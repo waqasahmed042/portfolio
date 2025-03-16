@@ -1,0 +1,15 @@
+export const randomQuotes = [
+    "Design is not just what it looks like, it's how it works. – Steve Jobs",
+    "Simplicity is the ultimate sophistication. – Leonardo da Vinci",
+    "The best way to predict the future is to invent it. – Alan Kay",
+    "Code is like humor. When you have to explain it, it’s bad. – Cory House",
+    "Success usually comes to those who are too busy to be looking for it. – Henry David Thoreau",
+    "Good code is its own best documentation. – Steve McConnell",
+    "Opportunities don't happen. You create them. – Chris Grosser",
+    "The only way to do great work is to love what you do. – Steve Jobs",
+    "Start where you are. Use what you have. Do what you can. – Arthur Ashe",
+    "If you can change your mind, you can change your life. – William James",
+    "Make each day your masterpiece. – John Wooden",
+    "Be so good they can't ignore you. – Steve Martin",
+    "Success is a Journey, Not a Destination. – Ben Sweetland",
+];

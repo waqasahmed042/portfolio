@@ -1,0 +1,148 @@
+$primary: #219ebc;
+$mainColor: #d73e0f;
+
+.logo-container {
+    width: 220px;
+    height: 55px;
+    background-image: url('../public/assets/images/signature.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-img {
+    width: 140px;
+    height: 40px
+}
+
+// Base styles for the nav link
+.nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 4px; // Space for the underline
+    font-weight: 500;
+    color: #333; // Adjust the text color as needed
+    transition: color 0.3s ease;
+
+    // Animated underline effect on hover
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0;
+        height: 2px; // Underline thickness
+        background-color: $mainColor; // Primary color for the underline
+        transition: width 0.3s ease; // Animate the width
+    }
+
+    &:hover {
+        color: $mainColor; // Change the text color on hover (optional)
+
+        &::after {
+            width: 100%; // Underline expands to full width on hover
+        }
+    }
+}
+
+.header_btn {
+    background-color: #fff;
+    color: #000;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 8px;
+    width: 122px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    /* Adjust padding */
+    padding-right: 10px;
+    /* Add right padding */
+    cursor: pointer;
+    transition: .4s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid $mainColor;
+    margin-top: -3px;
+
+}
+
+/* When cursor hovers over the button */
+.header_btn:hover {
+    background-color: $mainColor;
+    /* Change background to main color */
+    color: #fff;
+    /* Change text color to white */
+}
+
+.header_container__6am1c {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    gap: 5px;
+    /* Increased gap between the dots */
+}
+
+.header-dot1,
+.header-dot2,
+.header-dot3 {
+    height: 8px;
+    width: 8px;
+    background: $mainColor;
+    /* Define your main color */
+    border-radius: 50%;
+    animation: header_func__dXVFd 1s linear infinite;
+}
+
+/* When cursor hovers over the button, dots should change to white */
+.header_btn:hover .header-dot1,
+.header_btn:hover .header-dot2,
+.header_btn:hover .header-dot3 {
+    background: #fff;
+    /* Change dot color to white */
+}
+
+/* Delaying the animation for each dot to make them blink one by one */
+.header-dot1 {
+    animation-delay: 0s;
+}
+
+.header-dot2 {
+    animation-delay: 0.4s;
+    /* Add a slight delay */
+}
+
+.header-dot3 {
+    animation-delay: 0.7s;
+    /* Add a delay */
+}
+
+/* Animation for blinking effect */
+@keyframes header_func__dXVFd {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .header_btn {
+        margin-bottom: 10px;
+    }
+
+    .logo-container {
+        width: 160px;
+        height: 45px;
+    }
+
+}

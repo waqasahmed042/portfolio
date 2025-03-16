@@ -1,0 +1,21 @@
+@use"../sass/main.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Scrollbar Styling */
+$scrollbar-width: 12px;
+$scrollbar-track-color: #ebebeb;
+$scrollbar-thumb-color: #d73e0f;
+
+::-webkit-scrollbar {
+    width: $scrollbar-width;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $scrollbar-track-color;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $scrollbar-thumb-color;
+}

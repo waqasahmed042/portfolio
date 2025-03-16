@@ -1,0 +1,367 @@
+@use "sass:color";
+@use "./footer";
+@use "./loader";
+@use "./navbar";
+@use "./service";
+
+// @import './footer';
+// @import './loader';
+// @import './navbar';
+// @import './servicePage';
+
+$primary: #219ebc;
+$mainColor: #d73e0f;
+
+.hero-section {
+    padding-top: 25px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 960px;
+}
+
+.hellow-text {
+    color: $mainColor;
+}
+
+.type-writer-text {
+    margin-top: -0px !important;
+}
+
+.hero-btn-resume {
+    background-color: $mainColor;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: color.adjust($mainColor, $lightness: -10%);
+    }
+}
+
+.hero-btn-quote {
+    background-color: $primary;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+        background-color: color.adjust($primary, $lightness: -10%);
+    }
+}
+
+.text-underline {
+    background-color: $mainColor;
+}
+
+.home-contact-section {
+    background-image: url('../public/assets/images/bg3.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 65vh;
+    border-radius: 5px;
+
+}
+
+.contact-overlay {
+    background-color: rgba(46, 46, 46, 0.7);
+    min-height: 65vh;
+    border-radius: 5px;
+}
+
+.btn-default {
+    background-color: $primary;
+    color: white;
+    padding: 8px 16px 9px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 3px solid $primary;
+}
+
+
+@media (max-width: 768px) {
+    .hero-section {
+        margin-top: 65px;
+        padding-top: 25px;
+    }
+
+}
+
+
+.project-img {
+    position: relative;
+    overflow: hidden;
+
+    .group-hover-image {
+        transition: transform 0.5s ease-in-out;
+    }
+
+    &:hover .group-hover-image {
+        transform: scale(1.02);
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: -100%; // Initially off-screen
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100%;
+        transition: bottom 0.5s ease-in-out;
+    }
+
+    &:hover .overlay {
+        bottom: 0; // Slides into view
+    }
+
+    .text-content {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+    }
+
+    &:hover .text-content {
+        opacity: 1; // Fade in text
+    }
+}
+
+.about-hero-section {
+    margin-top: 62px;
+}
+
+.resume {
+    @apply bg-gray-50 p-6 rounded-lg shadow-lg;
+
+    .title-wrapper {
+        @apply flex items-center gap-4 mb-6;
+    }
+
+    .timeline-list {
+        @apply ml-12 text-base;
+    }
+
+    .timeline-item {
+        @apply relative mb-6;
+
+        &:not(:last-child)::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            /* Adjust this value to align the line */
+            left: -30px;
+            width: 1px;
+            height: calc(100% + 24px);
+            background: #5d5c5c; // Customize this color as needed
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            top: 15px;
+            /* Adjusted to align the bullet with text */
+            left: -33px;
+            height: 6px;
+            width: 6px;
+            background: #fff; // Tailwind's yellow-400
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px #5d5c5c; // Customize this as needed
+        }
+
+        h4 {
+            @apply text-lg font-semibold text-gray-700 mb-2;
+            position: relative;
+            top: 3px;
+            /* Adjust this to fine-tune text alignment */
+        }
+    }
+}
+
+.contact-icon-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 10%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, border 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1); // Slightly zoom in
+        // border: 3px solid rgba(33, 158, 188, 0.4); // Border appears
+    }
+}
+
+/* From Uiverse.io by mrhyddenn */
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #0a0909;
+    padding: 7px 0 7px 7px;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 600;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: $primary;
+    font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+
+
+@media (max-width: 440px) {
+
+    /* Adjust the max-width based on your needs */
+    .inputs-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* Stack items vertically */
+        gap: 10px;
+        /* Add some space between rows */
+    }
+}
+
+
+
+.metrics {
+    height: 160px;
+    width: 170px;
+    border-radius: 10%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.metric-text {
+    font-size: 54px;
+    color: $mainColor;
+    letter-spacing: 1px;
+}
+
+
+.project-card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; // Ensures child elements can be positioned relative to the card
+}
+
+.project-card-img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.project-card-content {
+    position: relative;
+    padding: 15px;
+    background-color: #fff;
+    margin-top: -20px;
+    border-radius: 10px;
+}
+
+.project-btn {
+    margin-top: 15px;
+    background-color: $mainColor;
+    color: white;
+    padding: 3px 16px 4px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+    // border: 3px solid $mainColor;
+}
+
+
+
+.card-icon {
+    position: absolute; // Allows positioning relative to the parent
+    top: 155px; // Position slightly above the .project-card-content
+    left: 12px; // Align with the left padding of the content
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.techstack-badge {
+    margin: 3px;
+    border: 1px solid $primary;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 15px;
+    transition: transform 0.3s ease, border 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1); // Slightly zoom in
+    }
+}
