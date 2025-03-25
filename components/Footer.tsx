@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import logo from '../public/assets/images/signature.png';
 import Image from 'next/image';
-import { FaLinkedin, FaInstagram, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { FaStackOverflow } from "react-icons/fa";
 import UIText from '@/utilities/testResource';
 
@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
                             {/* LinkedIn */}
                             <li className="icon-content">
                                 <Link
-                                    href="https://www.linkedin.com/in/ali-hamza-software-engineer/"
+                                    href="https://www.linkedin.com/in/waqas-ahmed-815b87265/"
                                     target='_blank'
                                     aria-label="linkedin"
                                     data-social="linkedin"
@@ -42,20 +42,6 @@ const Footer: React.FC = () => {
                                     <FaStackOverflow className="icon" />
                                 </a>
                                 {/* <div className="tooltip">Facebook</div> */}
-                            </li>
-
-                            {/* instagram */}
-                            <li className="icon-content">
-                                <a
-                                    href="https://www.instagram.com/itz_mehar_hamza/"
-                                    target='_blank'
-                                    aria-label="instagram"
-                                    data-social="instagram"
-                                >
-                                    <div className="filled"></div>
-                                    <FaInstagram className="icon" />
-                                </a>
-                                {/* <div className="tooltip">Instagram</div> */}
                             </li>
 
                             {/* GitHub */}

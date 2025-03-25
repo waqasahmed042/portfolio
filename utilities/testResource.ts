@@ -93,7 +93,21 @@ const UIText = {
     contact: {
         title: "Contact Me",
         description: "I’d love to hear from you! Whether you have questions about web application development, Office Add-ins for Word, Excel, Outlook, or PowerPoint, or need a custom solution tailored to your business needs, I’m here to help.",
-        collaborate: "Let’s collaborate to bring your ideas to life with innovative and efficient solutions. Get in touch today!"
+        collaborate: "Let’s collaborate to bring your ideas to life with innovative and efficient solutions. Get in touch today!",
+        interested_work_together: "Interested to work together?",
+        contact_email: "waqasaahmed.it@gmail.com",
+        phone: "Phone",
+        contact_no: "+923453088845",
+        address: "Address",
+        address_details: "Sargodha, Punjab, Pakistan",
+        let: "Let",
+        talk: "s talk",
+        name: "Name",
+        email: "Email",
+        subject: "Subject",
+        project_type: "Project Type",
+        selected_project_type: "Select Project Type",
+        message: "Message"
     },
     footer: {
         all_rights_reserved: "© 2025 Waqas Ahmed. All Right Reserved."

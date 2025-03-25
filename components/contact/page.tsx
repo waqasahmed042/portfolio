@@ -162,8 +162,8 @@ const Contact: React.FC = () => {
                                 <IoIosMail size={60} color="#d73e0f" />
                             </div>
                             <div className='ms-3'>
-                                <p className='font-semibold'>Email:</p>
-                                <a href="mailto:hamzamashooq492@gmail.com" className="text-lg mt-1 hover:text-custommain">waqasaahmed.it@gmail.com</a>
+                                <p className='font-semibold'>{UIText.contact.email}:</p>
+                                <a href="mailto:hamzamashooq492@gmail.com" className="text-lg mt-1 hover:text-custommain">{UIText.contact.contact_email}</a>
                             </div>
                         </div>
                         <div className="flex w-full sm:w-auto me-3">
@@ -171,8 +171,8 @@ const Contact: React.FC = () => {
                                 <IoCall size={52} color="#d73e0f" />
                             </div>
                             <div className='ms-3'>
-                                <p className='font-semibold'>Phone:</p>
-                                <a href="tel:+923037740991" className="text-lg hover:text-custommain">+923453088845</a>
+                                <p className='font-semibold'>{UIText.contact.phone}:</p>
+                                <a href="tel:+923037740991" className="text-lg hover:text-custommain">{UIText.contact.contact_no}</a>
                             </div>
                         </div>
                         <div className="flex w-full sm:w-auto me-3">
@@ -180,11 +180,11 @@ const Contact: React.FC = () => {
                                 <FaLocationDot size={50} color="#d73e0f" />
                             </div>
                             <div className='ms-3'>
-                                <p className='font-semibold'>Address:</p>
+                                <p className='font-semibold'>{UIText.contact.address}:</p>
                                 <a href="https://www.google.com/maps/place/Sargodha/@32.05496,72.697033,19187m/data=!3m2!1e3!4b1!4m6!3m5!1s0x39217439502694e3:0x55e1bad6edcbbc70!8m2!3d32.0739787!4d72.6860696!16zL20vMDVzNzlr?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-lg hover:text-custommain">Sargodha, Punjab, Pakistan</a>
+                                    className="text-lg hover:text-custommain">{UIText.contact.address_details}</a>
                             </div>
                         </div>
                     </div>
@@ -203,27 +203,27 @@ const Contact: React.FC = () => {
                         </div>
                         <div className='w-full md:w-1/2'>
                             <form className='bg-white shadow-md  px-8 pt-6 pb-8 mb-20'>
-                                <h2 className='text-4xl mb-10'>Interested to work together? <br /> Let&apos;s talk</h2>
+                                <h2 className='text-4xl mb-10'>{UIText.contact.interested_work_together} <br /> {UIText.contact.let}&apos;{UIText.contact.talk}</h2>
                                 <div className="flex gap-5 mb-4 flex-row inputs-container">
                                     <div className="form__group field w-full" >
                                         <input type="input" className="form__field" placeholder="Name" name='name' value={state.name} onChange={handleChange} />
-                                        <label htmlFor="name" className="form__label">Name</label>
+                                        <label htmlFor="name" className="form__label">{UIText.contact.name}</label>
                                     </div>
                                     <div className="form__group field w-full"   >
                                         <input type="input" className="form__field" placeholder="Email" name='email' value={state.email} onChange={handleChange} />
-                                        <label htmlFor="email" className="form__label">Email</label>
+                                        <label htmlFor="email" className="form__label">{UIText.contact.email}</label>
                                     </div>
                                 </div>
 
                                 <div className="form__group field w-full mb-4">
                                     <input type="input" className="form__field" placeholder="Subject" name='subject' value={state.subject} onChange={handleChange} />
-                                    <label htmlFor="subject" className="form__label">Subject</label>
+                                    <label htmlFor="subject" className="form__label">{UIText.contact.subject}</label>
                                 </div>
 
                                 <div className="form__group field w-full mb-4">
-                                    <label htmlFor="project_type" className="block font-semibold">Project Type</label>
+                                    <label htmlFor="project_type" className="block form__label">{UIText.contact.project_type}</label>
                                     <select id="project_type" name="project_type" className="form__field" value={state.project_type} onChange={handleChange}>
-                                        <option value="" disabled>Select Project Type</option>
+                                        <option value="" disabled>{UIText.contact.selected_project_type}</option>
                                         {projectTypeDropdown.map((type, index) => (
                                             <option key={index} value={type}>{type}</option>
                                         ))}
@@ -232,7 +232,7 @@ const Contact: React.FC = () => {
 
                                 <div className="form__group field w-full mb-4">
                                     <textarea className="form__field" placeholder="Message" rows={2} name='message' value={state.message} onChange={handleChange}></textarea>
-                                    <label htmlFor="message" className="form__label">Message</label>
+                                    <label htmlFor="message" className="form__label">{UIText.contact.message}</label>
                                 </div>
 
                                 <div className='flex items-center justify-end'>
