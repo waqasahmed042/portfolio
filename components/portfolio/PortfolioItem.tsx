@@ -107,13 +107,15 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
 
                                     {/* Image Carousel Section */}
                                     <div className="lg:w-7/12 mt-4 lg:mt-0 relative w-full">
-                                        <Slider {...sliderSettings}>
-                                            {addin_images.map((image, index) => (
-                                                <div key={index}>
-                                                    <Image src={image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover rounded-lg" />
-                                                </div>
-                                            ))}
-                                        </Slider>
+                                        <div className="w-full sticky top-0">
+                                            <Slider {...sliderSettings}>
+                                                {addin_images.map((image, index) => (
+                                                    <div key={index}>
+                                                        <Image src={image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover rounded-lg" />
+                                                    </div>
+                                                ))}
+                                            </Slider>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
