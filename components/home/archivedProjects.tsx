@@ -1,14 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { archived_projects } from '@/utilities/home/archivedProject';
 import UIText from '@/utilities/testResource';
+import Toast from '../Toast';
 import { FaEye } from 'react-icons/fa';
 import { Raleway } from 'next/font/google';
+import { RiCodeSSlashLine } from 'react-icons/ri';
 
 const raleway = Raleway({
     subsets: ['latin'],
 });
 
 const ArchivedProjects: React.FC = () => {
+    const [infoMessage, setInfoMessage] = useState("");
+
+    const handleGithubClick = (github_link: string) => {
+        setInfoMessage("");
+
+        setTimeout(() => {
+            if (!github_link) {
+                setInfoMessage("The GitHub repository for this project is private due to security reasons.");
+                return;
+            } else {
+                window.open(github_link, "_blank");
+            }
+        }, 100)
+    };
+
     return (
         <>
             <section className="bg-gray-100 py-10">
@@ -35,11 +52,16 @@ const ArchivedProjects: React.FC = () => {
 
                                     {/* Eye Icon (Link) */}
                                     <div className="text text-center p-4 z-10 text-content">
-                                        <h3 className="text-white text-lg font-semibold">
-                                            <a href={project.link} target="_blank" rel="noreferrer">
-                                                <FaEye size={30} />
-                                            </a>
-                                        </h3>
+                                        <div className="text text-center p-4 z-10 text-content flex justify-center gap-4">
+                                            <h3 className="text-white text-lg font-semibold flex items-center gap-2">
+                                                <a href={project.live_link} target="_blank" rel="noreferrer">
+                                                    <FaEye size={30} />
+                                                </a>
+                                                <a href="#" onClick={(e) => { e.preventDefault(); handleGithubClick(project.github_link); }}>
+                                                    <RiCodeSSlashLine size={30} />
+                                                </a>
+                                            </h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -47,6 +69,15 @@ const ArchivedProjects: React.FC = () => {
                     </div>
                 </div>
             </section>
+
+            {/* show toast info message */}
+            {infoMessage && (
+                <Toast
+                    infoMessage={infoMessage}
+                    errorMessage={""}
+                    successMessage={""}
+                />
+            )}
         </>
     );
 };

@@ -7,51 +7,67 @@ import project6 from "@/public/assets/archived-projects/project6.png";
 import project7 from "@/public/assets/archived-projects/project7.png";
 import project8 from "@/public/assets/archived-projects/project8.png";
 import project9 from "@/public/assets/archived-projects/project9.png";
+import project10 from "@/public/assets/archived-projects/project10.png";
 
 export const archived_projects = [
     {
         image: project1.src,
-        link: "https://hamza-tasklist-app.netlify.app/",
+        live_link: "https://hamza-tasklist-app.netlify.app/",
+        github_link: "",
         widthClass: "md:w-1/2",
     },
     {
         image: project2.src,
-        link: "https://foodhub-hotel.web.app/",
+        live_link: "https://foodhub-hotel.web.app/",
+        github_link: "",
         widthClass: "md:w-1/2",
     },
     {
         image: project3.src,
-        link: "https://waqasahmed042.github.io/weather-app/",
+        live_link: "https://waqasahmed042.github.io/weather-app/",
+        github_link: "https://github.com/waqasahmed042/weather-app",
         widthClass: "md:w-1/2",
     },
     {
         image: project4.src,
-        link: "https://waqasahmed042.github.io/todo-task-list/",
+        live_link: "https://waqasahmed042.github.io/todo-task-list/",
+        github_link: "https://github.com/waqasahmed042/todo-task-list",
         widthClass: "md:w-1/2",
     },
     {
         image: project5.src,
-        link: "https://waqasahmed042.github.io/text-speech-convertor/",
+        live_link: "https://waqasahmed042.github.io/text-speech-convertor/",
+        github_link: "https://github.com/waqasahmed042/text-speech-convertor",
         widthClass: "md:w-1/2",
     },
     {
         image: project6.src,
-        link: "https://waqasahmed042.github.io/grocery-store/",
+        live_link: "https://waqasahmed042.github.io/grocery-store/",
+        github_link: "https://github.com/waqasahmed042/grocery-store",
         widthClass: "md:w-1/2",
     },
     {
         image: project7.src,
-        link: "https://waqasahmed042.github.io/food-restaurant/",
+        live_link: "https://waqasahmed042.github.io/food-restaurant/",
+        github_link: "https://github.com/waqasahmed042/food-restaurant",
         widthClass: "md:w-1/2",
     },
     {
         image: project8.src,
-        link: "https://waqasahmed042.github.io/form-validations/",
+        live_link: "https://waqasahmed042.github.io/form-validations/",
+        github_link: "https://github.com/waqasahmed042/form-validations",
         widthClass: "md:w-1/2",
     },
     {
         image: project9.src,
-        link: "https://waqasahmed042.github.io/stock-market/",
+        live_link: "https://waqasahmed042.github.io/stock-market/",
+        github_link: "https://github.com/waqasahmed042/stock-market",
+        widthClass: "md:w-1/2",
+    },
+    {
+        image: project10.src,
+        live_link: "https://waqasahmed042.github.io/to-do-list-app/",
+        github_link: "https://github.com/waqasahmed042/to-do-list-app",
         widthClass: "md:w-1/2",
     }
 ];
