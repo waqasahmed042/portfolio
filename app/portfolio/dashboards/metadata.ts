@@ -1,8 +1,8 @@
 import { Metadata } from 'next/types';
 
 export const metadata: Metadata = {
-    title: 'Dashboards | Pinch Dashboard',
-    description: 'Specialized in custom Outlook Add-ins to enhance productivity through seamless tool integration and automation.',
+    title: 'Pinch | Email & Client Management Dashboard',
+    description: 'Pinch is a powerful web-based dashboard designed for efficient email and client data management. It enables seamless email access, client list management, and bulk data uploads via CSV files, enhancing productivity with a user-friendly interface.',
     icons: {
         icon: [
             { url: '/icon16x16.png', sizes: '16x16', type: 'image/png' },
