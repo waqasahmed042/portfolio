@@ -108,7 +108,7 @@ import pinch_after_mail_open from "../public/assets/portfolio/dashboad/pinch/pin
 
 export const buttonText = [
     'All Portfolio',
-    'Dashboard',
+    'Dashboards',
     'Office Add-ins',
     'Google Add-ons',
     'Word Add-ins',
@@ -906,13 +906,15 @@ export const word_addins = [
     {
         img: [
             doc_scan_pro_home,
+            doc_scan_pro_login_dialog,
             doc_scan_pro_questions,
+            doc_scan_pro_generating_ai_response,
             doc_scan_pro_comments
         ],
-        addin_name: "Contract Negotiator",
+        addin_name: "DocScan Pro",
         addin_type: "Word Add-in",
-        addin_purpose: "Contract Negotiator - Smart Document Review Assistant for Word",
-        addin_description_1: "Contract Negotiator is an advanced AI-driven writing assistant integrated into Word, designed to enhance document quality and streamline the review process.",
+        addin_purpose: "DocScan Pro - Smart Document Review Assistant for Word",
+        addin_description_1: "DocScan Pro is an advanced AI-driven writing assistant integrated into Word, designed to enhance document quality and streamline the review process.",
         addin_description_2: "This add-in reads the entire document and provides intelligent suggestions directly in the comments section against identified issues in the text. By offering actionable feedback on grammar, clarity, and style, Contract Negotiator helps users refine their documents, maintain consistency, and produce high-quality contracts and proposals with ease.",
         skills_and_deliverables: "Skills and deliverables",
         tags: [

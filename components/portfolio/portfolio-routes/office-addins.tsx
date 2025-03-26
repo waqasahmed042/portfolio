@@ -1,19 +1,19 @@
-"use client";
-import { useEffect, useState } from "react";
-import { Raleway, Roboto } from "next/font/google";
-import Link from "next/link";
+'use client';
+import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { Raleway, Roboto } from 'next/font/google';
+import Link from 'next/link';
 import { useRouter } from 'next/navigation';
+import Toast from '@/components/Toast';
+import { buttonText, demoLoomURLs, office_addins } from '@/utilities/portfolio';
 import portfolioPic from "@/public/assets/images/portfolioPic.png";
-import Contact from "@/components/Contact";
-import Image from "next/image";
-import { buttonText, demoLoomURLs, portfolio } from "@/utilities/portfolio";
 import { IoIosArrowDown } from "react-icons/io";
-import { PortfolioItem } from "@/utilities/type";
-import Portfolio from "./PortfolioItem";
-import Toast from "@/components/Toast";
-import UIText from "@/utilities/testResource";
-import AskAI from "../ai/page";
+import Navbar from '@/components/Navbar';
+import UIText from '@/utilities/testResource';
+import { PortfolioItem } from '@/utilities/type';
+import PortfolioDialog from '../PortfolioItem';
 
 const raleway = Raleway({
     subsets: ["latin"],
@@ -24,26 +24,47 @@ const roboto = Roboto({
     weight: ["400", "500"],
 });
 
-export const Projects = () => {
+const OfficeAddins: React.FC = () => {
     const router = useRouter();
     const [infoMessage, setInfoMessage] = useState('');
-    const [activeButton, setActiveButton] = useState<string>('All Portfolio');
+    const [activeButton, setActiveButton] = useState<string>('Office Add-ins');
     const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
     const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
     const [selectedCard, setSelectedCard] = useState<PortfolioItem | null>(null);
+
+    useEffect(() => {
+        AOS.init({ duration: 1200 });
+    }, []);
 
     useEffect(() => {
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth < 500);
         };
 
-        handleResize();
+        handleResize(); // Check initial size
         window.addEventListener('resize', handleResize);
 
         return () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    const handlePreviewClick = (card: PortfolioItem) => {
+        setSelectedCard(card);
+    };
+
+    const handleDemoClick = (item: { addin_name: string }) => {
+        setInfoMessage("");
+
+        setTimeout(() => {
+            const demo = demoLoomURLs.find(d => d.addin_name === item.addin_name);
+            if (demo && demo.demoLoomURL) {
+                window.open(demo.demoLoomURL, "_blank");
+            } else {
+                setInfoMessage("Demo not available for this project");
+            }
+        }, 100)
+    };
 
     const handleButtonClick = (text: string) => {
         setActiveButton(text);
@@ -69,33 +90,13 @@ export const Projects = () => {
         router.push(route);
     };
 
-    const handlePreviewClick = (card: PortfolioItem) => {
-        setSelectedCard(card);
-    };
-
-    const handleDemoClick = (item: { addin_name: string }) => {
-        setInfoMessage("");
-
-        setTimeout(() => {
-            const demo = demoLoomURLs.find(d => d.addin_name === item.addin_name);
-            if (demo && demo.demoLoomURL) {
-                window.open(demo.demoLoomURL, "_blank");
-            } else {
-                setInfoMessage("Demo not available for this project");
-            }
-        }, 100)
-    };
-
     const closeDialog = () => {
         setSelectedCard(null);
     };
 
-    useEffect(() => {
-        AOS.init();
-    }, []);
-
     return (
         <>
+            <Navbar />
             {/* Hero Section */}
             <section>
                 <div data-aos="fade-up" className="flex items-center justify-center bg-gray-100 hero-section">
@@ -159,7 +160,7 @@ export const Projects = () => {
                                     key={index}
                                     onClick={() => handleButtonClick(text)}
                                     className={`flex items-center justify-center font-bold text-xl px-4 py-3 rounded-full border transition-all duration-300 hover:bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] dark:text-white hover:text-white hover:border-none
-                  ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white dark:border-none' : 'border-[#d73e0f] text-black'}`}
+                                        ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white dark:border-none' : 'border-[#d73e0f] text-black'}`}
                                 >
                                     {text}
                                 </button>
@@ -168,16 +169,16 @@ export const Projects = () => {
                     )}
                 </div>
 
-                {/* Portfolio Items */}
+                {/* Office Addin Items */}
                 <section id="portfolio" className="py-16 z-20 px-4">
                     <div className="container mx-auto">
-                        {portfolio.length === 0 ? (
+                        {office_addins.length === 0 ? (
                             <div className="text-center">
                                 <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
                             </div>
                         ) : (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                                {portfolio.map((item, index) => (
+                                {office_addins.map((item, index) => (
                                     <div
                                         key={index}
                                         className="group bg-white dark:bg-black dark:text-white relative hover:shadow-lg shadow-md rounded-lg overflow-hidden"
@@ -222,7 +223,7 @@ export const Projects = () => {
 
             {/* Dialog for selected card */}
             {selectedCard && (
-                <Portfolio
+                <PortfolioDialog
                     addin_name={selectedCard.addin_name}
                     addin_images={selectedCard.img}
                     addin_title={selectedCard.addin_purpose}
@@ -234,12 +235,6 @@ export const Projects = () => {
                 />
             )}
 
-            {/* Contact Section */}
-            <Contact titlePre="Your vision, my" highlight="Expertise—" titlePost="let’s craft extraordinary!" />
-
-            {/* floating ask ai component */}
-            <AskAI />
-
             {/* show toast info message */}
             {infoMessage && (
                 <Toast
@@ -250,6 +245,6 @@ export const Projects = () => {
             )}
         </>
     );
-}
+};
 
-export default Projects;
+export default OfficeAddins;
