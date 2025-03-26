@@ -22,6 +22,27 @@ import doc_scan_pro_questions from "../public/assets/portfolio/word/doc-scan/doc
 import doc_scan_pro_generating_ai_response from "../public/assets/portfolio/word/doc-scan/doc-scan-generating-ai-response.png";
 import doc_scan_pro_comments from "../public/assets/portfolio/word/doc-scan/doc-scan-comments.png";
 
+// acl istanbul addin images
+import acl_istanbul_login from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-login.png";
+import acl_istanbul_login_error from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-login-error.png";
+import acl_istanbul_home from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-home.png";
+import acl_istanbul_search_for_categories_and_snippets from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-search-for-categories-and-snippets.png";
+import acl_istanbul_open_Dropdown from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-open-dropdown.png";
+import acl_istanbul_add_category from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-add-category.png";
+import acl_istanbul_add_snippet from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-add-snippet.png";
+import acl_istanbul_snippet_preview_insert from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-snippet-preview-insert.png";
+
+
+// acl istanbul addin images
+import limit_up_home from "../public/assets/portfolio/word/limit-up/limit-up-home.png";
+import limit_up_sign_in from "../public/assets/portfolio/word/limit-up/limit-up-sign-in.png";
+import limit_up_sign_up from "../public/assets/portfolio/word/limit-up/limit-up-sign-up.png";
+import limit_up_editor from "../public/assets/portfolio/word/limit-up/limit-up-editor.png";
+import limit_up_custom_prompt_manager from "../public/assets/portfolio/word/limit-up/limit-up-custom-prompt-manager.png";
+import limit_up_create_custom_prompt from "../public/assets/portfolio/word/limit-up/limit-up-create-custom-prompt.png";
+import limit_up_update_custom_prompt from "../public/assets/portfolio/word/limit-up/limit-up-update-custom-prompt.png";
+import limit_up_system_prompt from "../public/assets/portfolio/word/limit-up/limit-up-system-prompt.png";
+
 // bias awareness ai word addins images
 import bias_awareness_ai_home_tooltip from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-home-tooltip.png";
 import bias_awareness_ai_dropdown from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-dropdown.png";
@@ -66,16 +87,6 @@ import saber_ai_email_categorized_successfully from "../public/assets/portfolio/
 import saber_ai_green_category from "../public/assets/portfolio/outlook/saber-ai/saber-green-category.png";
 import saber_ai_red_category from "../public/assets/portfolio/outlook/saber-ai/saber-email-not-found.png";
 import saber_ai_amber_category from "../public/assets/portfolio/outlook/saber-ai/saber-user-is-non-lit-pcp.png";
-
-// acl istanbul addin images
-import acl_istanbul_login from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-login.png";
-import acl_istanbul_login_error from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-login-error.png";
-import acl_istanbul_home from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-home.png";
-import acl_istanbul_search_for_categories_and_snippets from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-search-for-categories-and-snippets.png";
-import acl_istanbul_open_Dropdown from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-open-dropdown.png";
-import acl_istanbul_add_category from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-add-category.png";
-import acl_istanbul_add_snippet from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-add-snippet.png";
-import acl_istanbul_snippet_preview_insert from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-snippet-preview-insert.png";
 
 // google sheet addons images
 import campaign_trackly_introduction from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-rackly-introduction.png";
@@ -157,7 +168,11 @@ export const demoLoomURLs = [
     },
     {
         addin_name: "ACL Istanbul",
-        demoLoomURL: "",
+        demoLoomURL: "https://www.loom.com/share/224ed48eab5444648e82dddeeed3ffb2?sid=39ba5bbe-bcd3-480b-b0c7-d58f19831809",
+    },
+    {
+        addin_name: "Limit Up",
+        demoLoomURL: "https://www.loom.com/share/ca80a43384f6478fbebe5c22afc6fd86?sid=ed8a2559-7b02-42a6-aebf-8985bf06372d",
     },
     {
         addin_name: "Campaign Trackly",
@@ -250,6 +265,57 @@ export const portfolio = [
             "Productivity",
             "Document Review",
             "Editing"
+        ]
+    },
+    {
+        img: [
+            acl_istanbul_login,
+            acl_istanbul_login_error,
+            acl_istanbul_home,
+            acl_istanbul_search_for_categories_and_snippets,
+            acl_istanbul_open_Dropdown,
+            acl_istanbul_add_category,
+            acl_istanbul_add_snippet,
+            acl_istanbul_snippet_preview_insert
+        ],
+        addin_name: "ACL Istanbul",
+        addin_type: "Outlook Add-in",
+        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
+        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
+        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Microsoft Office",
+            "Microsoft Outlook",
+            "Category Management",
+            "Snippet Management",
+            "Productivity",
+            "Collaboration"
+        ]
+    },
+    {
+        img: [
+            limit_up_home,
+            limit_up_sign_in,
+            limit_up_sign_up,
+            limit_up_editor,
+            limit_up_custom_prompt_manager,
+            limit_up_create_custom_prompt,
+            limit_up_update_custom_prompt,
+            limit_up_system_prompt
+        ],
+        addin_name: "Limit Up",
+        addin_type: "Word Add-in",
+        addin_purpose: "Limit Up - AI-Powered Text Enhancement with Custom Prompts for Word",
+        addin_description_1: "Limit Up is a powerful Word Add-in designed for seamless management of categories and snippets while preserving original formatting. It enables users to create, edit, and organize their content efficiently, ensuring well-structured and consistent documents.",
+        addin_description_2: "With Limit Up, users can sign in using Google via Firebase authentication or register with email and password. It allows effortless addition, deletion, and management of categories and snippets, along with inserting snippet content into Word documents while maintaining original formatting. Additionally, it enhances text using To-Gather AI for improved writing and productivity and features a Custom Prompt Manager to create personalized AI-driven responses tailored to specific needs. By streamlining these tasks, it enhances workflow efficiency, improves collaboration, and ensures a structured approach to content management within Word.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Google Sign-In",
+            "Firebase Authentication",
+            "AI-powered Text Enhancement",
+            "Custom Prompt Management",
+            "Word Document Automation"
         ]
     },
     {
@@ -432,32 +498,6 @@ export const portfolio = [
     },
     {
         img: [
-            acl_istanbul_login,
-            acl_istanbul_login_error,
-            acl_istanbul_home,
-            acl_istanbul_search_for_categories_and_snippets,
-            acl_istanbul_open_Dropdown,
-            acl_istanbul_add_category,
-            acl_istanbul_add_snippet,
-            acl_istanbul_snippet_preview_insert
-        ],
-        addin_name: "ACL Istanbul",
-        addin_type: "Outlook Add-in",
-        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
-        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
-        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Outlook",
-            "Category Management",
-            "Snippet Management",
-            "Productivity",
-            "Collaboration"
-        ]
-    },
-    {
-        img: [
             campaign_trackly_introduction,
             campaign_trackly_login,
             campaign_trackly_apply_template,
@@ -515,7 +555,6 @@ export const dashboard = [
 export const office_addins = [
     {
         img: [
-            "legal_track_ai_login",
             legal_track_ai_login,
             legal_track_ai_review,
             legal_track_ai_ai_result,
@@ -569,6 +608,84 @@ export const office_addins = [
             "Productivity",
             "Document Review",
             "Editing"
+        ]
+    },
+    {
+        img: [
+            acl_istanbul_login,
+            acl_istanbul_login_error,
+            acl_istanbul_home,
+            acl_istanbul_search_for_categories_and_snippets,
+            acl_istanbul_open_Dropdown,
+            acl_istanbul_add_category,
+            acl_istanbul_add_snippet,
+            acl_istanbul_snippet_preview_insert
+        ],
+        addin_name: "ACL Istanbul",
+        addin_type: "Outlook Add-in",
+        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
+        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
+        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Microsoft Office",
+            "Microsoft Outlook",
+            "Category Management",
+            "Snippet Management",
+            "Productivity",
+            "Collaboration"
+        ]
+    },
+    {
+        img: [
+            limit_up_home,
+            limit_up_sign_in,
+            limit_up_sign_up,
+            limit_up_editor,
+            limit_up_custom_prompt_manager,
+            limit_up_create_custom_prompt,
+            limit_up_update_custom_prompt,
+            limit_up_system_prompt
+        ],
+        addin_name: "Limit Up",
+        addin_type: "Word Add-in",
+        addin_purpose: "Limit Up - AI-Powered Text Enhancement with Custom Prompts for Word",
+        addin_description_1: "Limit Up is a powerful Word Add-in designed for seamless management of categories and snippets while preserving original formatting. It enables users to create, edit, and organize their content efficiently, ensuring well-structured and consistent documents.",
+        addin_description_2: "With Limit Up, users can sign in using Google via Firebase authentication or register with email and password. It allows effortless addition, deletion, and management of categories and snippets, along with inserting snippet content into Word documents while maintaining original formatting. Additionally, it enhances text using To-Gather AI for improved writing and productivity and features a Custom Prompt Manager to create personalized AI-driven responses tailored to specific needs. By streamlining these tasks, it enhances workflow efficiency, improves collaboration, and ensures a structured approach to content management within Word.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Google Sign-In",
+            "Firebase Authentication",
+            "AI-powered Text Enhancement",
+            "Custom Prompt Management",
+            "Word Document Automation"
+        ]
+    },
+    {
+        img: [
+            bias_awareness_ai_home_tooltip,
+            bias_awareness_ai_dropdown,
+            bias_awareness_ai_full_text,
+            bias_awareness_ai_large_text,
+            bias_awareness_ai_image_description,
+            bias_awareness_ai_comment_suggestions,
+            bias_awareness_ai_comment_quotes,
+        ],
+        addin_name: "BiasAwareness AI",
+        addin_type: "Word Add-in",
+        addin_purpose: "BiasAwareness AI - Comprehensive DEI Bias Detection Assistant for Microsoft Word",
+        addin_description_1: "BiasAwareness AI is an advanced tool for detecting and addressing potential biases in documents and images, specifically focusing on Diversity, Equity, and Inclusion (DEI) standards within Microsoft Word.",
+        addin_description_2: "This add-in analyzes text and images for explicit and implicit biases across DEI categories like gender, race, and socioeconomic status. It flags issues, including omissions and stereotypes, provides severity-based comments with suggestions, and generates a comprehensive bias report to improve inclusivity and representation in professional documents.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Microsoft Office",
+            "Microsoft Word",
+            "Artificial Intelligence",
+            "DEI",
+            "Bias Detection",
+            "Document Review",
+            "Image Analysis",
+            "Bias Report"
         ]
     },
     {
@@ -753,6 +870,41 @@ export const google_addons = [
 export const word_addins = [
     {
         img: [
+            legal_track_ai_login,
+            legal_track_ai_login,
+            legal_track_ai_review,
+            legal_track_ai_ai_result,
+            legal_track_ai_ai_result_expand_card,
+            legal_track_ai_ai_result_dialog,
+            legal_track_ai_summary,
+            legal_track_ai_summary_dialog,
+            legal_track_ai_risk_analysis,
+            legal_track_ai_risk_analysis_dialog,
+            legal_track_ai_write,
+            legal_track_ai_write_dialog,
+            legal_track_ai_clause_management,
+            legal_track_ai_add_clause,
+            legal_track_ai_search_library,
+            legal_track_ai_search_library_dialog
+        ],
+        addin_name: "Legal Track AI",
+        addin_type: "Word Add-in",
+        addin_purpose: "Legal Track AI - Smart Document Review Assistant for Word",
+        addin_description_1: "Legal Track AI is an advanced AI-powered writing and legal document review assistant integrated into Microsoft Word. It enhances document quality, streamlines the review process, and provides AI-driven suggestions for legal and business documents.",
+        addin_description_2: "This add-in analyzes entire documents and provides intelligent suggestions directly in the comments section, helping users refine contracts, agreements, and other legal texts. It offers AI-powered risk analysis, clause management, summarization, and writing assistance, ensuring clarity, compliance, and consistency in professional documents.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Microsoft Office",
+            "Microsoft Word",
+            "Artificial Intelligence",
+            "Productivity",
+            "Document Review",
+            "Editing",
+            "Legal Tech"
+        ]
+    },
+    {
+        img: [
             doc_scan_pro_home,
             doc_scan_pro_questions,
             doc_scan_pro_comments
@@ -770,6 +922,84 @@ export const word_addins = [
             "Productivity",
             "Document Review",
             "Editing"
+        ]
+    },
+    {
+        img: [
+            acl_istanbul_login,
+            acl_istanbul_login_error,
+            acl_istanbul_home,
+            acl_istanbul_search_for_categories_and_snippets,
+            acl_istanbul_open_Dropdown,
+            acl_istanbul_add_category,
+            acl_istanbul_add_snippet,
+            acl_istanbul_snippet_preview_insert
+        ],
+        addin_name: "ACL Istanbul",
+        addin_type: "Outlook Add-in",
+        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
+        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
+        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Microsoft Office",
+            "Microsoft Outlook",
+            "Category Management",
+            "Snippet Management",
+            "Productivity",
+            "Collaboration"
+        ]
+    },
+    {
+        img: [
+            limit_up_home,
+            limit_up_sign_in,
+            limit_up_sign_up,
+            limit_up_editor,
+            limit_up_custom_prompt_manager,
+            limit_up_create_custom_prompt,
+            limit_up_update_custom_prompt,
+            limit_up_system_prompt
+        ],
+        addin_name: "Limit Up",
+        addin_type: "Word Add-in",
+        addin_purpose: "Limit Up - AI-Powered Text Enhancement with Custom Prompts for Word",
+        addin_description_1: "Limit Up is a powerful Word Add-in designed for seamless management of categories and snippets while preserving original formatting. It enables users to create, edit, and organize their content efficiently, ensuring well-structured and consistent documents.",
+        addin_description_2: "With Limit Up, users can sign in using Google via Firebase authentication or register with email and password. It allows effortless addition, deletion, and management of categories and snippets, along with inserting snippet content into Word documents while maintaining original formatting. Additionally, it enhances text using To-Gather AI for improved writing and productivity and features a Custom Prompt Manager to create personalized AI-driven responses tailored to specific needs. By streamlining these tasks, it enhances workflow efficiency, improves collaboration, and ensures a structured approach to content management within Word.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Google Sign-In",
+            "Firebase Authentication",
+            "AI-powered Text Enhancement",
+            "Custom Prompt Management",
+            "Word Document Automation"
+        ]
+    },
+    {
+        img: [
+            bias_awareness_ai_home_tooltip,
+            bias_awareness_ai_dropdown,
+            bias_awareness_ai_full_text,
+            bias_awareness_ai_large_text,
+            bias_awareness_ai_image_description,
+            bias_awareness_ai_comment_suggestions,
+            bias_awareness_ai_comment_quotes,
+        ],
+        addin_name: "BiasAwareness AI",
+        addin_type: "Word Add-in",
+        addin_purpose: "BiasAwareness AI - Comprehensive DEI Bias Detection Assistant for Microsoft Word",
+        addin_description_1: "BiasAwareness AI is an advanced tool for detecting and addressing potential biases in documents and images, specifically focusing on Diversity, Equity, and Inclusion (DEI) standards within Microsoft Word.",
+        addin_description_2: "This add-in analyzes text and images for explicit and implicit biases across DEI categories like gender, race, and socioeconomic status. It flags issues, including omissions and stereotypes, provides severity-based comments with suggestions, and generates a comprehensive bias report to improve inclusivity and representation in professional documents.",
+        skills_and_deliverables: "Skills and deliverables",
+        tags: [
+            "Microsoft Office",
+            "Microsoft Word",
+            "Artificial Intelligence",
+            "DEI",
+            "Bias Detection",
+            "Document Review",
+            "Image Analysis",
+            "Bias Report"
         ]
     },
 ];
@@ -905,32 +1135,6 @@ export const outlook_addins = [
             "Productivity",
             "Task Automation",
             "Workflow Optimization"
-        ]
-    },
-    {
-        img: [
-            acl_istanbul_login,
-            acl_istanbul_login_error,
-            acl_istanbul_home,
-            acl_istanbul_search_for_categories_and_snippets,
-            acl_istanbul_open_Dropdown,
-            acl_istanbul_add_category,
-            acl_istanbul_add_snippet,
-            acl_istanbul_snippet_preview_insert
-        ],
-        addin_name: "ACL Istanbul",
-        addin_type: "Outlook Add-in",
-        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
-        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
-        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Outlook",
-            "Category Management",
-            "Snippet Management",
-            "Productivity",
-            "Collaboration"
         ]
     },
     {
