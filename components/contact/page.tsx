@@ -148,105 +148,105 @@ const Contact: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section className='bg-gray-100 hero-section'>
-                <div className='container mx-auto px-4 lg:px-24'>
-                    <h2 className={` text-3xl mt-20 font-bold mb-2 relative group ${raleway.className}`}>
-                        {UIText.contact.title}
-                        <span className="text-underline ms-1 absolute left-0 bottom-[-4px] rounded  h-1  w-12 transition-all duration-500 group-hover:w-40"></span>
-                    </h2>
-                    <div data-aos="fade-up" className="flex flex-wrap justify-around lg:justify-around sm:justify-start items-center sm:content-start mt-10 gap-y-2 mb-10">
-                        <div className="flex w-full sm:w-auto me-3">
-                            <div className="contact-icon-container">
-                                <IoIosMail size={60} color="#d73e0f" />
+                <section className='bg-gray-100 hero-section'>
+                    <div className='container mx-auto px-4 lg:px-24'>
+                        <h2 className={` text-3xl mt-20 font-bold mb-2 relative group ${raleway.className}`}>
+                            {UIText.contact.title}
+                            <span className="text-underline ms-1 absolute left-0 bottom-[-4px] rounded  h-1  w-12 transition-all duration-500 group-hover:w-40"></span>
+                        </h2>
+                        <div data-aos="fade-up" className="flex flex-wrap justify-around lg:justify-around sm:justify-start items-center sm:content-start mt-10 gap-y-2 mb-10">
+                            <div className="flex w-full sm:w-auto me-3">
+                                <div className="contact-icon-container">
+                                    <IoIosMail size={60} color="#d73e0f" />
+                                </div>
+                                <div className='ms-3'>
+                                    <p className='font-semibold'>{UIText.contact.email}:</p>
+                                    <a href="mailto:hamzamashooq492@gmail.com" className="text-lg mt-1 hover:text-custommain">{UIText.contact.contact_email}</a>
+                                </div>
                             </div>
-                            <div className='ms-3'>
-                                <p className='font-semibold'>{UIText.contact.email}:</p>
-                                <a href="mailto:hamzamashooq492@gmail.com" className="text-lg mt-1 hover:text-custommain">{UIText.contact.contact_email}</a>
+                            <div className="flex w-full sm:w-auto me-3">
+                                <div className="contact-icon-container">
+                                    <IoCall size={52} color="#d73e0f" />
+                                </div>
+                                <div className='ms-3'>
+                                    <p className='font-semibold'>{UIText.contact.phone}:</p>
+                                    <a href="tel:+923037740991" className="text-lg hover:text-custommain">{UIText.contact.contact_no}</a>
+                                </div>
+                            </div>
+                            <div className="flex w-full sm:w-auto me-3">
+                                <div className="contact-icon-container">
+                                    <FaLocationDot size={50} color="#d73e0f" />
+                                </div>
+                                <div className='ms-3'>
+                                    <p className='font-semibold'>{UIText.contact.address}:</p>
+                                    <a href="https://www.google.com/maps/place/Sargodha/@32.05496,72.697033,19187m/data=!3m2!1e3!4b1!4m6!3m5!1s0x39217439502694e3:0x55e1bad6edcbbc70!8m2!3d32.0739787!4d72.6860696!16zL20vMDVzNzlr?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="text-lg hover:text-custommain">{UIText.contact.address_details}</a>
+                                </div>
                             </div>
                         </div>
-                        <div className="flex w-full sm:w-auto me-3">
-                            <div className="contact-icon-container">
-                                <IoCall size={52} color="#d73e0f" />
+
+                        {/* map and form section */}
+                        <div data-aos="fade-up" className='container flex flex-wrap flex-col md:flex-row align-center justify-center '>
+                            {/* google map */}
+                            <div className='w-full md:w-1/2'>
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108208.7613301713!2d72.61463039841445!3d32.055078894508505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39217439502694e3%3A0x55e1bad6edcbbc70!2sSargodha%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740571509760!5m2!1sen!2s"
+                                    width="100%"
+                                    height="580"
+                                    style={{ border: 0 }}
+                                    loading="lazy"
+                                ></iframe>
                             </div>
-                            <div className='ms-3'>
-                                <p className='font-semibold'>{UIText.contact.phone}:</p>
-                                <a href="tel:+923037740991" className="text-lg hover:text-custommain">{UIText.contact.contact_no}</a>
-                            </div>
-                        </div>
-                        <div className="flex w-full sm:w-auto me-3">
-                            <div className="contact-icon-container">
-                                <FaLocationDot size={50} color="#d73e0f" />
-                            </div>
-                            <div className='ms-3'>
-                                <p className='font-semibold'>{UIText.contact.address}:</p>
-                                <a href="https://www.google.com/maps/place/Sargodha/@32.05496,72.697033,19187m/data=!3m2!1e3!4b1!4m6!3m5!1s0x39217439502694e3:0x55e1bad6edcbbc70!8m2!3d32.0739787!4d72.6860696!16zL20vMDVzNzlr?entry=ttu&g_ep=EgoyMDI1MDMwOC4wIKXMDSoASAFQAw%3D%3D"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="text-lg hover:text-custommain">{UIText.contact.address_details}</a>
+                            <div className='w-full md:w-1/2'>
+                                <form className='bg-white shadow-md  px-8 pt-6 pb-8 mb-20'>
+                                    <h2 className='text-4xl mb-10'>{UIText.contact.interested_work_together} <br /> {UIText.contact.let}&apos;{UIText.contact.talk}</h2>
+                                    <div className="flex gap-5 mb-4 flex-row inputs-container">
+                                        <div className="form__group field w-full" >
+                                            <input type="input" className="form__field" placeholder="Name" name='name' value={state.name} onChange={handleChange} />
+                                            <label htmlFor="name" className="form__label">{UIText.contact.name}</label>
+                                        </div>
+                                        <div className="form__group field w-full"   >
+                                            <input type="input" className="form__field" placeholder="Email" name='email' value={state.email} onChange={handleChange} />
+                                            <label htmlFor="email" className="form__label">{UIText.contact.email}</label>
+                                        </div>
+                                    </div>
+
+                                    <div className="form__group field w-full mb-4">
+                                        <input type="input" className="form__field" placeholder="Subject" name='subject' value={state.subject} onChange={handleChange} />
+                                        <label htmlFor="subject" className="form__label">{UIText.contact.subject}</label>
+                                    </div>
+
+                                    <div className="form__group field w-full mb-4">
+                                        <label htmlFor="project_type" className="block form__label">{UIText.contact.project_type}</label>
+                                        <select id="project_type" name="project_type" className="form__field" value={state.project_type} onChange={handleChange}>
+                                            <option value="" disabled>{UIText.contact.selected_project_type}</option>
+                                            {projectTypeDropdown.map((type, index) => (
+                                                <option key={index} value={type}>{type}</option>
+                                            ))}
+                                        </select>
+                                    </div>
+
+                                    <div className="form__group field w-full mb-4">
+                                        <textarea className="form__field" placeholder="Message" rows={2} name='message' value={state.message} onChange={handleChange}></textarea>
+                                        <label htmlFor="message" className="form__label">{UIText.contact.message}</label>
+                                    </div>
+
+                                    <div className='flex items-center justify-end'>
+                                        <button
+                                            className='bg-custommain text-white font-bold py-2 px-2 rounded hero-btn-resume h-10 w-32 flex items-center justify-center'
+                                            type='button' onClick={handleSubmit}
+                                        >
+                                            {loading ? <Loader /> : 'Send Message'}
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-
-                    {/* map and form section */}
-                    <div data-aos="fade-up" className='container flex flex-wrap flex-col md:flex-row align-center justify-center '>
-                        {/* google map */}
-                        <div className='w-full md:w-1/2'>
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108208.7613301713!2d72.61463039841445!3d32.055078894508505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39217439502694e3%3A0x55e1bad6edcbbc70!2sSargodha%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740571509760!5m2!1sen!2s"
-                                width="100%"
-                                height="580"
-                                style={{ border: 0 }}
-                                loading="lazy"
-                            ></iframe>
-                        </div>
-                        <div className='w-full md:w-1/2'>
-                            <form className='bg-white shadow-md  px-8 pt-6 pb-8 mb-20'>
-                                <h2 className='text-4xl mb-10'>{UIText.contact.interested_work_together} <br /> {UIText.contact.let}&apos;{UIText.contact.talk}</h2>
-                                <div className="flex gap-5 mb-4 flex-row inputs-container">
-                                    <div className="form__group field w-full" >
-                                        <input type="input" className="form__field" placeholder="Name" name='name' value={state.name} onChange={handleChange} />
-                                        <label htmlFor="name" className="form__label">{UIText.contact.name}</label>
-                                    </div>
-                                    <div className="form__group field w-full"   >
-                                        <input type="input" className="form__field" placeholder="Email" name='email' value={state.email} onChange={handleChange} />
-                                        <label htmlFor="email" className="form__label">{UIText.contact.email}</label>
-                                    </div>
-                                </div>
-
-                                <div className="form__group field w-full mb-4">
-                                    <input type="input" className="form__field" placeholder="Subject" name='subject' value={state.subject} onChange={handleChange} />
-                                    <label htmlFor="subject" className="form__label">{UIText.contact.subject}</label>
-                                </div>
-
-                                <div className="form__group field w-full mb-4">
-                                    <label htmlFor="project_type" className="block form__label">{UIText.contact.project_type}</label>
-                                    <select id="project_type" name="project_type" className="form__field" value={state.project_type} onChange={handleChange}>
-                                        <option value="" disabled>{UIText.contact.selected_project_type}</option>
-                                        {projectTypeDropdown.map((type, index) => (
-                                            <option key={index} value={type}>{type}</option>
-                                        ))}
-                                    </select>
-                                </div>
-
-                                <div className="form__group field w-full mb-4">
-                                    <textarea className="form__field" placeholder="Message" rows={2} name='message' value={state.message} onChange={handleChange}></textarea>
-                                    <label htmlFor="message" className="form__label">{UIText.contact.message}</label>
-                                </div>
-
-                                <div className='flex items-center justify-end'>
-                                    <button
-                                        className='bg-custommain text-white font-bold py-2 px-2 rounded hero-btn-resume h-10 w-32 flex items-center justify-center'
-                                        type='button' onClick={handleSubmit}
-                                    >
-                                        {loading ? <Loader /> : 'Send Message'}
-                                    </button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </section>
 
             {/* floating ask ai component */}

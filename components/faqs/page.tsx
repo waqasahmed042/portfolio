@@ -88,7 +88,7 @@ const FAQs: React.FC = () => {
                     <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
                         {/* Left section (text + buttons) */}
                         <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6 lg:px-20">
-                            <h2 className={`text-3xl font-bold mb-2 relative group ${raleway.className}`}>
+                            <h2 className={`text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold mb-2 relative group ${raleway.className}`}>
                                 {UIText.faqs.title}
                                 <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded h-1 w-20 transition-all duration-500 group-hover:w-96"></span>
                             </h2>
@@ -104,7 +104,7 @@ const FAQs: React.FC = () => {
 
                         {/* Right section (image with SVG background) */}
                         <div className="w-full md:w-1/2 flex justify-center items-center relative">
-                            <Image src={aboutImg.src} className='rounded-3xl' alt='about-hero' width={350} height={350} />
+                            <Image src={aboutImg.src} className='rounded-3xl my-12' alt='about-hero' width={350} height={350} />
                         </div>
                     </div>
                 </div>
