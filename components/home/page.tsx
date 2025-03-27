@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import profilePic from "@/public/assets/images/waqas-ahmed.png";
 import Contact from "@/components/Contact";
 import UIText from "@/utilities/testResource";
-import { highlights } from "@/utilities/home/highlights";
+import { highlights, iconColors } from "@/utilities/home/highlights";
 import ArchivedProjects from "./archivedProjects";
 import QuoteModel from "./quoteModel";
 import AskAI from "../ai/page";
@@ -27,6 +27,7 @@ const raleway = Raleway({
     subsets: ['latin'],
 });
 
+
 const Home: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
@@ -43,7 +44,7 @@ const Home: React.FC = () => {
                         {/* Left section (text + buttons) */}
                         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center space-y-8 lg:px-20">
                             <p className={`text-xl hellow-text ${rubik.className}`}>{UIText.home.hello}</p>
-                            <h1 className={`text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-center md:text-left ${rubik.className}`}>
+                            <h1 className={`text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-center md:text-left ${rubik.className}`}>
                                 {UIText.home.i}
                                 &apos;
                                 {UIText.home.name}
@@ -132,10 +133,12 @@ const Home: React.FC = () => {
                     {/* Highlights List */}
                     <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 ${roboto.className}`}>
                         {highlights.map((highlight, index) => {
-                            const { Icon, title, description, color } = highlight;
+                            const { Icon, title, description } = highlight;
+                            const iconColor = iconColors[index % iconColors.length];
+
                             return (
                                 <div key={index} className="bg-white shadow-lg rounded-lg p-7 flex flex-col items-center text-center">
-                                    <Icon className={`text-5xl mb-4 ${color}`} />
+                                    <Icon className={`text-5xl mb-4 ${iconColor}`} />
                                     <h3 className="text-xl font-medium mb-2">{title}</h3>
                                     <p className="text-gray-600">{description}</p>
                                 </div>
