@@ -29,7 +29,7 @@ const QuoteModel: React.FC<QuoteModelProps> = ({ isModalOpen, setIsModalOpen }) 
 
     return (
         <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Quote">
-            <div className="p-6 flex items-center justify-center space-x-4">
+            <div className="p-2 flex items-center justify-center space-x-4">
                 {quote ? (
                     <>
                         <FaQuoteLeft
