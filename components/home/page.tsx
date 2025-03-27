@@ -43,7 +43,7 @@ const Home: React.FC = () => {
                         {/* Left section (text + buttons) */}
                         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center space-y-8 lg:px-20">
                             <p className={`text-xl hellow-text ${rubik.className}`}>{UIText.home.hello}</p>
-                            <h1 className={`text-2xl md:text-5xl lg:text-5xl xl:text-5xl font-semibold text-center md:text-left ${rubik.className}`}>
+                            <h1 className={`text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-center md:text-left ${rubik.className}`}>
                                 {UIText.home.i}
                                 &apos;
                                 {UIText.home.name}
