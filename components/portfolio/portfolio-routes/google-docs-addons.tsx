@@ -119,7 +119,7 @@ const GoogleDocsAddons: React.FC = () => {
                                 <IoIosArrowDown />
                             </button>
                             {isDropdownOpen && (
-                                <div className="absolute mt-2 w-full z-10 rounded shadow-lg">
+                                <div className="absolute mt-2 w-full z-20 rounded bg-white shadow-lg">
                                     {buttonText.map((text, index) => (
                                         <button
                                             type="button"
@@ -134,14 +134,14 @@ const GoogleDocsAddons: React.FC = () => {
                             )}
                         </div>
                     ) : (
-                        <div className="flex flex-wrap justify-center mx-2 gap-4">
+                        <div className="absolute mt-2 w-full z-20 rounded bg-white shadow-lg">
                             {buttonText.map((text, index) => (
                                 <button
                                     type="button"
                                     key={index}
                                     onClick={() => handleButtonClick(text)}
                                     className={`flex items-center justify-center font-bold text-xl px-4 py-3 rounded-full border transition-all duration-300 hover:bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] dark:text-white hover:text-white hover:border-none
-                              ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white dark:border-none' : 'border-[#d73e0f] text-black'}`}
+                                        ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white dark:border-none' : 'border-[#d73e0f] text-black'}`}
                                 >
                                     {text}
                                 </button>

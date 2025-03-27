@@ -138,7 +138,7 @@ const GoogleSheetAddon: React.FC = () => {
                                 <IoIosArrowDown />
                             </button>
                             {isDropdownOpen && (
-                                <div className="absolute mt-2 w-full z-10 rounded shadow-lg">
+                                <div className="absolute mt-2 w-full z-20 rounded bg-white shadow-lg">
                                     {buttonText.map((text, index) => (
                                         <button
                                             type="button"
@@ -170,7 +170,7 @@ const GoogleSheetAddon: React.FC = () => {
                 </div>
 
                 {/* Google Seet Addin Items */}
-                <section id="portfolio" className="py-16 z-20 px-4">
+                <section id="portfolio" className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {google_sheet_addons.length === 0 ? (
                             <div className="text-center">

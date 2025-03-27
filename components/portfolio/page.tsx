@@ -137,7 +137,7 @@ export const Projects = () => {
                                 <IoIosArrowDown />
                             </button>
                             {isDropdownOpen && (
-                                <div className="absolute mt-2 w-full z-10 rounded shadow-lg">
+                                <div className="absolute mt-2 w-full z-20 rounded bg-white shadow-lg">
                                     {buttonText.map((text, index) => (
                                         <button
                                             type="button"
@@ -159,7 +159,7 @@ export const Projects = () => {
                                     key={index}
                                     onClick={() => handleButtonClick(text)}
                                     className={`flex items-center justify-center font-bold text-xl px-4 py-3 rounded-full border transition-all duration-300 hover:bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] dark:text-white hover:text-white hover:border-none
-                  ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white dark:border-none' : 'border-[#d73e0f] text-black'}`}
+                                        ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white dark:border-none' : 'border-[#d73e0f] text-black'}`}
                                 >
                                     {text}
                                 </button>
@@ -169,7 +169,7 @@ export const Projects = () => {
                 </div>
 
                 {/* Portfolio Items */}
-                <section id="portfolio" className="py-16 z-20 px-4">
+                <section id="portfolio" className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {portfolio.length === 0 ? (
                             <div className="text-center">
