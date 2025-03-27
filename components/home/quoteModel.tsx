@@ -32,9 +32,17 @@ const QuoteModel: React.FC<QuoteModelProps> = ({ isModalOpen, setIsModalOpen }) 
             <div className="p-6 flex items-center justify-center space-x-4">
                 {quote ? (
                     <>
-                        <FaQuoteLeft color="#d73e0f" size={40} />
-                        <p className={`text-3xl font-normal text-center ${roboto.className}`}>{quote}</p>
-                        <FaQuoteRight color="#d73e0f" size={40} />
+                        <FaQuoteLeft
+                            color="#d73e0f"
+                            className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"
+                        />
+                        <p className={`text-md md:text-lg lg:text-2xl xl:text-3xl font-normal text-center ${roboto.className}`}>
+                            {quote}
+                        </p>
+                        <FaQuoteRight
+                            color="#d73e0f"
+                            className="w-4 h-4 md:w-6 md:h-6 lg:w-8 lg:h-8 xl:w-10 xl:h-10"
+                        />
                     </>
                 ) : (
                     <p className="text-xl font-medium text-center">{UIText.home.loading}</p>

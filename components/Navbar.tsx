@@ -17,6 +17,10 @@ const Navbar: React.FC = () => {
         setIsMenuOpen(!isMenuOpen);
     };
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <header className={`${roboto.className}`}>
             <nav
@@ -24,7 +28,7 @@ const Navbar: React.FC = () => {
                 id="ftco-navbar"
             >
                 <div className="container mx-auto px-4 flex items-center justify-between">
-                    <Link href='/'>
+                    <Link href="/" onClick={closeMenu}>
                         <div className="logo-container">
                             {/* <Image src={logo} alt='logo' className='logo-img'/> */}
                         </div>
@@ -37,56 +41,41 @@ const Navbar: React.FC = () => {
                         aria-label="Toggle navigation"
                         onClick={toggleMenu}
                     >
-                        {isMenuOpen ? (
-                            <FaTimes className="text-2xl" />
-                        ) : (
-                            <FaBars className="text-2xl" />
-                        )}
+                        {isMenuOpen ? <FaTimes className="text-2xl" /> : <FaBars className="text-2xl" />}
                     </button>
 
                     <div
-                        className={`${isMenuOpen ? 'block' : 'hidden'
-                            } md:flex flex-col md:flex-row md:space-x-6 absolute md:static bg-white w-full md:w-auto top-16 left-0 shadow-md md:shadow-none z-40 lg:pe-6`}
+                        className={`${isMenuOpen ? "block" : "hidden"
+                            } md:flex flex-col md:flex-row md:space-x-6 py-4 absolute md:static bg-white w-full md:w-auto top-16 left-0 shadow-md md:shadow-none z-40 lg:pe-6`}
                         id="ftco-nav"
                     >
                         <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 px-4 md:px-0">
+                            {[
+                                { href: "/", label: UIText.navbar.home },
+                                { href: "about", label: UIText.navbar.about },
+                                { href: "services", label: UIText.navbar.services },
+                                { href: "portfolio", label: UIText.navbar.portfolio },
+                                { href: "faqs", label: UIText.navbar.faqs },
+                                { href: "contact", label: UIText.navbar.contact },
+                            ].map(({ href, label }) => (
+                                <li key={href} className="nav-item">
+                                    <Link href={href} className="nav-link hover:text-gray-500" onClick={closeMenu}>
+                                        <span>{label}</span>
+                                    </Link>
+                                </li>
+                            ))}
                             <li className="nav-item">
-                                <Link href="/" className="nav-link hover:text-gray-500">
-                                    <span>{UIText.navbar.home}</span>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="about" className="nav-link hover:text-gray-500">
-                                    <span>{UIText.navbar.about}</span>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="services" className="nav-link hover:text-gray-500">
-                                    <span>{UIText.navbar.services}</span>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="portfolio" className="nav-link hover:text-gray-500">
-                                    <span>{UIText.navbar.portfolio}</span>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="faqs" className="nav-link hover:text-gray-500">
-                                    <span>{UIText.navbar.faqs}</span>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link href="contact" className="nav-link hover:text-gray-500">
-                                    <span>{UIText.navbar.contact}</span>
-                                </Link>
-                            </li>
-                            <li className="nav-item ">
-                                <Link href='https://www.upwork.com/freelancers/~01da48bf334d633c83' target='_blank' className='header_btn'>
+                                <Link
+                                    href="https://www.upwork.com/freelancers/~01da48bf334d633c83"
+                                    target="_blank"
+                                    className="header_btn"
+                                    onClick={closeMenu}
+                                >
                                     {UIText.navbar.hire_me}
-                                    <div className='header_container__6am1c'>
-                                        <div className='header-dot1'></div>
-                                        <div className='header-dot2'></div>
-                                        <div className='header-dot3'></div>
+                                    <div className="header_container__6am1c">
+                                        <div className="header-dot1"></div>
+                                        <div className="header-dot2"></div>
+                                        <div className="header-dot3"></div>
                                     </div>
                                 </Link>
                             </li>

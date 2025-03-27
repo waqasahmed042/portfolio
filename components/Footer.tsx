@@ -8,7 +8,7 @@ import UIText from '@/utilities/testResource';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="footer bg-light">
+        <footer className="footer bg-light z-50">
             <div className="container mx-auto px-4 lg:px-24 py-0">
                 <div className='flex justify-between flex-wrap mt-4'>
                     <Link href='/'>
