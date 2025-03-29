@@ -159,8 +159,8 @@ const OutlookAddins: React.FC = () => {
                                     type="button"
                                     key={index}
                                     onClick={() => handleButtonClick(text)}
-                                    className={`flex items-center justify-center font-bold text-xl px-4 py-3 rounded-full border transition-all duration-300 hover:bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] dark:text-white hover:text-white hover:border-none
-                                        ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white dark:border-none' : 'border-[#d73e0f] text-black'}`}
+                                    className={`flex items-center justify-center font-bold text-xl px-4 py-3 rounded-full border transition-all duration-300 hover:bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] hover:text-white hover:border-none
+                                        ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white' : 'border-[#d73e0f] text-black'}`}
                                 >
                                     {text}
                                 </button>
@@ -181,7 +181,7 @@ const OutlookAddins: React.FC = () => {
                                 {outlook_addins.map((item, index) => (
                                     <div
                                         key={index}
-                                        className="group bg-white dark:bg-black dark:text-white relative hover:shadow-lg shadow-md rounded-lg overflow-hidden"
+                                        className="group bg-white relative hover:shadow-lg shadow-md rounded-lg overflow-hidden"
                                         data-aos="fade-up"
                                     >
                                         {/* Image */}

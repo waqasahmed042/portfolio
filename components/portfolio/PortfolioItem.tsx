@@ -73,7 +73,7 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div ref={dialogRef} className="bg-white dark:bg-gray-900 dark:text-white overflow-x-hidden mx-4 rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto" data-aos="zoom-in-up">
+            <div ref={dialogRef} className="bg-white overflow-x-hidden mx-4 rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto" data-aos="zoom-in-up">
                 <div className="flex z-10 flex-row justify-between items-center mb-4">
                     <h3 className="text-xl md:text-2xl lg:text-4xl font-semibold mb-4">{addin_name}</h3>
                     <button
@@ -89,7 +89,7 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
                     <div className="container mx-auto">
                         <div className="card mx-md-0">
                             <div className="flex flex-wrap justify-center">
-                                <div className="flex flex-col lg:flex-row w-full h-auto bg-[#F2F2F2] dark:bg-gray-900">
+                                <div className="flex flex-col lg:flex-row w-full h-auto bg-[#F2F2F2]">
                                     {/* Text Section */}
                                     <div className="px-4 py-4 lg:w-5/12 flex flex-col">
                                         <h1 className="text-xl md:text-3xl lg:text-3xl font-semibold">{addin_title}</h1>
@@ -98,7 +98,7 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
                                         <p className="py-4 text-md">{skills_and_deliverables}</p>
                                         <div className="flex flex-wrap gap-2">
                                             {tags.map((tag, index) => (
-                                                <span key={index} className="relative px-3 py-1 rounded-full shadow-sm bg-gray-200 dark:bg-gray-400 dark:text-gray-200">
+                                                <span key={index} className="relative px-3 py-1 rounded-full shadow-sm bg-gray-200">
                                                     {tag}
                                                 </span>
                                             ))}
