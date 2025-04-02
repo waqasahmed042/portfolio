@@ -22,7 +22,7 @@ const roboto = Roboto({
 
 const FAQs: React.FC = () => {
     const [fullStackDevelopment, setFullStackDevelopment] = useState(true);
-    const [openOffice, setOpenOffice] = useState(false);
+    const [openOffice, setOpenOffice] = useState(true);
     const [openGoogle, setOpenGoogle] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState('fullStack');
     const [openFAQ, setOpenFAQ] = useState<number | null>(0);
