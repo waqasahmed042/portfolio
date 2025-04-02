@@ -212,7 +212,6 @@ export const portfolio = [
     {
         img: [
             legal_track_ai_login,
-            legal_track_ai_login,
             legal_track_ai_review,
             legal_track_ai_ai_result,
             legal_track_ai_ai_result_expand_card,
