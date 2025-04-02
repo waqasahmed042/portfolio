@@ -8,7 +8,7 @@ import UIText from '@/utilities/testResource';
 import { Raleway, Roboto } from 'next/font/google';
 import aboutImg from '@/public/assets/images/faqsPic.jpg';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
-import { wordAddinFAQs, excelAddinFAQs, powerpointAddinFAQs, outlookAddinFAQs, gmailAddinFAQs, googleSheetAddinFAQs, googleDocsAddinFAQs, googleFormsAddinFAQs } from '@/utilities/faqs';
+import { wordAddinFAQs, excelAddinFAQs, powerpointAddinFAQs, outlookAddinFAQs, gmailAddinFAQs, googleSheetAddinFAQs, googleDocsAddinFAQs, googleFormsAddinFAQs, fullStackDevelopmentFAQs } from '@/utilities/faqs';
 import AskAI from '../ai/page';
 
 const raleway = Raleway({
@@ -21,15 +21,30 @@ const roboto = Roboto({
 });
 
 const FAQs: React.FC = () => {
-    const [openOffice, setOpenOffice] = useState(true);
+    const [fullStackDevelopment, setFullStackDevelopment] = useState(true);
+    const [openOffice, setOpenOffice] = useState(false);
     const [openGoogle, setOpenGoogle] = useState(false);
-    const [selectedCategory, setSelectedCategory] = useState('word');
+    const [selectedCategory, setSelectedCategory] = useState('fullStack');
     const [openFAQ, setOpenFAQ] = useState<number | null>(0);
-    const [faqList, setFaqList] = useState(wordAddinFAQs);
+    const [faqList, setFaqList] = useState(fullStackDevelopmentFAQs);
 
     useEffect(() => {
         AOS.init({ duration: 1200 });
     }, []);
+
+    const toggleFullStackDevelopment = () => {
+        if (fullStackDevelopment) {
+            // If already open, close it
+            setFullStackDevelopment(false);
+        } else {
+            // Open and close other sections
+            setFullStackDevelopment(true);
+            setOpenOffice(false);
+            setOpenGoogle(false);
+            setSelectedCategory('fullStack');
+            setFaqList(fullStackDevelopmentFAQs);
+        }
+    };
 
     const toggleOffice = () => {
         setOpenOffice(!openOffice);
@@ -42,8 +57,9 @@ const FAQs: React.FC = () => {
     };
 
     const handleCategoryClick = (category: string) => {
-        setSelectedCategory(category);
         setOpenFAQ(0);
+        setSelectedCategory(category);
+        setFullStackDevelopment(false);
 
         // Update the FAQ list based on the selected category
         switch (category) {
@@ -116,6 +132,18 @@ const FAQs: React.FC = () => {
                         {/* Categories Section */}
                         <div className="w-full lg:w-1/3 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] p-6 rounded-lg animate-slide-bottom">
                             <h2 className="text-lg font-semibold text-white mb-4">{UIText.faqs.categories}</h2>
+
+                            {/* Full Stack Development Dropdown */}
+                            <button
+                                type='button'
+                                onClick={toggleFullStackDevelopment}
+                                className={`w-full text-left px-4 py-3 my-2 ${fullStackDevelopment ? 'bg-gradient-to-br from-[#d73e0f] to-[#ff7e5f]' : 'bg-[#d73e0f]'} text-white rounded-lg font-medium flex items-center justify-between`}
+                            >
+                                {UIText.faqs.full_stack_development.title}
+                            </button>
+                            <div
+                                className={`overflow-hidden transition-all duration-300 ease-in-out ${fullStackDevelopment ? 'max-h-[300px]' : 'max-h-0'}`}
+                            ></div>
 
                             {/* Office Add-ins Dropdown */}
                             <button

@@ -149,3 +149,22 @@ export const googleFormsAddinFAQs = [
         answer: "To manage your Google Forms Add-ons, click the three dots in the top-right corner of the form, select 'Add-ons,' and then choose 'Manage add-ons.' From there, you can enable, disable, or remove your installed add-ons.",
     },
 ];
+
+export const fullStackDevelopmentFAQs = [
+    {
+        question: "What is Full Stack Web Development?",
+        answer: "Full stack web development refers to the practice of developing both the frontend (client-side) and backend (server-side) of a web application. A full stack developer works with technologies like HTML, CSS, JavaScript (for frontend) and backend languages like Node.js, Python, Ruby, or PHP, along with databases such as MySQL or MongoDB.",
+    },
+    {
+        question: "What skills are required to become a Full Stack Developer?",
+        answer: "A full stack developer needs to be proficient in frontend technologies like HTML, CSS, JavaScript (React.js, Vue.js, Angular), backend technologies like Node.js, Express.js, Django, Flask, databases like MySQL, PostgreSQL, MongoDB, and tools like Git, Docker, and cloud platforms (AWS, Azure, Firebase).",
+    },
+    {
+        question: "What is the difference between REST and GraphQL?",
+        answer: "REST (Representational State Transfer) uses HTTP methods and fixed endpoints to retrieve or modify data, while GraphQL is a query language that allows clients to request specific data structures, reducing over-fetching or under-fetching of data.",
+    },
+    {
+        question: "What is the role of APIs in Full Stack Development?",
+        answer: "APIs (Application Programming Interfaces) enable communication between the frontend and backend of a web application. They allow the frontend to send requests to the server to retrieve, modify, or delete data. APIs can be RESTful or GraphQL-based, facilitating scalable and interactive applications.",
+    },
+];

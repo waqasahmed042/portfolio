@@ -75,6 +75,9 @@ const UIText = {
         title: "Frequently Asked Questions",
         description: "Here, you'll find answers to common questions about our web application development services and Office Add-in solutions. Whether you're curious about the scalability of our web apps, the integration of Office Add-ins for Word, Excel, Outlook, or PowerPoint, or the advanced features of Google Add-ons, we're here to provide the information you need. If you don't see your question answered, feel free to reach out to us directly!",
         categories: "Categories",
+        full_stack_development: {
+            title: "Full Stack Development",
+        },
         office_addins: {
             title: "Office Add-ins",
             word_Addin: "Word Add-ins",
