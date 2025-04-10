@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
                             <Image src={logo} alt="logo" width={250} />
                         </Link>
                         <div className="flex justify-center items-center social-icons-container">
-                            <ul className="example-2 ps-4 ">
+                            <ul className="example-2 ps-4">
                                 {/* LinkedIn */}
                                 <li className="icon-content">
                                     <Link
@@ -55,7 +55,6 @@ const Footer: React.FC = () => {
                                         <FaGithub className="icon" />
                                     </a>
                                 </li>
-
                             </ul>
                         </div>
                     </div>
