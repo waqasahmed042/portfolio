@@ -151,7 +151,7 @@ const GoogleDocsAddons: React.FC = () => {
                 </div>
 
                 {/* Google Docs Items */}
-                <section id="portfolio" className="py-16 z-20 px-4">
+                <section className="py-16 z-20 px-4">
                     <div className="container mx-auto">
                         {google_docs_addons.length === 0 && (
                             <div className="text-center" data-aos="zoom-in">

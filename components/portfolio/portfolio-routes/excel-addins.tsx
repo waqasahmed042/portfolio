@@ -170,7 +170,7 @@ const ExcelAddins: React.FC = () => {
                 </div>
 
                 {/* Excel Addin Items */}
-                <section id="portfolio" className="py-16 z-50 px-4">
+                <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {excel_addins.length === 0 ? (
                             <div className="text-center">

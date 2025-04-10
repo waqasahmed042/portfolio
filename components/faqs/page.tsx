@@ -39,6 +39,8 @@ const FAQs: React.FC = () => {
         } else {
             // Open and close other sections
             setFullStackDevelopment(true);
+            setOpenOffice(false);
+            setOpenGoogle(false);
             setSelectedCategory('fullStack');
             setFaqList(fullStackDevelopmentFAQs);
         }

@@ -169,7 +169,7 @@ export const Projects = () => {
                 </div>
 
                 {/* Portfolio Items */}
-                <section id="portfolio" className="py-16 z-50 px-4">
+                <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {portfolio.length === 0 ? (
                             <div className="text-center">

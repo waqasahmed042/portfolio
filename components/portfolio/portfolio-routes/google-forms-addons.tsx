@@ -151,7 +151,7 @@ const GoogleFormsAddons: React.FC = () => {
                 </div>
 
                 {/* Google Form Items */}
-                <section id="portfolio" className="py-16 z-50 px-4">
+                <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {google_forms_addons.length === 0 && (
                             <div className="text-center" data-aos="zoom-in">

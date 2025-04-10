@@ -174,7 +174,7 @@ const Dashboards: React.FC = () => {
                 </div>
 
                 {/* Dashboard Items */}
-                <section id="portfolio" className="py-16 z-50 px-4">
+                <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {dashboard.length === 0 ? (
                             <div className="text-center">
@@ -226,7 +226,7 @@ const Dashboards: React.FC = () => {
             </section>
 
             {/* Portfolio Items */}
-            <section id="portfolio" className="py-16 z-20 px-4">
+            <section className="py-16 z-20 px-4">
                 <div className="container mx-auto">
                     {excel_addins.length === 0 ? (
                         <div className="text-center">
