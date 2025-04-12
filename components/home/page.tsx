@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter'
 import profilePic from "@/public/assets/images/waqas-ahmed.png";
 import Contact from "@/components/Contact";
 import UIText from "@/utilities/testResource";
-import { highlights, iconColors } from "@/utilities/home/highlights";
+import { highlights } from "@/utilities/home/highlights";
 import ArchivedProjects from "./archivedProjects";
 import QuoteModel from "./quoteModel";
 import AskAI from "../ai/page";
@@ -133,12 +133,20 @@ const Home: React.FC = () => {
                     {/* Highlights List */}
                     <div className={`grid grid-cols-1 md:grid-cols-3 gap-6 ${roboto.className}`}>
                         {highlights.map((highlight, index) => {
-                            const { Icon, title, description } = highlight;
-                            const iconColor = iconColors[index % iconColors.length];
+                            const { Icon, title, description, color } = highlight;
 
                             return (
                                 <div key={index} className="bg-white shadow-lg rounded-lg p-7 flex flex-col items-center text-center">
-                                    <Icon className={`text-5xl mb-4 ${iconColor}`} />
+                                    <Icon
+                                        className={`text-5xl mb-4 ${color === "blue"
+                                            ? "text-blue-500"
+                                            : color === "green"
+                                                ? "text-green-500"
+                                                : color === "yellow"
+                                                    ? "text-yellow-500"
+                                                    : ""
+                                            }`}
+                                    />
                                     <h3 className="text-xl font-medium mb-2">{title}</h3>
                                     <p className="text-gray-600">{description}</p>
                                 </div>
