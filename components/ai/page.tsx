@@ -13,6 +13,8 @@ const AskAI: React.FC = () => {
     const [input, setInput] = useState<string>("");
     const [isLoading, setIsLoading] = useState<boolean>(false);
     const [showQuestions, setShowQuestions] = useState<boolean>(true);
+    const [typingText, setTypingText] = useState<string>("");
+    const [isTyping, setIsTyping] = useState<boolean>(false);
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -21,15 +23,31 @@ const AskAI: React.FC = () => {
 
     useEffect(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-    }, [messages]);
+    }, [messages, typingText]);
+
+    const typeText = (text: string) => {
+        let index = 0;
+        setIsTyping(true);
+        setTypingText("");
+
+        const interval = setInterval(() => {
+            if (index < text.length) {
+                setTypingText(text.substring(0, index + 1));
+                index++;
+            } else {
+                clearInterval(interval);
+                setIsTyping(false);
+            }
+        }, 30); // Adjust typing speed here (lower = faster)
+    };
 
     const handleSendMessage = (message: string): void => {
         if (!message.trim()) return;
+        setIsLoading(true);
 
         setMessages(prev => [...prev, { text: message, sender: "user" }]);
         setShowQuestions(false);
         setInput("");
-        setIsLoading(true);
 
         generateResponse(message, (error, aiMessage) => {
             if (error) {
@@ -37,6 +55,7 @@ const AskAI: React.FC = () => {
                 setMessages(prev => [...prev, { text: "Error communicating with AI. Please try again.", sender: "ai" }]);
             } else if (aiMessage) {
                 setMessages(prev => [...prev, { text: aiMessage, sender: "ai" }]);
+                typeText(aiMessage);
             }
             setIsLoading(false);
         });
@@ -110,7 +129,7 @@ const AskAI: React.FC = () => {
                                         )}
                                         <div className={`p-2 rounded-lg ${msg.sender === "user" ? "bg-[#219ebc] text-white" : "bg-gray-200 text-black"}`}>
                                             {msg.sender === "ai" ? (
-                                                <span dangerouslySetInnerHTML={{ __html: formatMessage(msg.text) }} />
+                                                <span dangerouslySetInnerHTML={{ __html: formatMessage(index === messages.length - 1 && isTyping ? typingText : msg.text) }} />
                                             ) : (
                                                 msg.text
                                             )}
