@@ -127,7 +127,7 @@ const AskAI: React.FC = () => {
                                                 <RiRobot2Line className="text-xl text-[#219ebc] mr-2 mt-2 w-6 h-6 flex-shrink-0" />
                                             </div>
                                         )}
-                                        <div className={`p-2 rounded-lg ${msg.sender === "user" ? "bg-[#219ebc] text-white" : "bg-gray-200 text-black"}`}>
+                                        <div className={`p-2 rounded-lg ${msg.sender === "user" ? "bg-[#219ebc] text-white" : "text-black"}`}>
                                             {msg.sender === "ai" ? (
                                                 <span dangerouslySetInnerHTML={{ __html: formatMessage(index === messages.length - 1 && isTyping ? typingText : msg.text) }} />
                                             ) : (
