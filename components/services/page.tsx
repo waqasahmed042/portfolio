@@ -11,6 +11,7 @@ import { services, toolsAndTechnologies } from '@/utilities/services/services';
 import UIText from '@/utilities/testResource';
 import { reasons } from '@/utilities/services/reasons';
 import AskAI from '../ai/page';
+import Contact from '../Contact';
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -145,6 +146,9 @@ const Services: React.FC = () => {
                     </section>
                 </div>
             </div>
+
+            {/* contact section */}
+            <Contact titlePre="Ready to " highlight="Start a Project " titlePost="or need more info?" />
 
             {/* floating ask ai component */}
             <AskAI />

@@ -10,6 +10,7 @@ import aboutImg from '@/public/assets/images/faqsPic.jpg';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { wordAddinFAQs, excelAddinFAQs, powerpointAddinFAQs, outlookAddinFAQs, gmailAddinFAQs, googleSheetAddinFAQs, googleDocsAddinFAQs, googleFormsAddinFAQs, fullStackDevelopmentFAQs } from '@/utilities/faqs';
 import AskAI from '../ai/page';
+import Contact from '../Contact';
 
 const raleway = Raleway({
     subsets: ['latin'],
@@ -216,6 +217,9 @@ const FAQs: React.FC = () => {
                     </div>
                 </div>
             </div>
+
+            {/* contact section */}
+            <Contact titlePre="Still have " highlight="Questions? " titlePost="We're here to help!" />
 
             {/* floating ask ai component */}
             <AskAI />
