@@ -2,7 +2,7 @@
 import { useState, useEffect, useRef } from 'react';
 import AOS from 'aos';
 import { FaBookOpen } from 'react-icons/fa';
-import { Roboto, Raleway } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import aboutImg from '@/public/assets/images/aboutPic.png';
 import missionImg from '@/public/assets/images/mission.png';
 import Contact from '@/components/Contact';
@@ -10,15 +10,6 @@ import Image from 'next/image';
 import CountUp from 'react-countup';
 import UIText from '@/utilities/testResource';
 import AskAI from '../ai/page';
-
-const roboto = Roboto({
-    subsets: ['latin'],
-    weight: ['400', '500'],
-});
-
-const raleway = Raleway({
-    subsets: ['latin'],
-});
 
 const About: React.FC = () => {
     const [startCount, setStartCount] = useState(false);

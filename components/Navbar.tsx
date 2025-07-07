@@ -52,11 +52,11 @@ const Navbar: React.FC = () => {
                         <ul className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 px-4 md:px-0">
                             {[
                                 { href: "/", label: UIText.navbar.home },
-                                { href: "about", label: UIText.navbar.about },
-                                { href: "services", label: UIText.navbar.services },
-                                { href: "portfolio", label: UIText.navbar.portfolio },
-                                { href: "faqs", label: UIText.navbar.faqs },
-                                { href: "contact", label: UIText.navbar.contact },
+                                { href: "/about", label: UIText.navbar.about },
+                                { href: "/services", label: UIText.navbar.services },
+                                { href: "/portfolio", label: UIText.navbar.portfolio },
+                                { href: "/faqs", label: UIText.navbar.faqs },
+                                { href: "/contact", label: UIText.navbar.contact },
                             ].map(({ href, label }) => (
                                 <li key={href} className="nav-item">
                                     <Link href={href} className="nav-link hover:text-gray-500" onClick={closeMenu}>

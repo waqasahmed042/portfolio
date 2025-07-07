@@ -1,5 +1,11 @@
 import { StaticImageData } from "next/image";
 
+export interface ToastProps {
+    errorMessage: string;
+    successMessage: string;
+    infoMessage: string;
+}
+
 export interface ModalProps {
     isOpen: boolean;
     onClose: () => void;
@@ -85,8 +91,7 @@ export interface CustomArrowProps {
     onClick: () => void;
 }
 
-export interface ToastProps {
-    errorMessage: string;
-    successMessage: string;
-    infoMessage: string;
+export interface NoDataFoundProps {
+    category?: string;
+    showContactButton?: boolean;
 }

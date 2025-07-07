@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from "next/image";
-import { Roboto, Rubik, Raleway } from 'next/font/google';
+import { raleway, rubik, roboto } from '@/utilities/hook/useFonts';
 import { Typewriter } from 'react-simple-typewriter'
 import profilePic from "@/public/assets/images/waqas-ahmed.png";
 import Contact from "@/components/Contact";
@@ -12,21 +12,6 @@ import { highlights } from "@/utilities/home/highlights";
 import ArchivedProjects from "./archivedProjects";
 import QuoteModel from "./quoteModel";
 import AskAI from "../ai/page";
-
-const roboto = Roboto({
-    subsets: ['latin'],
-    weight: ['400', '500'],
-});
-
-const rubik = Rubik({
-    subsets: ['latin'],
-    weight: ['500'],
-});
-
-const raleway = Raleway({
-    subsets: ['latin'],
-});
-
 
 const Home: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);

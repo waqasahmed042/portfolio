@@ -4,8 +4,8 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import { Raleway, Roboto } from 'next/font/google';
 import { useRouter } from 'next/navigation';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import { buttonText, google_forms_addons } from '@/utilities/portfolio';
 import portfolioPic from "@/public/assets/images/portfolioPic.png";
 import { IoIosArrowDown } from "react-icons/io";
@@ -13,15 +13,7 @@ import Navbar from '@/components/Navbar';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-
-const raleway = Raleway({
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
+import NoDataFound from '../NoDataFound';
 
 const GoogleFormsAddons: React.FC = () => {
     const router = useRouter();
@@ -151,11 +143,11 @@ const GoogleFormsAddons: React.FC = () => {
                 </div>
 
                 {/* Google Form Items */}
-                <section className="py-16 z-50 px-4">
+                <section className="py-8 z-50 px-4">
                     <div className="container mx-auto">
                         {google_forms_addons.length === 0 && (
                             <div className="text-center" data-aos="zoom-in">
-                                <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
+                                <NoDataFound category="Google Form Add-ons" />
                             </div>
                         )}
                     </div>

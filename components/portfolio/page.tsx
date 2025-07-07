@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Raleway, Roboto } from "next/font/google";
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import Link from "next/link";
 import AOS from 'aos';
 import { useRouter } from 'next/navigation';
@@ -14,15 +14,6 @@ import Portfolio from "./PortfolioItem";
 import Toast from "@/components/Toast";
 import UIText from "@/utilities/testResource";
 import AskAI from "../ai/page";
-
-const raleway = Raleway({
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
 
 export const Projects = () => {
     const router = useRouter();

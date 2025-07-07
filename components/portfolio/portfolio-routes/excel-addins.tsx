@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import { Raleway, Roboto } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import { useRouter } from 'next/navigation';
 import { buttonText, demoLoomURLs, excel_addins } from '@/utilities/portfolio';
 import { IoIosArrowDown } from "react-icons/io";
@@ -14,15 +14,7 @@ import portfolioPic from "@/public/assets/images/portfolioPic.png";
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-
-const raleway = Raleway({
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
+import NoDataFound from '../NoDataFound';
 
 const ExcelAddins: React.FC = () => {
     const router = useRouter();
@@ -173,9 +165,15 @@ const ExcelAddins: React.FC = () => {
                 <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {excel_addins.length === 0 ? (
-                            <div className="text-center">
-                                <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
-                            </div>
+                            <section className="py-8 z-50 px-4">
+                                <div className="container mx-auto">
+                                    {excel_addins.length === 0 && (
+                                        <div className="text-center" data-aos="zoom-in">
+                                            <NoDataFound category="Outlook Add-ins" />
+                                        </div>
+                                    )}
+                                </div>
+                            </section>
                         ) : (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                                 {excel_addins.map((item, index) => (

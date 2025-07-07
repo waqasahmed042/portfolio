@@ -5,21 +5,12 @@ import 'aos/dist/aos.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import UIText from '@/utilities/testResource';
-import { Raleway, Roboto } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import aboutImg from '@/public/assets/images/faqsPic.jpg';
 import { IoIosArrowDown, IoIosArrowUp } from 'react-icons/io';
 import { wordAddinFAQs, excelAddinFAQs, powerpointAddinFAQs, outlookAddinFAQs, gmailAddinFAQs, googleSheetAddinFAQs, googleDocsAddinFAQs, googleFormsAddinFAQs, fullStackDevelopmentFAQs } from '@/utilities/faqs';
 import AskAI from '../ai/page';
 import Contact from '../Contact';
-
-const raleway = Raleway({
-    subsets: ['latin'],
-});
-
-const roboto = Roboto({
-    subsets: ['latin'],
-    weight: ['400', '500'],
-});
 
 const FAQs: React.FC = () => {
     const [fullStackDevelopment, setFullStackDevelopment] = useState(true);

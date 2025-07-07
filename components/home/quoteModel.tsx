@@ -2,14 +2,9 @@ import React, { useState, useEffect } from "react";
 import Modal from "../Modal";
 import UIText from "@/utilities/testResource";
 import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
-import { Roboto } from "next/font/google";
+import { roboto } from '@/utilities/hook/useFonts';
 import { randomQuotes } from "@/utilities/home/randomQuotes";
 import { QuoteModelProps } from "@/utilities/type";
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
 
 const QuoteModel: React.FC<QuoteModelProps> = ({ isModalOpen, setIsModalOpen }) => {
     const [quote, setQuote] = useState<string | null>(null);

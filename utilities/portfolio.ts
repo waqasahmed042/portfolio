@@ -22,18 +22,7 @@ import doc_scan_pro_questions from "../public/assets/portfolio/word/doc-scan/doc
 import doc_scan_pro_generating_ai_response from "../public/assets/portfolio/word/doc-scan/doc-scan-generating-ai-response.png";
 import doc_scan_pro_comments from "../public/assets/portfolio/word/doc-scan/doc-scan-comments.png";
 
-// acl istanbul addin images
-import acl_istanbul_login from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-login.png";
-import acl_istanbul_login_error from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-login-error.png";
-import acl_istanbul_home from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-home.png";
-import acl_istanbul_search_for_categories_and_snippets from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-search-for-categories-and-snippets.png";
-import acl_istanbul_open_Dropdown from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-open-dropdown.png";
-import acl_istanbul_add_category from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-add-category.png";
-import acl_istanbul_add_snippet from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-add-snippet.png";
-import acl_istanbul_snippet_preview_insert from "../public/assets/portfolio/outlook/acl-istanbul/acl-istanbul-snippet-preview-insert.png";
-
-
-// acl istanbul addin images
+// limit up addin images
 import limit_up_home from "../public/assets/portfolio/word/limit-up/limit-up-home.png";
 import limit_up_sign_in from "../public/assets/portfolio/word/limit-up/limit-up-sign-in.png";
 import limit_up_sign_up from "../public/assets/portfolio/word/limit-up/limit-up-sign-up.png";
@@ -43,50 +32,30 @@ import limit_up_create_custom_prompt from "../public/assets/portfolio/word/limit
 import limit_up_update_custom_prompt from "../public/assets/portfolio/word/limit-up/limit-up-update-custom-prompt.png";
 import limit_up_system_prompt from "../public/assets/portfolio/word/limit-up/limit-up-system-prompt.png";
 
-// bias awareness ai word addins images
-import bias_awareness_ai_home_tooltip from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-home-tooltip.png";
-import bias_awareness_ai_dropdown from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-dropdown.png";
-import bias_awareness_ai_full_text from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-full-text.png";
-import bias_awareness_ai_large_text from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-large-text.png";
-import bias_awareness_ai_image_description from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-image-description.png";
-import bias_awareness_ai_comment_suggestions from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-comment-suggestions.png";
-import bias_awareness_ai_comment_quotes from "../public/assets/portfolio/word/bias-awareness-ai/bias-awareness-ai-comment-quotes.png";
+// this is a phish outlook addin iamges
+import this_is_a_phish_login from "../public/assets/portfolio/outlook/this-is-a-phish/this-is-a-phish-login.png";
+import this_is_a_phish_report_phishing_email from "../public/assets/portfolio/outlook/this-is-a-phish/this-is-a-phish-report-phishing-email.png";
+import this_is_a_phish_processing_report from "../public/assets/portfolio/outlook/this-is-a-phish/this-is-a-phish-processing-report.png";
+import this_is_a_phish_suspected_phishing_attempt from "../public/assets/portfolio/outlook/this-is-a-phish/this-is-a-phish-suspected-phishing-attempt.png";
+import this_is_a_phish_compose_mode from "../public/assets/portfolio/outlook/this-is-a-phish/this-is-a-phish-compose-mode.png";
 
-// acterys excel addins images 
-import acterys_planning from "../public/assets/portfolio/excel/acterys-plus-online-test/acterys-planning.png";
-import acterys_plus_pivot_table from "../public/assets/portfolio/excel/acterys-plus-online-test/acterys-plus-pivot-table.png";
+// gems tool outlook addin images
+import gems_tool_login from "../public/assets/portfolio/outlook/gems-tool/gems-tool-login.png";
+import gems_tool_home from "../public/assets/portfolio/outlook/gems-tool/gems-tool-home.png";
+import gems_tool_dropdown from "../public/assets/portfolio/outlook/gems-tool/gems-tool-dropdown.png";
+import gems_tool_change_of_director from "../public/assets/portfolio/outlook/gems-tool/gems-tool-cahnge-of-director.png";
+import gems_tool_change_of_ownership from "../public/assets/portfolio/outlook/gems-tool/gems-tool-change-of-ownership.png";
+import gems_tool_change_of_address from "../public/assets/portfolio/outlook/gems-tool/gems-tool-change-of-address.png";
+import gems_tool_change_of_legal_form from "../public/assets/portfolio/outlook/gems-tool/gems-tool-change-of-legal-form.png";
+import gems_tool_change_of_country_counsel from "../public/assets/portfolio/outlook/gems-tool/gems-tool-change-of-country-counsel.png";
+import gems_tool_change_of_name from "../public/assets/portfolio/outlook/gems-tool/gems-tool-change-of-name.png";
+import gems_tool_change_of_status_and_cessation from "../public/assets/portfolio/outlook/gems-tool/gems-tool-change-of-status-and-cessation.png";
+import gems_tool_open_emial from "../public/assets/portfolio/outlook/gems-tool/gems-tool-open-mail.png";
 
-// genius sheet excel addins images
-import genius_sheet_menu from "../public/assets/portfolio/excel/gunies-sheet/genius-sheet-menu.png";
-import gunies_sheet_report_selection from "../public/assets/portfolio/excel/gunies-sheet/gunies-sheet-report-selection.png";
-
-// zippy docs excel addins images
-import zippy_doc_login from "../public/assets/portfolio/excel/zippy-docs/zippy-doc-login.png";
-import zippy_doc_folders from "../public/assets/portfolio/excel/zippy-docs/zippy-doc-folders.png";
-
-// ppt trevi powerpoint addins images
-import ppt_trevi_company_logo from "../public/assets/portfolio/powerpoint/ppt-trevi/ppt-trevi-company-logo.png";
-import ppt_trevi_company_logos from "../public/assets/portfolio/powerpoint/ppt-trevi/ppt-trevi-logos.png";
-
-// qalyptus ppa powerpoint addins images
-import qalyptus_ppa_overview from "../public/assets/portfolio/powerpoint/qalyptus-ppa/qalyptus-ppa-overview.png";
-import qalyptus_ppa_object from "../public/assets/portfolio/powerpoint/qalyptus-ppa/qalyptus-ppa-object.png";
-
-// axya outlook addins images
-import axya_inc from "../public/assets/portfolio/outlook/axya/login.png";
-import track_on_axya from "../public/assets/portfolio/outlook/axya/track-on-axya.png";
-import axya_search_list from "../public/assets/portfolio/outlook/axya/search-list.png";
-import axya_suggestions_list from "../public/assets/portfolio/outlook/axya/suggestions.png";
-import axya_requested_for_quotes from "../public/assets/portfolio/outlook/axya/requested-for-quotes.png";
-
-// saber-ai outlook addins images
-import saber_ai_login from "../public/assets/portfolio/outlook/saber-ai/saber-login.png";
-import saber_ai_home from "../public/assets/portfolio/outlook/saber-ai/saber-home.png";
-import saber_ai_fetch_to_fail_error from "../public/assets/portfolio/outlook/saber-ai/saber-fetch-to-fail-error.png";
-import saber_ai_email_categorized_successfully from "../public/assets/portfolio/outlook/saber-ai/saber-email-categorized-successfully.png";
-import saber_ai_green_category from "../public/assets/portfolio/outlook/saber-ai/saber-green-category.png";
-import saber_ai_red_category from "../public/assets/portfolio/outlook/saber-ai/saber-email-not-found.png";
-import saber_ai_amber_category from "../public/assets/portfolio/outlook/saber-ai/saber-user-is-non-lit-pcp.png";
+// excel compliance control addin images 
+import excel_compliance_control_home from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-home.png";
+import excel_compliance_control_file_preview from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-file-preview.png";
+import excel_compliance_control_insert_metadata from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-insert-metadata.png";
 
 // google sheet addons images
 import campaign_trackly_introduction from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-rackly-introduction.png";
@@ -94,6 +63,11 @@ import campaign_trackly_login from "../public/assets/portfolio/google-sheet/camp
 import campaign_trackly_apply_template from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-trackly-apply-template.png";
 import campaign_trackly_demo_excel_template from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-trackly-demo-excel-template.png";
 import campaign_trackly_select_to_continue from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-trackly-select-to-continue.png";
+
+// gmail addon images
+import gmail_timestamp_home from "../public/assets/portfolio/gmail/gmail-timestamp-home.png";
+import gmail_timestamp_recieved_time from "../public/assets/portfolio/gmail/gmail-timestamp-recieved-time.png";
+import gmail_timestamp_replied_time from "../public/assets/portfolio/gmail/gmail-timestamp-replied-time.png";
 
 // dashboard images
 import pinch_login from "../public/assets/portfolio/dashboad/pinch/pinch-login.png";
@@ -112,9 +86,9 @@ export const buttonText = [
     'Office Add-ins',
     'Google Add-ons',
     'Word Add-ins',
+    'Outlook Add-ins',
     'Excel Add-ins',
     'PowerPoint Add-ins',
-    'Outlook Add-ins',
     'Gmail Add-ons',
     'Google Sheet Add-ons',
     'Google Docs Add-ons',
@@ -135,35 +109,11 @@ export const demoLoomURLs = [
         demoLoomURL: "https://www.loom.com/share/ece2a5fdedaf473f9c78b4caccccdfc9?sid=29b445bb-fbcb-4022-83b1-bb3cb7f28b47",
     },
     {
-        addin_name: "Acterys Plus Online Test",
-        demoLoomURL: "",
-    },
-    {
-        addin_name: "Genius Sheets",
-        demoLoomURL: "",
-    },
-    {
-        addin_name: "Zippy Docs",
-        demoLoomURL: "",
-    },
-    {
         addin_name: "PPT Trevi",
         demoLoomURL: "",
     },
     {
         addin_name: "Qalyptus PPA",
-        demoLoomURL: "",
-    },
-    {
-        addin_name: "Axya Inc",
-        demoLoomURL: "",
-    },
-    {
-        addin_name: "Saber AI",
-        demoLoomURL: "",
-    },
-    {
-        addin_name: "Glasscube",
         demoLoomURL: "",
     },
     {
@@ -175,9 +125,21 @@ export const demoLoomURLs = [
         demoLoomURL: "https://www.loom.com/share/ca80a43384f6478fbebe5c22afc6fd86?sid=ed8a2559-7b02-42a6-aebf-8985bf06372d",
     },
     {
-        addin_name: "Campaign Trackly",
-        demoLoomURL: "",
-    }
+        addin_name: "Gmail Timestamp",
+        demoLoomURL: "https://www.loom.com/share/2cbbb8532daf4b2a9db7297f633679d8?sid=57f2a6ef-56a6-46b9-aaa0-c8dd7a617aa3"
+    },
+    {
+        addin_name: "Excel Compliance Control",
+        demoLoomURL: "https://www.loom.com/share/e857d24dcb954c03b878bda7c35b3266?sid=6e0d4f11-3f58-413c-917a-fac55d95b5f4"
+    },
+    {
+        addin_name: "This is a Phish",
+        demoLoomURL: "https://www.loom.com/share/705eccc070ba4f6791955987f9dc0f8d?sid=016015ba-d75f-434c-930a-93a84bf93813"
+    },
+    {
+        addin_name: "GEMS Tool",
+        demoLoomURL: "https://www.loom.com/share/2a068da505da400fac77ddeeda8ae1e2?sid=1797e44e-727c-48b4-a2bc-f85b806e755c"
+    },
 ]
 
 export const portfolio = [
@@ -268,32 +230,6 @@ export const portfolio = [
     },
     {
         img: [
-            acl_istanbul_login,
-            acl_istanbul_login_error,
-            acl_istanbul_home,
-            acl_istanbul_search_for_categories_and_snippets,
-            acl_istanbul_open_Dropdown,
-            acl_istanbul_add_category,
-            acl_istanbul_add_snippet,
-            acl_istanbul_snippet_preview_insert
-        ],
-        addin_name: "ACL Istanbul",
-        addin_type: "Outlook Add-in",
-        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
-        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
-        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Outlook",
-            "Category Management",
-            "Snippet Management",
-            "Productivity",
-            "Collaboration"
-        ]
-    },
-    {
-        img: [
             limit_up_home,
             limit_up_sign_in,
             limit_up_sign_up,
@@ -319,180 +255,78 @@ export const portfolio = [
     },
     {
         img: [
-            bias_awareness_ai_home_tooltip,
-            bias_awareness_ai_dropdown,
-            bias_awareness_ai_full_text,
-            bias_awareness_ai_large_text,
-            bias_awareness_ai_image_description,
-            bias_awareness_ai_comment_suggestions,
-            bias_awareness_ai_comment_quotes,
+            gems_tool_login,
+            gems_tool_home,
+            gems_tool_dropdown,
+            gems_tool_change_of_director,
+            gems_tool_change_of_ownership,
+            gems_tool_change_of_address,
+            gems_tool_change_of_legal_form,
+            gems_tool_change_of_country_counsel,
+            gems_tool_change_of_name,
+            gems_tool_change_of_status_and_cessation,
+            gems_tool_open_emial
         ],
-        addin_name: "BiasAwareness AI",
-        addin_type: "Word Add-in",
-        addin_purpose: "BiasAwareness AI - Comprehensive DEI Bias Detection Assistant for Microsoft Word",
-        addin_description_1: "BiasAwareness AI is an advanced tool for detecting and addressing potential biases in documents and images, specifically focusing on Diversity, Equity, and Inclusion (DEI) standards within Microsoft Word.",
-        addin_description_2: "This add-in analyzes text and images for explicit and implicit biases across DEI categories like gender, race, and socioeconomic status. It flags issues, including omissions and stereotypes, provides severity-based comments with suggestions, and generates a comprehensive bias report to improve inclusivity and representation in professional documents.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Word",
-            "Artificial Intelligence",
-            "DEI",
-            "Bias Detection",
-            "Document Review",
-            "Image Analysis",
-            "Bias Report"
-        ]
-    },
-    {
-        img: [
-            acterys_planning,
-            acterys_plus_pivot_table
-        ],
-        addin_name: "Acterys Plus Online Test",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Acterys Plus - Advanced Financial Planning and Analysis Tool",
-        addin_description_1: "Acterys Plus simplifies advanced financial planning and analysis within Excel by enabling seamless data integration, automation, and real-time insights.",
-        addin_description_2: "This add-in provides powerful forecasting, scenario modeling, and pivot table functionalities, helping finance professionals optimize decision-making with accurate, data-driven insights.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Financial Planning",
-            "Reporting Finance",
-            "Analysis",
-            "Forecasting"
-        ]
-    },
-    {
-        img: [
-            genius_sheet_menu,
-            gunies_sheet_report_selection
-        ],
-        addin_name: "Genius Sheets",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Genius Sheets - Automated Real-Time Financial Reporting",
-        addin_description_1: "Genius Sheets revolutionizes financial reporting by automating real-time data integration, enabling users to generate accurate financial insights directly within Excel.",
-        addin_description_2: "This add-in simplifies the report selection process, allowing seamless integration of live financial data into customized reports. By reducing manual entry, it enhances efficiency, minimizes errors, and accelerates decision-making for finance professionals.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Financial Reporting",
-            "Automation",
-            "Document Management",
-            "Data Organization",
-            "Real-Time Analysis"
-        ]
-    },
-    {
-        img: [
-            zippy_doc_login,
-            zippy_doc_folders
-        ],
-        addin_name: "Zippy Docs",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Zippy Docs - Document Management System for Excel",
-        addin_description_1: "Zippy Docs transforms Excel into a powerful document management hub, allowing users to efficiently store, organize, and access files within an intuitive folder structure.",
-        addin_description_2: "This add-in enhances workflow efficiency by enabling seamless document navigation, version control, and secure file management directly inside Excel. With structured organization and easy retrieval, users can optimize productivity and collaboration across teams.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Document Management",
-            "Organization",
-            "File Storage",
-            "Workflow Automation"
-        ]
-    },
-    {
-        img: [
-            ppt_trevi_company_logo,
-            ppt_trevi_company_logos
-        ],
-        addin_name: "PPT Trevi",
-        addin_type: "PowerPoint Add-in",
-        addin_purpose: "PPT Trevi - Custom Branding Enhancements for Presentations",
-        addin_description_1: "PPT Trevi provides powerful branding capabilities for PowerPoint, allowing users to seamlessly integrate custom logos, colors, and corporate identity into their presentations.",
-        addin_description_2: "This add-in streamlines the process of applying consistent branding across slides, ensuring presentations maintain a professional and visually cohesive look. Users can easily manage company assets, apply design templates, and enhance the overall presentation quality with branded elements.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "PowerPoint",
-            "Branding",
-            "Design",
-            "Customization",
-            "Presentation Templates"
-        ]
-    },
-    {
-        img: [
-            qalyptus_ppa_overview,
-            qalyptus_ppa_object
-        ],
-        addin_name: "Qalyptus PPA",
-        addin_type: "PowerPoint Add-in",
-        addin_purpose: "Qalyptus PPA - Data-Driven Presentations from Powerpoint",
-        addin_description_1: "Qalyptus PPA enhances PowerPoint by integrating dynamic, data-driven presentation capabilities, allowing users to automate slide creation with real-time data insights.",
-        addin_description_2: "Designed for professionals who need to transform raw data into compelling presentations, Qalyptus PPA streamlines the process of importing structured information, charts, and reports directly into PowerPoint. This ensures consistency, accuracy, and efficiency in business reporting and decision-making.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "PowerPoint",
-            "Data Integration",
-            "Presentations",
-            "Business Intelligence",
-            "Automation"
-        ]
-    },
-    {
-        img: [
-            axya_inc,
-            track_on_axya,
-            axya_search_list,
-            axya_suggestions_list,
-            axya_requested_for_quotes
-        ],
-        addin_name: "Axya Inc",
+        addin_name: "GEMS Tool",
         addin_type: "Outlook Add-in",
-        addin_purpose: "Axya Inc - Enhanced Email Tracking and Task Management for Outlook",
-        addin_description_1: "Axya Inc streamlines email tracking and task management in Outlook, offering users a seamless way to monitor email interactions, categorize tasks, and optimize workflow efficiency.",
-        addin_description_2: "This add-in provides advanced tracking and filtering options, enabling users to organize emails and tasks efficiently while enhancing productivity in Outlook. With intelligent automation and real-time insights, Axya Inc simplifies email prioritization, improves team collaboration, and ensures users never miss important messages or deadlines.",
+        addin_purpose: "GEMS Tool – Government Entity Management and Change Submission for Outlook",
+        addin_description_1: "GEMS Tool is an Outlook Add-in that streamlines the process of managing and submitting changes for government entities. It provides a user-friendly interface to handle director/officer updates, ownership transfers, address changes, legal form modifications, status changes, name changes, and country counsel updates—all from within Outlook.",
+        addin_description_2: "With GEMS Tool, users can select the type of change, fill out guided forms, upload supporting documents, and submit requests directly via email. The add-in automatically generates a structured summary and attaches all relevant evidence, ensuring compliance and efficient communication. This integration simplifies entity management, reduces manual effort, and ensures all changes are properly documented and sent to the right recipients.",
         skills_and_deliverables: "Skills and deliverables",
         tags: [
-            "Microsoft Office",
-            "Microsoft Outlook Development",
-            "Email Management",
-            "Outlook",
-            "Tracking",
-            "Productivity",
-            "Task Automation",
-            "Workflow Optimization"
+            "Outlook Add-in",
+            "Entity Management",
+            "Government Compliance",
+            "Workflow Automation",
+            "Email Integration",
+            "Document Management",
+            "Office.js"
         ]
     },
     {
         img: [
-            saber_ai_login,
-            saber_ai_home,
-            saber_ai_fetch_to_fail_error,
-            saber_ai_email_categorized_successfully,
-            saber_ai_green_category,
-            saber_ai_red_category,
-            saber_ai_amber_category
+            this_is_a_phish_login,
+            this_is_a_phish_report_phishing_email,
+            this_is_a_phish_processing_report,
+            this_is_a_phish_suspected_phishing_attempt,
+            this_is_a_phish_compose_mode
         ],
-        addin_name: "Saber AI",
+        addin_name: "This is a Phish",
         addin_type: "Outlook Add-in",
-        addin_purpose: "Saber AI - Smart Email Categorization Assistant for Outlook",
-        addin_description_1: "Saber AI is an intelligent categorization tool integrated within Outlook, designed to organize emails by priority and relevance.",
-        addin_description_2: "Saber AI optimizes email management by automatically categorizing messages into three key categories: Green for success, Red for not found, and Amber for non-lit PCP (Primary Care Provider) cases. This add-in enhances productivity by allowing users to quickly identify and prioritize emails, streamlining communication and reducing manual sorting efforts.",
-        skills_and_deliverables: "Skills and deliverables",
+        addin_purpose: "This is a Phish – Phishing Reporting and Email Security for Outlook",
+        addin_description_1: "This is a Phish is an Outlook Add-in that empowers users to quickly and securely report suspected phishing emails directly from their inbox. It streamlines the reporting process and helps organizations respond to threats efficiently.",
+        addin_description_2: "With a simple click, users can report suspicious emails, automatically attach the original message and headers, and notify the security team. The add-in guides users through confirmation, processing, and success states, ensuring a smooth and compliant reporting workflow integrated with Microsoft 365.",
+        skills_and_deliverables: "Office.js, Outlook Add-in development, UI/UX, Security integration, Microsoft 365 compliance",
+        tags: [
+            "Outlook Add-in",
+            "Phishing Protection",
+            "Email Security",
+            "Microsoft 365",
+            "Incident Response",
+            "Office.js",
+            "User Awareness"
+        ]
+    },
+    {
+        img: [
+            excel_compliance_control_home,
+            excel_compliance_control_file_preview,
+            excel_compliance_control_insert_metadata
+        ],
+        addin_name: "Excel Compliance Control",
+        addin_type: "Excel Add-in",
+        addin_purpose: "Metadata Management and Compliance Automation Tool for Excel",
+        addin_description_1: "Excel Compliance Control streamlines document compliance by enabling users to insert, manage, and approve metadata directly within Excel workbooks.",
+        addin_description_2: "Designed for standards like ISO 9001 and IATF 16949, this add-in helps maintain document control by automating metadata entry, version tracking, and approval workflows.",
+        skills_and_deliverables: "Metadata handling, versioning logic, Excel Taskpane development, UI/UX using Office.js",
         tags: [
             "Microsoft Office",
-            "Microsoft Outlook",
-            "Artificial Intelligence",
-            "Productivity",
-            "Email Management",
-            "Categorization"
+            "Excel",
+            "Metadata",
+            "Document Control",
+            "IATF 16949",
+            "Versioning",
+            "Compliance"
         ]
     },
     {
@@ -516,6 +350,29 @@ export const portfolio = [
             "Analytics",
             "Automation",
             "Performance Tracking"
+        ]
+    },
+    {
+        "img": [
+            gmail_timestamp_home,
+            gmail_timestamp_recieved_time,
+            gmail_timestamp_replied_time
+        ],
+        "addin_name": "Gmail Timestamp",
+        "addin_type": "Gmail Add-on",
+        "addin_purpose": "Gmail Timestamp - Response Time Tracker for Gmail",
+        "addin_description_1": "Gmail Timestamp enables users to track their email response times directly within the Gmail interface. It provides real-time feedback on how long it takes to respond to each email, helping improve communication efficiency.",
+        "addin_description_2": "This add-on displays the time elapsed since receiving a message and automatically logs the response time once a reply is sent. It supports better email management, accountability, and faster decision-making for professionals handling high email volumes.",
+        "skills_and_deliverables": "Skills and deliverables",
+        "tags": [
+            "Gmail Add-on",
+            "Google Apps Script",
+            "Response Time Tracking",
+            "Productivity",
+            "Automation",
+            "Email Management",
+            "Client Communication",
+            "Real-Time Analysis"
         ]
     }
 ];
@@ -611,32 +468,6 @@ export const office_addins = [
     },
     {
         img: [
-            acl_istanbul_login,
-            acl_istanbul_login_error,
-            acl_istanbul_home,
-            acl_istanbul_search_for_categories_and_snippets,
-            acl_istanbul_open_Dropdown,
-            acl_istanbul_add_category,
-            acl_istanbul_add_snippet,
-            acl_istanbul_snippet_preview_insert
-        ],
-        addin_name: "ACL Istanbul",
-        addin_type: "Outlook Add-in",
-        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
-        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
-        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Outlook",
-            "Category Management",
-            "Snippet Management",
-            "Productivity",
-            "Collaboration"
-        ]
-    },
-    {
-        img: [
             limit_up_home,
             limit_up_sign_in,
             limit_up_sign_up,
@@ -662,182 +493,80 @@ export const office_addins = [
     },
     {
         img: [
-            bias_awareness_ai_home_tooltip,
-            bias_awareness_ai_dropdown,
-            bias_awareness_ai_full_text,
-            bias_awareness_ai_large_text,
-            bias_awareness_ai_image_description,
-            bias_awareness_ai_comment_suggestions,
-            bias_awareness_ai_comment_quotes,
+            this_is_a_phish_login,
+            this_is_a_phish_report_phishing_email,
+            this_is_a_phish_processing_report,
+            this_is_a_phish_suspected_phishing_attempt,
+            this_is_a_phish_compose_mode
         ],
-        addin_name: "BiasAwareness AI",
-        addin_type: "Word Add-in",
-        addin_purpose: "BiasAwareness AI - Comprehensive DEI Bias Detection Assistant for Microsoft Word",
-        addin_description_1: "BiasAwareness AI is an advanced tool for detecting and addressing potential biases in documents and images, specifically focusing on Diversity, Equity, and Inclusion (DEI) standards within Microsoft Word.",
-        addin_description_2: "This add-in analyzes text and images for explicit and implicit biases across DEI categories like gender, race, and socioeconomic status. It flags issues, including omissions and stereotypes, provides severity-based comments with suggestions, and generates a comprehensive bias report to improve inclusivity and representation in professional documents.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Word",
-            "Artificial Intelligence",
-            "DEI",
-            "Bias Detection",
-            "Document Review",
-            "Image Analysis",
-            "Bias Report"
-        ]
-    },
-    {
-        img: [
-            acterys_planning,
-            acterys_plus_pivot_table
-        ],
-        addin_name: "Acterys Plus Online Test",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Acterys Plus - Advanced Financial Planning and Analysis Tool",
-        addin_description_1: "Acterys Plus simplifies advanced financial planning and analysis within Excel by enabling seamless data integration, automation, and real-time insights.",
-        addin_description_2: "This add-in provides powerful forecasting, scenario modeling, and pivot table functionalities, helping finance professionals optimize decision-making with accurate, data-driven insights.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Financial Planning",
-            "Reporting Finance",
-            "Analysis",
-            "Forecasting"
-        ]
-    },
-    {
-        img: [
-            genius_sheet_menu,
-            gunies_sheet_report_selection
-        ],
-        addin_name: "Genius Sheets",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Genius Sheets - Automated Real-Time Financial Reporting",
-        addin_description_1: "Genius Sheets revolutionizes financial reporting by automating real-time data integration, enabling users to generate accurate financial insights directly within Excel.",
-        addin_description_2: "This add-in simplifies the report selection process, allowing seamless integration of live financial data into customized reports. By reducing manual entry, it enhances efficiency, minimizes errors, and accelerates decision-making for finance professionals.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Financial Reporting",
-            "Automation",
-            "Document Management",
-            "Data Organization",
-            "Real-Time Analysis"
-        ]
-    },
-    {
-        img: [
-            zippy_doc_login,
-            zippy_doc_folders
-        ],
-        addin_name: "Zippy Docs",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Zippy Docs - Document Management System for Excel",
-        addin_description_1: "Zippy Docs transforms Excel into a powerful document management hub, allowing users to efficiently store, organize, and access files within an intuitive folder structure.",
-        addin_description_2: "This add-in enhances workflow efficiency by enabling seamless document navigation, version control, and secure file management directly inside Excel. With structured organization and easy retrieval, users can optimize productivity and collaboration across teams.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Document Management",
-            "Organization",
-            "File Storage",
-            "Workflow Automation"
-        ]
-    },
-    {
-        img: [
-            ppt_trevi_company_logo,
-            ppt_trevi_company_logos
-        ],
-        addin_name: "PPT Trevi",
-        addin_type: "PowerPoint Add-in",
-        addin_purpose: "PPT Trevi - Custom Branding Enhancements for Presentations",
-        addin_description_1: "PPT Trevi provides powerful branding capabilities for PowerPoint, allowing users to seamlessly integrate custom logos, colors, and corporate identity into their presentations.",
-        addin_description_2: "This add-in streamlines the process of applying consistent branding across slides, ensuring presentations maintain a professional and visually cohesive look. Users can easily manage company assets, apply design templates, and enhance the overall presentation quality with branded elements.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "PowerPoint",
-            "Branding",
-            "Design",
-            "Customization",
-            "Presentation Templates"
-        ]
-    },
-    {
-        img: [
-            qalyptus_ppa_overview,
-            qalyptus_ppa_object
-        ],
-        addin_name: "Qalyptus PPA",
-        addin_type: "PowerPoint Add-in",
-        addin_purpose: "Qalyptus PPA - Data-Driven Presentations from Powerpoint",
-        addin_description_1: "Qalyptus PPA enhances PowerPoint by integrating dynamic, data-driven presentation capabilities, allowing users to automate slide creation with real-time data insights.",
-        addin_description_2: "Designed for professionals who need to transform raw data into compelling presentations, Qalyptus PPA streamlines the process of importing structured information, charts, and reports directly into PowerPoint. This ensures consistency, accuracy, and efficiency in business reporting and decision-making.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "PowerPoint",
-            "Data Integration",
-            "Presentations",
-            "Business Intelligence",
-            "Automation"
-        ]
-    },
-    {
-        img: [
-            axya_inc,
-            track_on_axya,
-            axya_search_list,
-            axya_suggestions_list,
-            axya_requested_for_quotes
-        ],
-        addin_name: "Axya Inc",
+        addin_name: "This is a Phish",
         addin_type: "Outlook Add-in",
-        addin_purpose: "Axya Inc - Enhanced Email Tracking and Task Management for Outlook",
-        addin_description_1: "Axya Inc streamlines email tracking and task management in Outlook, offering users a seamless way to monitor email interactions, categorize tasks, and optimize workflow efficiency.",
-        addin_description_2: "This add-in provides advanced tracking and filtering options, enabling users to organize emails and tasks efficiently while enhancing productivity in Outlook. With intelligent automation and real-time insights, Axya Inc simplifies email prioritization, improves team collaboration, and ensures users never miss important messages or deadlines.",
-        skills_and_deliverables: "Skills and deliverables",
+        addin_purpose: "This is a Phish – Phishing Reporting and Email Security for Outlook",
+        addin_description_1: "This is a Phish is an Outlook Add-in that empowers users to quickly and securely report suspected phishing emails directly from their inbox. It streamlines the reporting process and helps organizations respond to threats efficiently.",
+        addin_description_2: "With a simple click, users can report suspicious emails, automatically attach the original message and headers, and notify the security team. The add-in guides users through confirmation, processing, and success states, ensuring a smooth and compliant reporting workflow integrated with Microsoft 365.",
+        skills_and_deliverables: "Office.js, Outlook Add-in development, UI/UX, Security integration, Microsoft 365 compliance",
         tags: [
-            "Microsoft Office",
-            "Microsoft Outlook Development",
-            "Email Management",
-            "Outlook",
-            "Tracking",
-            "Productivity",
-            "Task Automation",
-            "Workflow Optimization"
+            "Outlook Add-in",
+            "Phishing Protection",
+            "Email Security",
+            "Microsoft 365",
+            "Incident Response",
+            "Office.js",
+            "User Awareness"
         ]
     },
     {
         img: [
-            saber_ai_login,
-            saber_ai_home,
-            saber_ai_fetch_to_fail_error,
-            saber_ai_email_categorized_successfully,
-            saber_ai_green_category,
-            saber_ai_red_category,
-            saber_ai_amber_category
+            gems_tool_login,
+            gems_tool_home,
+            gems_tool_dropdown,
+            gems_tool_change_of_director,
+            gems_tool_change_of_ownership,
+            gems_tool_change_of_address,
+            gems_tool_change_of_legal_form,
+            gems_tool_change_of_country_counsel,
+            gems_tool_change_of_name,
+            gems_tool_change_of_status_and_cessation,
+            gems_tool_open_emial
         ],
-        addin_name: "Saber AI",
+        addin_name: "GEMS Tool",
         addin_type: "Outlook Add-in",
-        addin_purpose: "Saber AI - Smart Email Categorization Assistant for Outlook",
-        addin_description_1: "Saber AI is an intelligent categorization tool integrated within Outlook, designed to organize emails by priority and relevance.",
-        addin_description_2: "Saber AI optimizes email management by automatically categorizing messages into three key categories: Green for success, Red for not found, and Amber for non-lit PCP (Primary Care Provider) cases. This add-in enhances productivity by allowing users to quickly identify and prioritize emails, streamlining communication and reducing manual sorting efforts.",
+        addin_purpose: "GEMS Tool – Government Entity Management and Change Submission for Outlook",
+        addin_description_1: "GEMS Tool is an Outlook Add-in that streamlines the process of managing and submitting changes for government entities. It provides a user-friendly interface to handle director/officer updates, ownership transfers, address changes, legal form modifications, status changes, name changes, and country counsel updates—all from within Outlook.",
+        addin_description_2: "With GEMS Tool, users can select the type of change, fill out guided forms, upload supporting documents, and submit requests directly via email. The add-in automatically generates a structured summary and attaches all relevant evidence, ensuring compliance and efficient communication. This integration simplifies entity management, reduces manual effort, and ensures all changes are properly documented and sent to the right recipients.",
         skills_and_deliverables: "Skills and deliverables",
         tags: [
-            "Microsoft Office",
-            "Microsoft Outlook",
-            "Artificial Intelligence",
-            "Productivity",
-            "Email Management",
-            "Categorization"
+            "Outlook Add-in",
+            "Entity Management",
+            "Government Compliance",
+            "Workflow Automation",
+            "Email Integration",
+            "Document Management",
+            "Office.js"
         ]
-    }
+    },
+    {
+        img: [
+            excel_compliance_control_home,
+            excel_compliance_control_file_preview,
+            excel_compliance_control_insert_metadata
+        ],
+        addin_name: "Excel Compliance Control",
+        addin_type: "Excel Add-in",
+        addin_purpose: "Metadata Management and Compliance Automation Tool for Excel",
+        addin_description_1: "Excel Compliance Control streamlines document compliance by enabling users to insert, manage, and approve metadata directly within Excel workbooks.",
+        addin_description_2: "Designed for standards like ISO 9001 and IATF 16949, this add-in helps maintain document control by automating metadata entry, version tracking, and approval workflows.",
+        skills_and_deliverables: "Metadata handling, versioning logic, Excel Taskpane development, UI/UX using Office.js",
+        tags: [
+            "Microsoft Office",
+            "Excel",
+            "Metadata",
+            "Document Control",
+            "IATF 16949",
+            "Versioning",
+            "Compliance"
+        ]
+    },
 ];
 
 export const google_addons = [
@@ -862,6 +591,29 @@ export const google_addons = [
             "Analytics",
             "Automation",
             "Performance Tracking"
+        ]
+    },
+    {
+        "img": [
+            gmail_timestamp_home,
+            gmail_timestamp_recieved_time,
+            gmail_timestamp_replied_time
+        ],
+        "addin_name": "Gmail Timestamp",
+        "addin_type": "Gmail Add-on",
+        "addin_purpose": "Gmail Timestamp - Response Time Tracker for Gmail",
+        "addin_description_1": "Gmail Timestamp enables users to track their email response times directly within the Gmail interface. It provides real-time feedback on how long it takes to respond to each email, helping improve communication efficiency.",
+        "addin_description_2": "This add-on displays the time elapsed since receiving a message and automatically logs the response time once a reply is sent. It supports better email management, accountability, and faster decision-making for professionals handling high email volumes.",
+        "skills_and_deliverables": "Skills and deliverables",
+        "tags": [
+            "Gmail Add-on",
+            "Google Apps Script",
+            "Response Time Tracking",
+            "Productivity",
+            "Automation",
+            "Email Management",
+            "Client Communication",
+            "Real-Time Analysis"
         ]
     }
 ];
@@ -926,32 +678,6 @@ export const word_addins = [
     },
     {
         img: [
-            acl_istanbul_login,
-            acl_istanbul_login_error,
-            acl_istanbul_home,
-            acl_istanbul_search_for_categories_and_snippets,
-            acl_istanbul_open_Dropdown,
-            acl_istanbul_add_category,
-            acl_istanbul_add_snippet,
-            acl_istanbul_snippet_preview_insert
-        ],
-        addin_name: "ACL Istanbul",
-        addin_type: "Outlook Add-in",
-        addin_purpose: "Acl Istanbul - Efficient Category and Snippet Management Tool for Outlook",
-        addin_description_1: "ACL Istanbul is a powerful Outlook Add-in designed for seamless management of categories and snippets. It enables users to create, edit, and organize their content efficiently while maintaining original formatting.",
-        addin_description_2: "With ACL Istanbul, users can effortlessly add or delete categories and snippets, and insert snippet content into Word documents while preserving the original formatting. By streamlining these tasks, it enhances productivity and ensures consistent, well-organized communication tailored for Outlook users.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Outlook",
-            "Category Management",
-            "Snippet Management",
-            "Productivity",
-            "Collaboration"
-        ]
-    },
-    {
-        img: [
             limit_up_home,
             limit_up_sign_in,
             limit_up_sign_up,
@@ -975,196 +701,117 @@ export const word_addins = [
             "Word Document Automation"
         ]
     },
-    {
-        img: [
-            bias_awareness_ai_home_tooltip,
-            bias_awareness_ai_dropdown,
-            bias_awareness_ai_full_text,
-            bias_awareness_ai_large_text,
-            bias_awareness_ai_image_description,
-            bias_awareness_ai_comment_suggestions,
-            bias_awareness_ai_comment_quotes,
-        ],
-        addin_name: "BiasAwareness AI",
-        addin_type: "Word Add-in",
-        addin_purpose: "BiasAwareness AI - Comprehensive DEI Bias Detection Assistant for Microsoft Word",
-        addin_description_1: "BiasAwareness AI is an advanced tool for detecting and addressing potential biases in documents and images, specifically focusing on Diversity, Equity, and Inclusion (DEI) standards within Microsoft Word.",
-        addin_description_2: "This add-in analyzes text and images for explicit and implicit biases across DEI categories like gender, race, and socioeconomic status. It flags issues, including omissions and stereotypes, provides severity-based comments with suggestions, and generates a comprehensive bias report to improve inclusivity and representation in professional documents.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Microsoft Word",
-            "Artificial Intelligence",
-            "DEI",
-            "Bias Detection",
-            "Document Review",
-            "Image Analysis",
-            "Bias Report"
-        ]
-    },
 ];
 
 export const excel_addins = [
     {
         img: [
-            acterys_planning,
-            acterys_plus_pivot_table
+            excel_compliance_control_home,
+            excel_compliance_control_file_preview,
+            excel_compliance_control_insert_metadata
         ],
-        addin_name: "Acterys Plus Online Test",
+        addin_name: "Excel Compliance Control",
         addin_type: "Excel Add-in",
-        addin_purpose: "Acterys Plus - Advanced Financial Planning and Analysis Tool",
-        addin_description_1: "Acterys Plus simplifies advanced financial planning and analysis within Excel by enabling seamless data integration, automation, and real-time insights.",
-        addin_description_2: "This add-in provides powerful forecasting, scenario modeling, and pivot table functionalities, helping finance professionals optimize decision-making with accurate, data-driven insights.",
-        skills_and_deliverables: "Skills and deliverables",
+        addin_purpose: "Metadata Management and Compliance Automation Tool for Excel",
+        addin_description_1: "Excel Compliance Control streamlines document compliance by enabling users to insert, manage, and approve metadata directly within Excel workbooks.",
+        addin_description_2: "Designed for standards like ISO 9001 and IATF 16949, this add-in helps maintain document control by automating metadata entry, version tracking, and approval workflows.",
+        skills_and_deliverables: "Metadata handling, versioning logic, Excel Taskpane development, UI/UX using Office.js",
         tags: [
             "Microsoft Office",
             "Excel",
-            "Financial Planning",
-            "Reporting Finance",
-            "Analysis",
-            "Forecasting"
-        ]
-    },
-    {
-        img: [
-            genius_sheet_menu,
-            gunies_sheet_report_selection
-        ],
-        addin_name: "Genius Sheets",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Genius Sheets - Automated Real-Time Financial Reporting",
-        addin_description_1: "Genius Sheets revolutionizes financial reporting by automating real-time data integration, enabling users to generate accurate financial insights directly within Excel.",
-        addin_description_2: "This add-in simplifies the report selection process, allowing seamless integration of live financial data into customized reports. By reducing manual entry, it enhances efficiency, minimizes errors, and accelerates decision-making for finance professionals.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Financial Reporting",
-            "Automation",
-            "Document Management",
-            "Data Organization",
-            "Real-Time Analysis"
-        ]
-    },
-    {
-        img: [
-            zippy_doc_login,
-            zippy_doc_folders
-        ],
-        addin_name: "Zippy Docs",
-        addin_type: "Excel Add-in",
-        addin_purpose: "Zippy Docs - Document Management System for Excel",
-        addin_description_1: "Zippy Docs transforms Excel into a powerful document management hub, allowing users to efficiently store, organize, and access files within an intuitive folder structure.",
-        addin_description_2: "This add-in enhances workflow efficiency by enabling seamless document navigation, version control, and secure file management directly inside Excel. With structured organization and easy retrieval, users can optimize productivity and collaboration across teams.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "Excel",
-            "Document Management",
-            "Organization",
-            "File Storage",
-            "Workflow Automation"
+            "Metadata",
+            "Document Control",
+            "IATF 16949",
+            "Versioning",
+            "Compliance"
         ]
     },
 ];
 
-export const powerpoint_addins = [
-    {
-        img: [
-            ppt_trevi_company_logo,
-            ppt_trevi_company_logos
-        ],
-        addin_name: "PPT Trevi",
-        addin_type: "PowerPoint Add-in",
-        addin_purpose: "PPT Trevi - Custom Branding Enhancements for Presentations",
-        addin_description_1: "PPT Trevi provides powerful branding capabilities for PowerPoint, allowing users to seamlessly integrate custom logos, colors, and corporate identity into their presentations.",
-        addin_description_2: "This add-in streamlines the process of applying consistent branding across slides, ensuring presentations maintain a professional and visually cohesive look. Users can easily manage company assets, apply design templates, and enhance the overall presentation quality with branded elements.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "PowerPoint",
-            "Branding",
-            "Design",
-            "Customization",
-            "Presentation Templates"
-        ]
-    },
-    {
-        img: [
-            qalyptus_ppa_overview,
-            qalyptus_ppa_object
-        ],
-        addin_name: "Qalyptus PPA",
-        addin_type: "PowerPoint Add-in",
-        addin_purpose: "Qalyptus PPA - Data-Driven Presentations from Powerpoint",
-        addin_description_1: "Qalyptus PPA enhances PowerPoint by integrating dynamic, data-driven presentation capabilities, allowing users to automate slide creation with real-time data insights.",
-        addin_description_2: "Designed for professionals who need to transform raw data into compelling presentations, Qalyptus PPA streamlines the process of importing structured information, charts, and reports directly into PowerPoint. This ensures consistency, accuracy, and efficiency in business reporting and decision-making.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Microsoft Office",
-            "PowerPoint",
-            "Data Integration",
-            "Presentations",
-            "Business Intelligence",
-            "Automation"
-        ]
-    }
-];
+export const powerpoint_addins = [];
 
 export const outlook_addins = [
     {
         img: [
-            axya_inc,
-            track_on_axya,
-            axya_search_list,
-            axya_suggestions_list,
-            axya_requested_for_quotes
+            gems_tool_login,
+            gems_tool_home,
+            gems_tool_dropdown,
+            gems_tool_change_of_director,
+            gems_tool_change_of_ownership,
+            gems_tool_change_of_address,
+            gems_tool_change_of_legal_form,
+            gems_tool_change_of_country_counsel,
+            gems_tool_change_of_name,
+            gems_tool_change_of_status_and_cessation,
+            gems_tool_open_emial
         ],
-        addin_name: "Axya Inc",
+        addin_name: "GEMS Tool",
         addin_type: "Outlook Add-in",
-        addin_purpose: "Axya Inc - Enhanced Email Tracking and Task Management for Outlook",
-        addin_description_1: "Axya Inc streamlines email tracking and task management in Outlook, offering users a seamless way to monitor email interactions, categorize tasks, and optimize workflow efficiency.",
-        addin_description_2: "This add-in provides advanced tracking and filtering options, enabling users to organize emails and tasks efficiently while enhancing productivity in Outlook. With intelligent automation and real-time insights, Axya Inc simplifies email prioritization, improves team collaboration, and ensures users never miss important messages or deadlines.",
+        addin_purpose: "GEMS Tool – Government Entity Management and Change Submission for Outlook",
+        addin_description_1: "GEMS Tool is an Outlook Add-in that streamlines the process of managing and submitting changes for government entities. It provides a user-friendly interface to handle director/officer updates, ownership transfers, address changes, legal form modifications, status changes, name changes, and country counsel updates—all from within Outlook.",
+        addin_description_2: "With GEMS Tool, users can select the type of change, fill out guided forms, upload supporting documents, and submit requests directly via email. The add-in automatically generates a structured summary and attaches all relevant evidence, ensuring compliance and efficient communication. This integration simplifies entity management, reduces manual effort, and ensures all changes are properly documented and sent to the right recipients.",
         skills_and_deliverables: "Skills and deliverables",
         tags: [
-            "Microsoft Office",
-            "Microsoft Outlook Development",
-            "Email Management",
-            "Outlook",
-            "Tracking",
-            "Productivity",
-            "Task Automation",
-            "Workflow Optimization"
+            "Outlook Add-in",
+            "Entity Management",
+            "Government Compliance",
+            "Workflow Automation",
+            "Email Integration",
+            "Document Management",
+            "Office.js"
         ]
     },
     {
         img: [
-            saber_ai_login,
-            saber_ai_home,
-            saber_ai_fetch_to_fail_error,
-            saber_ai_email_categorized_successfully,
-            saber_ai_green_category,
-            saber_ai_red_category,
-            saber_ai_amber_category
+            this_is_a_phish_login,
+            this_is_a_phish_report_phishing_email,
+            this_is_a_phish_processing_report,
+            this_is_a_phish_suspected_phishing_attempt,
+            this_is_a_phish_compose_mode
         ],
-        addin_name: "Saber AI",
+        addin_name: "This is a Phish",
         addin_type: "Outlook Add-in",
-        addin_purpose: "Saber AI - Smart Email Categorization Assistant for Outlook",
-        addin_description_1: "Saber AI is an intelligent categorization tool integrated within Outlook, designed to organize emails by priority and relevance.",
-        addin_description_2: "Saber AI optimizes email management by automatically categorizing messages into three key categories: Green for success, Red for not found, and Amber for non-lit PCP (Primary Care Provider) cases. This add-in enhances productivity by allowing users to quickly identify and prioritize emails, streamlining communication and reducing manual sorting efforts.",
-        skills_and_deliverables: "Skills and deliverables",
+        addin_purpose: "This is a Phish – Phishing Reporting and Email Security for Outlook",
+        addin_description_1: "This is a Phish is an Outlook Add-in that empowers users to quickly and securely report suspected phishing emails directly from their inbox. It streamlines the reporting process and helps organizations respond to threats efficiently.",
+        addin_description_2: "With a simple click, users can report suspicious emails, automatically attach the original message and headers, and notify the security team. The add-in guides users through confirmation, processing, and success states, ensuring a smooth and compliant reporting workflow integrated with Microsoft 365.",
+        skills_and_deliverables: "Office.js, Outlook Add-in development, UI/UX, Security integration, Microsoft 365 compliance",
         tags: [
-            "Microsoft Office",
-            "Microsoft Outlook",
-            "Artificial Intelligence",
+            "Outlook Add-in",
+            "Phishing Protection",
+            "Email Security",
+            "Microsoft 365",
+            "Incident Response",
+            "Office.js",
+            "User Awareness"
+        ]
+    },
+];
+
+export const gmail_addons = [
+    {
+        "img": [
+            gmail_timestamp_home,
+            gmail_timestamp_recieved_time,
+            gmail_timestamp_replied_time
+        ],
+        "addin_name": "Gmail Timestamp",
+        "addin_type": "Gmail Add-on",
+        "addin_purpose": "Gmail Timestamp - Response Time Tracker for Gmail",
+        "addin_description_1": "Gmail Timestamp enables users to track their email response times directly within the Gmail interface. It provides real-time feedback on how long it takes to respond to each email, helping improve communication efficiency.",
+        "addin_description_2": "This add-on displays the time elapsed since receiving a message and automatically logs the response time once a reply is sent. It supports better email management, accountability, and faster decision-making for professionals handling high email volumes.",
+        "skills_and_deliverables": "Skills and deliverables",
+        "tags": [
+            "Gmail Add-on",
+            "Google Apps Script",
+            "Response Time Tracking",
             "Productivity",
+            "Automation",
             "Email Management",
-            "Categorization"
+            "Client Communication",
+            "Real-Time Analysis"
         ]
     }
 ];
-
-export const gmail_addons = [];
 
 export const google_sheet_addons = [
     {

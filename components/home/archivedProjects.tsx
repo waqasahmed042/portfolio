@@ -3,12 +3,8 @@ import { archived_projects } from '@/utilities/home/archivedProject';
 import UIText from '@/utilities/testResource';
 import Toast from '../Toast';
 import { FaEye } from 'react-icons/fa';
-import { Raleway } from 'next/font/google';
+import { raleway } from '@/utilities/hook/useFonts';
 import { RiCodeSSlashLine } from 'react-icons/ri';
-
-const raleway = Raleway({
-    subsets: ['latin'],
-});
 
 const ArchivedProjects: React.FC = () => {
     const [infoMessage, setInfoMessage] = useState("");

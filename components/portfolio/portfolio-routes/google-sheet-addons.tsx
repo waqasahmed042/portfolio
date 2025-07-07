@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useRouter } from 'next/navigation';
-import { Raleway, Roboto } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import Link from 'next/link';
 import Toast from '@/components/Toast';
 import { buttonText, demoLoomURLs, google_sheet_addons } from '@/utilities/portfolio';
@@ -14,15 +14,6 @@ import Navbar from '@/components/Navbar';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-
-const raleway = Raleway({
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
 
 const GoogleSheetAddon: React.FC = () => {
     const router = useRouter();

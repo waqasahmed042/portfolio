@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Raleway, Roboto } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import Toast from '@/components/Toast';
@@ -14,15 +14,6 @@ import Navbar from '@/components/Navbar';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-
-const raleway = Raleway({
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
 
 const WordAddins: React.FC = () => {
     const router = useRouter();

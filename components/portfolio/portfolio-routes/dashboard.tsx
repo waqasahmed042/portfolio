@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Link from 'next/link';
-import { Raleway, Roboto } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import { useRouter } from 'next/navigation';
 import { buttonText, dashboard, demoLoomURLs, excel_addins } from '@/utilities/portfolio';
 import { IoIosArrowDown } from "react-icons/io";
@@ -14,15 +14,6 @@ import portfolioPic from "@/public/assets/images/portfolioPic.png";
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-
-const raleway = Raleway({
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
 
 const Dashboards: React.FC = () => {
     const router = useRouter();

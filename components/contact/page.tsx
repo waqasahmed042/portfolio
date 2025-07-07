@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from 'react'
-import { Raleway, Roboto } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import { FaLocationDot } from 'react-icons/fa6'
 import { IoIosMail } from 'react-icons/io'
 import { IoCall } from 'react-icons/io5';
@@ -17,15 +17,6 @@ import { contact, projectTypeDropdown } from '@/utilities/contact';
 import aboutImg from '@/public/assets/images/contactPic.jpg';
 import UIText from '@/utilities/testResource';
 import AskAI from '../ai/page';
-
-const raleway = Raleway({
-    subsets: ['latin'],
-});
-
-const roboto = Roboto({
-    subsets: ['latin'],
-    weight: ['400', '500'],
-});
 
 const initialState: ContactPageProps = { name: '', email: '', subject: '', project_type: '', message: '' };
 

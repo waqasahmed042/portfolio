@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useRouter } from 'next/navigation';
-import { Raleway, Roboto } from 'next/font/google';
+import { raleway, roboto } from '@/utilities/hook/useFonts';
 import Link from 'next/link';
 import { buttonText, google_docs_addons } from '@/utilities/portfolio';
 import portfolioPic from "@/public/assets/images/portfolioPic.png";
@@ -13,15 +13,7 @@ import Navbar from '@/components/Navbar';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-
-const raleway = Raleway({
-    subsets: ["latin"],
-});
-
-const roboto = Roboto({
-    subsets: ["latin"],
-    weight: ["400", "500"],
-});
+import NoDataFound from '../NoDataFound';
 
 const GoogleDocsAddons: React.FC = () => {
     const router = useRouter();
@@ -134,7 +126,7 @@ const GoogleDocsAddons: React.FC = () => {
                             )}
                         </div>
                     ) : (
-                        <div className="absolute mt-2 w-full z-20 rounded bg-white shadow-lg">
+                        <div className="flex flex-wrap justify-center mx-2 gap-4">
                             {buttonText.map((text, index) => (
                                 <button
                                     type="button"
@@ -151,11 +143,11 @@ const GoogleDocsAddons: React.FC = () => {
                 </div>
 
                 {/* Google Docs Items */}
-                <section className="py-16 z-20 px-4">
+                <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {google_docs_addons.length === 0 && (
                             <div className="text-center" data-aos="zoom-in">
-                                <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
+                                <NoDataFound category="Google Form Add-ons" />
                             </div>
                         )}
                     </div>
