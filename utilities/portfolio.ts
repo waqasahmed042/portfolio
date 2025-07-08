@@ -57,17 +57,10 @@ import excel_compliance_control_home from "../public/assets/portfolio/excel/exce
 import excel_compliance_control_file_preview from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-file-preview.png";
 import excel_compliance_control_insert_metadata from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-insert-metadata.png";
 
-// google sheet addons images
-import campaign_trackly_introduction from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-rackly-introduction.png";
-import campaign_trackly_login from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-trackly-login.png";
-import campaign_trackly_apply_template from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-trackly-apply-template.png";
-import campaign_trackly_demo_excel_template from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-trackly-demo-excel-template.png";
-import campaign_trackly_select_to_continue from "../public/assets/portfolio/google-sheet/campaign-trackly/campaign-trackly-select-to-continue.png";
-
 // gmail addon images
-import gmail_timestamp_home from "../public/assets/portfolio/gmail/gmail-timestamp-home.png";
-import gmail_timestamp_recieved_time from "../public/assets/portfolio/gmail/gmail-timestamp-recieved-time.png";
-import gmail_timestamp_replied_time from "../public/assets/portfolio/gmail/gmail-timestamp-replied-time.png";
+import gmail_timestamp_home from "../public/assets/portfolio/gmail/gmail-timestamp/gmail-timestamp-home.png";
+import gmail_timestamp_recieved_time from "../public/assets/portfolio/gmail/gmail-timestamp/gmail-timestamp-recieved-time.png";
+import gmail_timestamp_replied_time from "../public/assets/portfolio/gmail/gmail-timestamp/gmail-timestamp-replied-time.png";
 
 // dashboard images
 import pinch_login from "../public/assets/portfolio/dashboad/pinch/pinch-login.png";
@@ -109,14 +102,6 @@ export const demoLoomURLs = [
         demoLoomURL: "https://www.loom.com/share/ece2a5fdedaf473f9c78b4caccccdfc9?sid=29b445bb-fbcb-4022-83b1-bb3cb7f28b47",
     },
     {
-        addin_name: "PPT Trevi",
-        demoLoomURL: "",
-    },
-    {
-        addin_name: "Qalyptus PPA",
-        demoLoomURL: "",
-    },
-    {
         addin_name: "ACL Istanbul",
         demoLoomURL: "https://www.loom.com/share/224ed48eab5444648e82dddeeed3ffb2?sid=39ba5bbe-bcd3-480b-b0c7-d58f19831809",
     },
@@ -130,7 +115,7 @@ export const demoLoomURLs = [
     },
     {
         addin_name: "Excel Compliance Control",
-        demoLoomURL: "https://www.loom.com/share/e857d24dcb954c03b878bda7c35b3266?sid=6e0d4f11-3f58-413c-917a-fac55d95b5f4"
+        demoLoomURL: "https://www.loom.com/share/781367738eff4201b6c1610f5b1e1fe2?sid=9b2443a2-5eac-4eed-96bd-71a0448e04f2"
     },
     {
         addin_name: "This is a Phish",
@@ -327,29 +312,6 @@ export const portfolio = [
             "IATF 16949",
             "Versioning",
             "Compliance"
-        ]
-    },
-    {
-        img: [
-            campaign_trackly_introduction,
-            campaign_trackly_login,
-            campaign_trackly_apply_template,
-            campaign_trackly_demo_excel_template,
-            campaign_trackly_select_to_continue
-        ],
-        addin_name: "Campaign Trackly",
-        addin_type: "Google Sheet Add-on",
-        addin_purpose: "Campaign Trackly - Streamlined Digital Campaign Management for Google Sheets",
-        addin_description_1: "Campaign Trackly enhances digital campaign tracking within Google Sheets, offering a seamless way to create, manage, and monitor campaign performance using structured templates and automation.",
-        addin_description_2: "This add-on simplifies campaign tracking by allowing marketing teams to apply predefined templates, generate tracking links, and analyze performance data directly in Google Sheets. It eliminates manual tracking efforts, enhances collaboration, and provides real-time insights to optimize digital marketing strategies.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Google Sheets",
-            "Campaign Management",
-            "Marketing",
-            "Analytics",
-            "Automation",
-            "Performance Tracking"
         ]
     },
     {
@@ -571,29 +533,6 @@ export const office_addins = [
 
 export const google_addons = [
     {
-        img: [
-            campaign_trackly_introduction,
-            campaign_trackly_login,
-            campaign_trackly_apply_template,
-            campaign_trackly_demo_excel_template,
-            campaign_trackly_select_to_continue
-        ],
-        addin_name: "Campaign Trackly",
-        addin_type: "Google Sheet Add-on",
-        addin_purpose: "Campaign Trackly - Streamlined Digital Campaign Management for Google Sheets",
-        addin_description_1: "Campaign Trackly enhances digital campaign tracking within Google Sheets, offering a seamless way to create, manage, and monitor campaign performance using structured templates and automation.",
-        addin_description_2: "This add-on simplifies campaign tracking by allowing marketing teams to apply predefined templates, generate tracking links, and analyze performance data directly in Google Sheets. It eliminates manual tracking efforts, enhances collaboration, and provides real-time insights to optimize digital marketing strategies.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Google Sheets",
-            "Campaign Management",
-            "Marketing",
-            "Analytics",
-            "Automation",
-            "Performance Tracking"
-        ]
-    },
-    {
         "img": [
             gmail_timestamp_home,
             gmail_timestamp_recieved_time,
@@ -813,31 +752,7 @@ export const gmail_addons = [
     }
 ];
 
-export const google_sheet_addons = [
-    {
-        img: [
-            campaign_trackly_introduction,
-            campaign_trackly_login,
-            campaign_trackly_apply_template,
-            campaign_trackly_demo_excel_template,
-            campaign_trackly_select_to_continue
-        ],
-        addin_name: "Campaign Trackly",
-        addin_type: "Google Sheet Add-on",
-        addin_purpose: "Campaign Trackly - Streamlined Digital Campaign Management for Google Sheets",
-        addin_description_1: "Campaign Trackly enhances digital campaign tracking within Google Sheets, offering a seamless way to create, manage, and monitor campaign performance using structured templates and automation.",
-        addin_description_2: "This add-on simplifies campaign tracking by allowing marketing teams to apply predefined templates, generate tracking links, and analyze performance data directly in Google Sheets. It eliminates manual tracking efforts, enhances collaboration, and provides real-time insights to optimize digital marketing strategies.",
-        skills_and_deliverables: "Skills and deliverables",
-        tags: [
-            "Google Sheets",
-            "Campaign Management",
-            "Marketing",
-            "Analytics",
-            "Automation",
-            "Performance Tracking"
-        ]
-    }
-];
+export const google_sheet_addons = [];
 
 export const google_docs_addons = [];
 

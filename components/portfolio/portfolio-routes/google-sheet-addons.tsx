@@ -6,18 +6,17 @@ import 'aos/dist/aos.css';
 import { useRouter } from 'next/navigation';
 import { raleway, roboto } from '@/utilities/hook/useFonts';
 import Link from 'next/link';
-import Toast from '@/components/Toast';
-import { buttonText, demoLoomURLs, google_sheet_addons } from '@/utilities/portfolio';
+import { buttonText, google_sheet_addons } from '@/utilities/portfolio';
 import portfolioPic from "@/public/assets/images/portfolioPic.png";
 import { IoIosArrowDown } from "react-icons/io";
 import Navbar from '@/components/Navbar';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
+import NoDataFound from '../NoDataFound';
 
 const GoogleSheetAddon: React.FC = () => {
     const router = useRouter();
-    const [infoMessage, setInfoMessage] = useState('');
     const [activeButton, setActiveButton] = useState<string>('Google Sheet Add-ons');
     const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
     const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
@@ -39,23 +38,6 @@ const GoogleSheetAddon: React.FC = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
-
-    const handlePreviewClick = (card: PortfolioItem) => {
-        setSelectedCard(card);
-    };
-
-    const handleDemoClick = (item: { addin_name: string }) => {
-        setInfoMessage("");
-
-        setTimeout(() => {
-            const demo = demoLoomURLs.find(d => d.addin_name === item.addin_name);
-            if (demo && demo.demoLoomURL) {
-                window.open(demo.demoLoomURL, "_blank");
-            } else {
-                setInfoMessage("Demo not available for this project");
-            }
-        }, 100)
-    };
 
     const handleButtonClick = (text: string) => {
         setActiveButton(text);
@@ -161,51 +143,11 @@ const GoogleSheetAddon: React.FC = () => {
                 </div>
 
                 {/* Google Seet Addin Items */}
-                <section className="py-16 z-50 px-4">
+                <section className="py-8 z-50 px-4">
                     <div className="container mx-auto">
-                        {google_sheet_addons.length === 0 ? (
-                            <div className="text-center">
-                                <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
-                            </div>
-                        ) : (
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                                {google_sheet_addons.map((item, index) => (
-                                    <div
-                                        key={index}
-                                        className="group bg-white relative hover:shadow-lg shadow-md rounded-lg overflow-hidden"
-                                        data-aos="fade-up"
-                                    >
-                                        {/* Image */}
-                                        <Image className="w-full h-60 object-cover" src={item.img[0]} alt={item.addin_type} />
-
-                                        {/* Overlay */}
-                                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] rounded opacity-0 transition duration-300 ease-in-out group-hover:opacity-60"></div>
-
-                                        {/* Buttons (Appear on Hover) */}
-                                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition duration-300">
-                                            <button
-                                                type="button"
-                                                onClick={() => handlePreviewClick(item)}
-                                                className="bg-white text-[#d73e0f] px-4 py-2 rounded-lg font-bold hover:bg-[#d73e0f] hover:text-white"
-                                            >
-                                                {UIText.projects.preview_button}
-                                            </button>
-                                            <button
-                                                type="button"
-                                                onClick={() => handleDemoClick(item)}
-                                                className="bg-white text-[#d73e0f] px-4 py-2 rounded-lg font-bold hover:bg-[#d73e0f] hover:text-white"
-                                            >
-                                                {UIText.projects.demo_button}
-                                            </button>
-                                        </div>
-
-                                        {/* Text Content */}
-                                        <div className="p-4 flex flex-col items-center justify-between relative">
-                                            <h3 className="text-lg font-medium group-hover:text-white">{item.addin_name}</h3>
-                                            <span className="text-sm font-bold text-[#d73e0f] group-hover:text-white">{item.addin_type}</span>
-                                        </div>
-                                    </div>
-                                ))}
+                        {google_sheet_addons.length === 0 && (
+                            <div className="text-center" data-aos="zoom-in">
+                                <NoDataFound category="Google Form Add-ons" />
                             </div>
                         )}
                     </div>
@@ -223,15 +165,6 @@ const GoogleSheetAddon: React.FC = () => {
                     skills_and_deliverables={selectedCard.skills_and_deliverables}
                     tags={selectedCard.tags}
                     closeDialog={closeDialog}
-                />
-            )}
-
-            {/* show toast info message */}
-            {infoMessage && (
-                <Toast
-                    infoMessage={infoMessage}
-                    errorMessage={""}
-                    successMessage={""}
                 />
             )}
         </>
