@@ -56,6 +56,7 @@ import gems_tool_open_emial from "../public/assets/portfolio/outlook/gems-tool/g
 import excel_compliance_control_home from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-home.png";
 import excel_compliance_control_file_preview from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-file-preview.png";
 import excel_compliance_control_insert_metadata from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-insert-metadata.png";
+import excel_compliance_control_hidden_sheet from "../public/assets/portfolio/excel/excel-compliance-control/excel-compliance-control-hidden-sheet.png";
 
 // gmail addon images
 import gmail_timestamp_home from "../public/assets/portfolio/gmail/gmail-timestamp/gmail-timestamp-home.png";
@@ -296,22 +297,23 @@ export const portfolio = [
         img: [
             excel_compliance_control_home,
             excel_compliance_control_file_preview,
-            excel_compliance_control_insert_metadata
+            excel_compliance_control_insert_metadata,
+            excel_compliance_control_hidden_sheet
         ],
         addin_name: "Excel Compliance Control",
         addin_type: "Excel Add-in",
-        addin_purpose: "Metadata Management and Compliance Automation Tool for Excel",
-        addin_description_1: "Excel Compliance Control streamlines document compliance by enabling users to insert, manage, and approve metadata directly within Excel workbooks.",
-        addin_description_2: "Designed for standards like ISO 9001 and IATF 16949, this add-in helps maintain document control by automating metadata entry, version tracking, and approval workflows.",
-        skills_and_deliverables: "Metadata handling, versioning logic, Excel Taskpane development, UI/UX using Office.js",
+        addin_purpose: "Comprehensive Metadata Management and Compliance Automation Tool for Excel Workbooks",
+        addin_description_1: "Excel Compliance Control empowers users to seamlessly insert, manage, and approve critical metadata within Excel workbooks, ensuring robust document control and compliance with industry standards.",
+        addin_description_2: "Tailored for frameworks such as ISO 9001 and IATF 16949, this add-in automates metadata entry, versioning (using a hidden 'RevisionHistory' sheet), and approval workflows, helping organizations maintain audit-ready records and streamline compliance processes.",
+        skills_and_deliverables: "Advanced metadata handling, automated versioning logic (with hidden sheet storage), Excel Taskpane development, intuitive UI/UX using Office.js, and compliance workflow integration.",
         tags: [
             "Microsoft Office",
             "Excel",
             "Metadata",
             "Document Control",
-            "IATF 16949",
             "Versioning",
-            "Compliance"
+            "Compliance",
+            "Hidden Sheet"
         ]
     },
     {
@@ -511,22 +513,23 @@ export const office_addins = [
         img: [
             excel_compliance_control_home,
             excel_compliance_control_file_preview,
-            excel_compliance_control_insert_metadata
+            excel_compliance_control_insert_metadata,
+            excel_compliance_control_hidden_sheet
         ],
         addin_name: "Excel Compliance Control",
         addin_type: "Excel Add-in",
-        addin_purpose: "Metadata Management and Compliance Automation Tool for Excel",
-        addin_description_1: "Excel Compliance Control streamlines document compliance by enabling users to insert, manage, and approve metadata directly within Excel workbooks.",
-        addin_description_2: "Designed for standards like ISO 9001 and IATF 16949, this add-in helps maintain document control by automating metadata entry, version tracking, and approval workflows.",
-        skills_and_deliverables: "Metadata handling, versioning logic, Excel Taskpane development, UI/UX using Office.js",
+        addin_purpose: "Comprehensive Metadata Management and Compliance Automation Tool for Excel Workbooks",
+        addin_description_1: "Excel Compliance Control empowers users to seamlessly insert, manage, and approve critical metadata within Excel workbooks, ensuring robust document control and compliance with industry standards.",
+        addin_description_2: "Tailored for frameworks such as ISO 9001 and IATF 16949, this add-in automates metadata entry, versioning (using a hidden 'RevisionHistory' sheet), and approval workflows, helping organizations maintain audit-ready records and streamline compliance processes.",
+        skills_and_deliverables: "Advanced metadata handling, automated versioning logic (with hidden sheet storage), Excel Taskpane development, intuitive UI/UX using Office.js, and compliance workflow integration.",
         tags: [
             "Microsoft Office",
             "Excel",
             "Metadata",
             "Document Control",
-            "IATF 16949",
             "Versioning",
-            "Compliance"
+            "Compliance",
+            "Hidden Sheet"
         ]
     },
 ];
@@ -647,22 +650,23 @@ export const excel_addins = [
         img: [
             excel_compliance_control_home,
             excel_compliance_control_file_preview,
-            excel_compliance_control_insert_metadata
+            excel_compliance_control_insert_metadata,
+            excel_compliance_control_hidden_sheet
         ],
         addin_name: "Excel Compliance Control",
         addin_type: "Excel Add-in",
-        addin_purpose: "Metadata Management and Compliance Automation Tool for Excel",
-        addin_description_1: "Excel Compliance Control streamlines document compliance by enabling users to insert, manage, and approve metadata directly within Excel workbooks.",
-        addin_description_2: "Designed for standards like ISO 9001 and IATF 16949, this add-in helps maintain document control by automating metadata entry, version tracking, and approval workflows.",
-        skills_and_deliverables: "Metadata handling, versioning logic, Excel Taskpane development, UI/UX using Office.js",
+        addin_purpose: "Comprehensive Metadata Management and Compliance Automation Tool for Excel Workbooks",
+        addin_description_1: "Excel Compliance Control empowers users to seamlessly insert, manage, and approve critical metadata within Excel workbooks, ensuring robust document control and compliance with industry standards.",
+        addin_description_2: "Tailored for frameworks such as ISO 9001 and IATF 16949, this add-in automates metadata entry, versioning (using a hidden 'RevisionHistory' sheet), and approval workflows, helping organizations maintain audit-ready records and streamline compliance processes.",
+        skills_and_deliverables: "Advanced metadata handling, automated versioning logic (with hidden sheet storage), Excel Taskpane development, intuitive UI/UX using Office.js, and compliance workflow integration.",
         tags: [
             "Microsoft Office",
             "Excel",
             "Metadata",
             "Document Control",
-            "IATF 16949",
             "Versioning",
-            "Compliance"
+            "Compliance",
+            "Hidden Sheet"
         ]
     },
 ];
