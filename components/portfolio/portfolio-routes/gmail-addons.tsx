@@ -1,23 +1,23 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
 import Toast from '@/components/Toast';
 import { useRouter } from 'next/navigation';
-import { raleway, roboto } from '@/utilities/hook/useFonts';
-import Link from 'next/link';
 import { buttonText, demoLoomURLs, gmail_addons } from '@/utilities/portfolio';
-import portfolioPic from "@/public/assets/images/portfolioPic.png";
 import { IoIosArrowDown } from "react-icons/io";
 import Navbar from '@/components/Navbar';
+import HeroSection from '@/components/portfolio/HeroSection';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
 import NoDataFound from '../NoDataFound';
+import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
 const GmailAddons: React.FC = () => {
     const router = useRouter();
+    const dashboardSectionRef = useRef(null);
     const [infoMessage, setInfoMessage] = useState('');
     const [activeButton, setActiveButton] = useState<string>('Gmail Add-ons');
     const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
@@ -40,6 +40,9 @@ const GmailAddons: React.FC = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []);
+
+    // scroll to gamil add-on items
+    useScrollToSection(dashboardSectionRef, '/portfolio/gmail-addons');
 
     const handlePreviewClick = (card: PortfolioItem) => {
         setSelectedCard(card);
@@ -89,35 +92,9 @@ const GmailAddons: React.FC = () => {
     return (
         <>
             <Navbar />
-            {/* Hero Section */}
-            <section>
-                <div data-aos="fade-up" className="flex items-center justify-center bg-gray-100 hero-section">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
-                        {/* Left Section */}
-                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6 lg:px-20">
-                            <h2 className={`text-3xl font-bold mb-2 relative group ${raleway.className}`}>
-                                {UIText.projects.title}
-                                <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded h-1 w-12 transition-all duration-500 group-hover:w-40"></span>
-                            </h2>
-                            <p className={`text-lg text-center md:text-left ${roboto.className}`}>{UIText.projects.description}</p>
-                            <div>
-                                <Link href="/contact" passHref>
-                                    <button type="button" className="hero-btn-resume text-white font-bold py-2 px-5 rounded">
-                                        {UIText.contact.title}
-                                    </button>
-                                </Link>
-                            </div>
-                        </div>
+            <HeroSection />
 
-                        {/* Right Section */}
-                        <div className="w-full md:w-1/2 flex justify-center items-center relative">
-                            <Image src={portfolioPic.src} className="rounded-3xl" alt="about-hero" width={350} height={350} />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section className="bg-gray-100">
+            <section className="bg-gray-100" ref={dashboardSectionRef}>
                 <div className="mx-4 md:mx-0">
                     {isSmallScreen ? (
                         <div className="relative">
