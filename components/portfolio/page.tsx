@@ -44,6 +44,7 @@ export const Projects = () => {
         const routes: { [key: string]: string } = {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
+            'Web Applications': '/portfolio/web-applications',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
@@ -72,7 +73,7 @@ export const Projects = () => {
             if (demo && demo.demoLoomURL) {
                 window.open(demo.demoLoomURL, "_blank");
             } else {
-                setInfoMessage("Demo not available for this project");
+                setInfoMessage("The demo for this project is currently unavailable.");
             }
         }, 100)
     };

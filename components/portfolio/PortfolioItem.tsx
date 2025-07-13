@@ -14,7 +14,7 @@ const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
         className="h-8 w-8 md:h-12 md:w-12 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
         onClick={onClick}
-        style={{ position: "absolute", left: "0px", top: "44%", zIndex: 1 }}
+        style={{ position: "absolute", left: "8px", top: "210px", zIndex: 2 }}
     >
         <IoChevronBack />
     </div>
@@ -25,7 +25,7 @@ const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
         className="h-8 w-8 md:h-12 md:w-12 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
         onClick={onClick}
-        style={{ position: 'absolute', right: '0px', top: "44%", zIndex: 1 }}
+        style={{ position: 'absolute', right: '8px', top: "210px", zIndex: 2 }}
     >
         <IoChevronForward />
     </div>
@@ -73,8 +73,8 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
 
     return (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div ref={dialogRef} className="bg-white overflow-x-hidden mx-4 rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto" data-aos="zoom-in-up">
-                <div className="flex z-10 flex-row justify-between items-center mb-4">
+            <div ref={dialogRef} className="bg-white mx-4 rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto" data-aos="zoom-in-up">
+                <div className="flex flex-row justify-between items-center mb-4">
                     <h3 className="text-xl md:text-2xl lg:text-4xl font-semibold mb-4">{addin_name}</h3>
                     <button
                         type='button'
@@ -95,7 +95,7 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
                                         <h1 className="text-xl md:text-3xl lg:text-3xl font-semibold">{addin_title}</h1>
                                         <p className="py-4 text-md">{addin_description_1}</p>
                                         <p className="py-2 text-md">{addin_description_2}</p>
-                                        <p className="py-4 text-md">{skills_and_deliverables}</p>
+                                        <p className="py-4 text-md font-semibold">{skills_and_deliverables}</p>
                                         <div className="flex flex-wrap gap-2">
                                             {tags.map((tag, index) => (
                                                 <span key={index} className="relative px-3 py-1 rounded-full shadow-sm bg-gray-200">

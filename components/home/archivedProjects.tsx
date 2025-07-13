@@ -14,7 +14,7 @@ const ArchivedProjects: React.FC = () => {
 
         setTimeout(() => {
             if (!github_link) {
-                setInfoMessage("The GitHub repository for this project is private due to security reasons.");
+                setInfoMessage("Due to security considerations, the GitHub repository for this project is kept private.");
                 return;
             } else {
                 window.open(github_link, "_blank");

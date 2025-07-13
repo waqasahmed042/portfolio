@@ -4,7 +4,7 @@ import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { useRouter } from 'next/navigation';
-import { buttonText, dashboard, demoLoomURLs, excel_addins } from '@/utilities/portfolio';
+import { buttonText, dashboard, demoLoomURLs } from '@/utilities/portfolio';
 import { IoIosArrowDown } from "react-icons/io";
 import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/portfolio/HeroSection';
@@ -68,6 +68,7 @@ const Dashboards: React.FC = () => {
         const routes: { [key: string]: string } = {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
+            'Web Applications': '/portfolio/web-applications',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
@@ -82,10 +83,6 @@ const Dashboards: React.FC = () => {
 
         const route = routes[text] || '/portfolio'; // Default route
         router.push(route);
-    };
-
-    const handleCardClick = (card: PortfolioItem) => {
-        setSelectedCard(card);
     };
 
     const closeDialog = () => {
@@ -192,35 +189,6 @@ const Dashboards: React.FC = () => {
                         )}
                     </div>
                 </section>
-            </section>
-
-            {/* Portfolio Items */}
-            <section className="py-16 z-20 px-4">
-                <div className="container mx-auto">
-                    {excel_addins.length === 0 ? (
-                        <div className="text-center">
-                            <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
-                        </div>
-                    ) : (
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                            {excel_addins.map((item, index) => (
-                                <div
-                                    key={index}
-                                    className="group bg-white relative hover:shadow-lg shadow-md rounded-lg overflow-hidden cursor-pointer"
-                                    data-aos="fade-up"
-                                    onClick={() => handleCardClick(item)}
-                                >
-                                    <Image className="w-full h-60 object-cover" src={item.img[0]} alt={item.addin_type} />
-                                    <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-[#6ebbf7] to-[#006DC1] rounded-2xl opacity-0 transition duration-300 ease-in-out group-hover:opacity-70"></div>
-                                    <div className="p-4 flex flex-col items-center justify-between relative">
-                                        <h3 className="text-lg font-medium group-hover:text-white">{item.addin_name}</h3>
-                                        <span className="text-sm font-bold text-[#006DC1] group-hover:text-white">{item.addin_type}</span>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-                    )}
-                </div>
             </section>
 
             {/* Dialog for selected card */}

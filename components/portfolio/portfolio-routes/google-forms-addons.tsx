@@ -48,6 +48,7 @@ const GoogleFormsAddons: React.FC = () => {
         const routes: { [key: string]: string } = {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
+            'Web Applications': '/portfolio/web-applications',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
