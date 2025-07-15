@@ -203,6 +203,7 @@ export const portfolio = [
         tags: [
             'Browser Extension',
             'Email Management',
+            'Auto Send Emails',
             'Client Management',
             'CSV Upload',
             'Productivity Tool',
