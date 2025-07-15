@@ -78,6 +78,9 @@ const UIText = {
         full_stack_development: {
             title: "Full Stack Development",
         },
+        browser_extensions: {
+            title: "Browser Extensions",
+        },
         office_addins: {
             title: "Office Add-ins",
             word_Addin: "Word Add-ins",
