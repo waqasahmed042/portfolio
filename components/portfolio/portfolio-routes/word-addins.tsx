@@ -12,6 +12,7 @@ import HeroSection from '@/components/portfolio/HeroSection';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
+import NoDataFound from '@/components/portfolio/NoDataFound';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
 const WordAddins: React.FC = () => {
@@ -69,6 +70,7 @@ const WordAddins: React.FC = () => {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
             'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
@@ -142,9 +144,15 @@ const WordAddins: React.FC = () => {
                 <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {word_addins.length === 0 ? (
-                            <div className="text-center">
-                                <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
-                            </div>
+                            <section className="py-8 z-50 px-4">
+                                <div className="container mx-auto">
+                                    {word_addins.length === 0 && (
+                                        <div className="text-center" data-aos="zoom-in">
+                                            <NoDataFound category="Word Add-ins" />
+                                        </div>
+                                    )}
+                                </div>
+                            </section>
                         ) : (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                                 {word_addins.map((item, index) => (

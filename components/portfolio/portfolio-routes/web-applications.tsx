@@ -1,8 +1,8 @@
 'use client';
 import React, { useState, useEffect, useRef } from 'react';
-import Image from 'next/image';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { buttonText, demoLoomURLs, web_applications } from '@/utilities/portfolio';
 import { IoIosArrowDown } from "react-icons/io";
@@ -11,6 +11,7 @@ import HeroSection from '@/components/portfolio/HeroSection';
 import Toast from '@/components/Toast';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
+import NoDataFound from '@/components/portfolio/NoDataFound';
 import PortfolioDialog from '../PortfolioItem';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
@@ -68,6 +69,8 @@ const WebApplications: React.FC = () => {
         const routes: { [key: string]: string } = {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
+            'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
@@ -142,9 +145,15 @@ const WebApplications: React.FC = () => {
                 <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {web_applications.length === 0 ? (
-                            <div className="text-center">
-                                <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
-                            </div>
+                            <section className="py-8 z-50 px-4">
+                                <div className="container mx-auto">
+                                    {web_applications.length === 0 && (
+                                        <div className="text-center" data-aos="zoom-in">
+                                            <NoDataFound category="Web Applications" />
+                                        </div>
+                                    )}
+                                </div>
+                            </section>
                         ) : (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                                 {web_applications.map((item, index) => (

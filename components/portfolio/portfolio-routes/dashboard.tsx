@@ -11,6 +11,7 @@ import HeroSection from '@/components/portfolio/HeroSection';
 import Toast from '@/components/Toast';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
+import NoDataFound from '@/components/portfolio/NoDataFound';
 import PortfolioDialog from '../PortfolioItem';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
@@ -69,6 +70,7 @@ const Dashboards: React.FC = () => {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
             'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
@@ -143,9 +145,15 @@ const Dashboards: React.FC = () => {
                 <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {dashboard.length === 0 ? (
-                            <div className="text-center">
-                                <p className="text-lg font-semibold text-gray-500">{UIText.projects.not_found}</p>
-                            </div>
+                            <section className="py-8 z-50 px-4">
+                                <div className="container mx-auto">
+                                    {dashboard.length === 0 && (
+                                        <div className="text-center" data-aos="zoom-in">
+                                            <NoDataFound category="Dashboards" />
+                                        </div>
+                                    )}
+                                </div>
+                            </section>
                         ) : (
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                                 {dashboard.map((item, index) => (

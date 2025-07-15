@@ -9,7 +9,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/portfolio/HeroSection';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-import NoDataFound from '../NoDataFound';
+import NoDataFound from '@/components/portfolio/NoDataFound';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
 const GoogleDocsAddons: React.FC = () => {
@@ -50,6 +50,7 @@ const GoogleDocsAddons: React.FC = () => {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
             'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',

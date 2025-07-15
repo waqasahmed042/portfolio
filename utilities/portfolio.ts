@@ -89,10 +89,15 @@ import food_hub_order_history from "../public/assets/portfolio/websites/food-hub
 import food_hub_booking_history from "../public/assets/portfolio/websites/food-hub/food-hub-booking-history.png";
 import food_hub_update_profile from "../public/assets/portfolio/websites/food-hub/food-hub-update-profile.png";
 
+// browser extention images
+import g_auto_pilot_home from "../public/assets/portfolio/browser-extensions/g-auto-pilot/g-auto-pilot-home.png";
+import g_auto_pilot_authenticate_first from "../public/assets/portfolio/browser-extensions/g-auto-pilot/g-auto-pilot-authenticate-first.png";
+
 export const buttonText = [
     'All Portfolio',
     'Dashboards',
     'Web Applications',
+    'Browser Extensions',
     'Office Add-ins',
     'Google Add-ons',
     'Word Add-ins',
@@ -150,6 +155,10 @@ export const demoLoomURLs = [
         addin_name: "GEMS Tool",
         demoLoomURL: "https://www.loom.com/share/2a068da505da400fac77ddeeda8ae1e2?sid=1797e44e-727c-48b4-a2bc-f85b806e755c"
     },
+    {
+        addin_name: "GAutoPilot",
+        demoLoomURL: ""
+    },
 ]
 
 export const portfolio = [
@@ -176,10 +185,29 @@ export const portfolio = [
             "Email Management",
             "Client Management",
             "CSV Upload",
-            "Dashboard",
             "Office 365",
             "Microsoft Add-in"
         ]
+    },
+    {
+        "img": [
+            g_auto_pilot_home,
+            g_auto_pilot_authenticate_first
+        ],
+        addin_name: 'GAutoPilot',
+        addin_type: 'Browser Extension',
+        addin_purpose: 'GAutoPilot is a powerful browser extension for managing emails and client data efficiently.',
+        addin_description_1: 'GAutoPilot provides a user-friendly interface to access all emails, manage client lists, create new clients, and upload bulk client data via CSV files directly from your browser.',
+        addin_description_2: 'Optimized for seamless data workflows, GAutoPilot boosts productivity by organizing emails and clients with clarity and control.',
+        skills_and_deliverables: 'Skills and deliverables:',
+        tags: [
+            'Browser Extension',
+            'Email Management',
+            'Client Management',
+            'CSV Upload',
+            'Productivity Tool',
+            'Data Organization',
+        ],
     },
     {
         img: [
@@ -428,6 +456,29 @@ export const dashboard = [
             "Microsoft Add-in"
         ]
     },
+];
+
+export const browser_extentions = [
+    {
+        "img": [
+            g_auto_pilot_home,
+            g_auto_pilot_authenticate_first
+        ],
+        addin_name: 'GAutoPilot',
+        addin_type: 'Browser Extension',
+        addin_purpose: 'GAutoPilot is a powerful browser extension for managing emails and client data efficiently.',
+        addin_description_1: 'GAutoPilot provides a user-friendly interface to access all emails, manage client lists, create new clients, and upload bulk client data via CSV files directly from your browser.',
+        addin_description_2: 'Optimized for seamless data workflows, GAutoPilot boosts productivity by organizing emails and clients with clarity and control.',
+        skills_and_deliverables: 'Skills and deliverables:',
+        tags: [
+            'Browser Extension',
+            'Email Management',
+            'Client Management',
+            'CSV Upload',
+            'Productivity Tool',
+            'Data Organization',
+        ],
+    }
 ];
 
 export const web_applications = [

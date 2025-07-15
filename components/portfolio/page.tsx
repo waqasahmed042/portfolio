@@ -45,6 +45,7 @@ export const Projects = () => {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
             'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',

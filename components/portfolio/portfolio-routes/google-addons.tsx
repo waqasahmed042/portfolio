@@ -12,7 +12,7 @@ import HeroSection from '@/components/portfolio/HeroSection';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-import NoDataFound from '../NoDataFound';
+import NoDataFound from '@/components/portfolio/NoDataFound';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
 const GoogleAddons: React.FC = () => {
@@ -70,6 +70,7 @@ const GoogleAddons: React.FC = () => {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
             'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
@@ -149,7 +150,7 @@ const GoogleAddons: React.FC = () => {
                                 <div className="container mx-auto">
                                     {google_addons.length === 0 && (
                                         <div className="text-center" data-aos="zoom-in">
-                                            <NoDataFound category="Google Form Add-ons" />
+                                            <NoDataFound category="Google Add-ons" />
                                         </div>
                                     )}
                                 </div>

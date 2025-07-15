@@ -2,20 +2,24 @@
 import React, { useState, useEffect, useRef } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { buttonText, google_sheet_addons } from '@/utilities/portfolio';
+import { buttonText, browser_extentions, demoLoomURLs } from '@/utilities/portfolio';
 import { IoIosArrowDown } from "react-icons/io";
 import Navbar from '@/components/Navbar';
+import Toast from '@/components/Toast';
+import UIText from '@/utilities/testResource';
 import HeroSection from '@/components/portfolio/HeroSection';
 import { PortfolioItem } from '@/utilities/type';
-import PortfolioDialog from '../PortfolioItem';
 import NoDataFound from '@/components/portfolio/NoDataFound';
+import PortfolioDialog from '../PortfolioItem';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
-const GoogleSheetAddon: React.FC = () => {
+const BrowserExtensions: React.FC = () => {
     const router = useRouter();
     const dashboardSectionRef = useRef(null);
-    const [activeButton, setActiveButton] = useState<string>('Google Sheet Add-ons');
+    const [infoMessage, setInfoMessage] = useState('');
+    const [activeButton, setActiveButton] = useState<string>('Browser Extensions');
     const [isDropdownOpen, setIsDropdownOpen] = useState<boolean>(false);
     const [isSmallScreen, setIsSmallScreen] = useState<boolean>(false);
     const [selectedCard, setSelectedCard] = useState<PortfolioItem | null>(null);
@@ -37,8 +41,25 @@ const GoogleSheetAddon: React.FC = () => {
         };
     }, []);
 
-    // scroll to google sheet add-on items
-    useScrollToSection(dashboardSectionRef, '/portfolio/google-sheet-addons');
+    // scroll to google forms add-on items
+    useScrollToSection(dashboardSectionRef, '/portfolio/browser-extensions');
+
+    const handlePreviewClick = (card: PortfolioItem) => {
+        setSelectedCard(card);
+    };
+
+    const handleDemoClick = (item: { addin_name: string }) => {
+        setInfoMessage("");
+
+        setTimeout(() => {
+            const demo = demoLoomURLs.find(d => d.addin_name === item.addin_name);
+            if (demo && demo.demoLoomURL) {
+                window.open(demo.demoLoomURL, "_blank");
+            } else {
+                setInfoMessage("Demo not available for this project");
+            }
+        }, 100)
+    };
 
     const handleButtonClick = (text: string) => {
         setActiveButton(text);
@@ -110,7 +131,7 @@ const GoogleSheetAddon: React.FC = () => {
                                     key={index}
                                     onClick={() => handleButtonClick(text)}
                                     className={`flex items-center justify-center font-bold text-xl px-4 py-3 rounded-full border transition-all duration-300 hover:bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] hover:text-white hover:border-none
-                                        ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white' : 'border-[#d73e0f] text-black'}`}
+                                          ${activeButton === text ? 'bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white' : 'border-[#d73e0f] text-black'}`}
                                 >
                                     {text}
                                 </button>
@@ -119,12 +140,58 @@ const GoogleSheetAddon: React.FC = () => {
                     )}
                 </div>
 
-                {/* Google Seet Addin Items */}
-                <section className="py-8 z-50 px-4">
+                {/* Broswer Extentin Items */}
+                <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
-                        {google_sheet_addons.length === 0 && (
-                            <div className="text-center" data-aos="zoom-in">
-                                <NoDataFound category="Google Sheet Add-ons" />
+                        {browser_extentions.length === 0 ? (
+                            <section className="py-8 z-50 px-4">
+                                <div className="container mx-auto">
+                                    {browser_extentions.length === 0 && (
+                                        <div className="text-center" data-aos="zoom-in">
+                                            <NoDataFound category="Browser Extentions" />
+                                        </div>
+                                    )}
+                                </div>
+                            </section>
+                        ) : (
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                                {browser_extentions.map((item, index) => (
+                                    <div
+                                        key={index}
+                                        className="group bg-white relative hover:shadow-lg shadow-md rounded-lg overflow-hidden"
+                                        data-aos="fade-up"
+                                    >
+                                        {/* Image */}
+                                        <Image className="w-full h-60 object-cover" src={item.img[0]} alt={item.addin_type} />
+
+                                        {/* Overlay */}
+                                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] rounded opacity-0 transition duration-300 ease-in-out group-hover:opacity-60"></div>
+
+                                        {/* Buttons (Appear on Hover) */}
+                                        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex space-x-3 opacity-0 group-hover:opacity-100 transition duration-300">
+                                            <button
+                                                type="button"
+                                                onClick={() => handlePreviewClick(item)}
+                                                className="bg-white text-[#d73e0f] px-4 py-2 rounded-lg font-bold hover:bg-[#d73e0f] hover:text-white"
+                                            >
+                                                {UIText.projects.preview_button}
+                                            </button>
+                                            <button
+                                                type="button"
+                                                onClick={() => handleDemoClick(item)}
+                                                className="bg-white text-[#d73e0f] px-4 py-2 rounded-lg font-bold hover:bg-[#d73e0f] hover:text-white"
+                                            >
+                                                {UIText.projects.demo_button}
+                                            </button>
+                                        </div>
+
+                                        {/* Text Content */}
+                                        <div className="p-4 flex flex-col items-center justify-between relative">
+                                            <h3 className="text-lg font-medium group-hover:text-white">{item.addin_name}</h3>
+                                            <span className="text-sm font-bold text-[#d73e0f] group-hover:text-white">{item.addin_type}</span>
+                                        </div>
+                                    </div>
+                                ))}
                             </div>
                         )}
                     </div>
@@ -144,8 +211,17 @@ const GoogleSheetAddon: React.FC = () => {
                     closeDialog={closeDialog}
                 />
             )}
+
+            {/* show toast info message */}
+            {infoMessage && (
+                <Toast
+                    infoMessage={infoMessage}
+                    errorMessage={""}
+                    successMessage={""}
+                />
+            )}
         </>
     );
 };
 
-export default GoogleSheetAddon;
+export default BrowserExtensions;

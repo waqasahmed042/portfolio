@@ -9,7 +9,7 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/portfolio/HeroSection';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-import NoDataFound from '../NoDataFound';
+import NoDataFound from '@/components/portfolio/NoDataFound';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
 const PowerpointAddins: React.FC = () => {
@@ -49,6 +49,7 @@ const PowerpointAddins: React.FC = () => {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
             'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
@@ -123,7 +124,7 @@ const PowerpointAddins: React.FC = () => {
                     <div className="container mx-auto">
                         {powerpoint_addins.length === 0 && (
                             <div className="text-center" data-aos="zoom-in">
-                                <NoDataFound category="PowerPoint Add-ins" />
+                                <NoDataFound category="Outlook Add-ins" />
                             </div>
                         )}
                     </div>

@@ -12,7 +12,7 @@ import HeroSection from '@/components/portfolio/HeroSection';
 import UIText from '@/utilities/testResource';
 import { PortfolioItem } from '@/utilities/type';
 import PortfolioDialog from '../PortfolioItem';
-import NoDataFound from '../NoDataFound';
+import NoDataFound from '@/components/portfolio/NoDataFound';
 import useScrollToSection from '@/utilities/hook/useScrollToSection';
 
 const OutlookAddins: React.FC = () => {
@@ -70,6 +70,7 @@ const OutlookAddins: React.FC = () => {
             'All Portfolio': '/portfolio',
             'Dashboards': '/portfolio/dashboards',
             'Web Applications': '/portfolio/web-applications',
+            'Browser Extensions': '/portfolio/browser-extensions',
             'Office Add-ins': '/portfolio/office-addins',
             'Google Add-ons': '/portfolio/google-addons',
             'Gmail Add-ons': '/portfolio/gmail-addons',
