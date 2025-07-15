@@ -15,6 +15,14 @@ export const fullStackDevelopmentFAQs = [
         question: "What is the role of APIs in Full Stack Development?",
         answer: "APIs (Application Programming Interfaces) enable communication between the frontend and backend of a web application. They allow the frontend to send requests to the server to retrieve, modify, or delete data. APIs can be RESTful or GraphQL-based, facilitating scalable and interactive applications.",
     },
+    {
+        question: "What are some popular stacks used in full stack development?",
+        answer: "Popular stacks include the MERN stack (MongoDB, Express.js, React, Node.js), MEAN stack (MongoDB, Express.js, Angular, Node.js), and LAMP stack (Linux, Apache, MySQL, PHP). Each stack offers a set of technologies for building robust web applications.",
+    },
+    {
+        question: "How important is DevOps knowledge for a Full Stack Developer?",
+        answer: "DevOps knowledge is increasingly important for full stack developers, as it helps with automating deployments, managing infrastructure, and ensuring smooth integration and delivery of code. Familiarity with CI/CD pipelines, Docker, and cloud services is highly beneficial.",
+    },
 ];
 
 export const browserExtensionFAQs = [
@@ -33,6 +41,14 @@ export const browserExtensionFAQs = [
     {
         question: "How are extensions published to Chrome or Edge?",
         answer: "Chrome extensions are submitted to the Chrome Web Store, and Edge extensions to the Microsoft Edge Add-ons Store. After uploading a ZIP package and setting permissions, your extension goes through a review before it becomes publicly available.",
+    },
+    {
+        question: "How do I debug a browser extension?",
+        answer: "You can debug browser extensions using the browser's developer tools. For Chrome, go to chrome://extensions, enable Developer mode, and click 'background page' or 'inspect views' to debug background and content scripts.",
+    },
+    {
+        question: "Can browser extensions access all websites I visit?",
+        answer: "Browser extensions can access websites based on the permissions you grant during installation. Always review requested permissions and install extensions from trusted sources to protect your privacy and security.",
     },
 ];
 

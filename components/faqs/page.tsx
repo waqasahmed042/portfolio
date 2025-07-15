@@ -15,7 +15,7 @@ import Contact from '../Contact';
 const FAQs: React.FC = () => {
     const [fullStackDevelopment, setFullStackDevelopment] = useState(true);
     const [browserExtensions, setBrowserExtensions] = useState(false);
-    const [openOffice, setOpenOffice] = useState(false);
+    const [openOffice, setOpenOffice] = useState(true);
     const [openGoogle, setOpenGoogle] = useState(false);
     const [selectedCategory, setSelectedCategory] = useState('fullStack');
     const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -33,7 +33,7 @@ const FAQs: React.FC = () => {
             // Open and close other sections
             setFullStackDevelopment(true);
             setBrowserExtensions(false);
-            setOpenOffice(false);
+            setOpenOffice(true);
             setOpenGoogle(false);
             setSelectedCategory('fullStack');
             setFaqList(fullStackDevelopmentFAQs);
@@ -48,7 +48,7 @@ const FAQs: React.FC = () => {
             // Open and close other sections
             setFullStackDevelopment(false);
             setBrowserExtensions(true);
-            setOpenOffice(false);
+            setOpenOffice(true);
             setOpenGoogle(false);
             setSelectedCategory('browserExtensions');
             setFaqList(browserExtensionFAQs);
