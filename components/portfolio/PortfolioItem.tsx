@@ -12,7 +12,7 @@ import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 // Custom Previous Arrow Component
 const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
-        className="h-8 w-8 md:h-12 md:w-12 absolute left-0 top-[80px] md:top-[160px] lg:top-[210px] z-10 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
+        className="h-8 w-8 md:h-12 md:w-12 absolute left-0 top-[60px] md:top-[160px] lg:top-[210px] z-10 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
         onClick={onClick}
     >
         <IoChevronBack />
@@ -22,7 +22,7 @@ const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
 // Custom Next Arrow Component
 const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
-        className="h-8 w-8 md:h-12 md:w-12 absolute right-0 top-[80px] md:top-[160px] lg:top-[210px] z-10 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
+        className="h-8 w-8 md:h-12 md:w-12 absolute right-0 top-[60px] md:top-[160px] lg:top-[210px] z-10 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
         onClick={onClick}
     >
         <IoChevronForward />
