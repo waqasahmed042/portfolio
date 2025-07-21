@@ -12,9 +12,8 @@ import { IoChevronBack, IoChevronForward } from 'react-icons/io5';
 // Custom Previous Arrow Component
 const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
-        className="h-8 w-8 md:h-12 md:w-12 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
+        className="h-8 w-8 md:h-12 md:w-12 absolute left-0 top-[80px] md:top-[160px] lg:top-[210px] z-10 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
         onClick={onClick}
-        style={{ position: "absolute", left: "8px", top: "210px", zIndex: 2 }}
     >
         <IoChevronBack />
     </div>
@@ -23,9 +22,8 @@ const CustomPrevArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
 // Custom Next Arrow Component
 const CustomNextArrow: React.FC<CustomArrowProps> = ({ onClick }) => (
     <div
-        className="h-8 w-8 md:h-12 md:w-12 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
+        className="h-8 w-8 md:h-12 md:w-12 absolute right-0 top-[80px] md:top-[160px] lg:top-[210px] z-10 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] text-white flex justify-center items-center p-2 rounded-full cursor-pointer"
         onClick={onClick}
-        style={{ position: 'absolute', right: '8px', top: "210px", zIndex: 2 }}
     >
         <IoChevronForward />
     </div>
@@ -72,49 +70,51 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
     }, [closeDialog]);
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-            <div ref={dialogRef} className="bg-white mx-4 rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto" data-aos="zoom-in-up">
-                <div className="flex flex-row justify-between items-center mb-4">
-                    <h3 className="text-xl md:text-2xl lg:text-4xl font-semibold mb-4">{addin_name}</h3>
-                    <button
-                        type='button'
-                        onClick={closeDialog}
-                        className="text-gray-400 text-xl md:text-2xl lg:text-4xl mb-3 hover:bg-[#F1F1F1] hover:text-[#2e2e2e] flex justify-center items-center h-12 w-12 rounded-full font-bold hover:opacity-90 transition"
-                    >
-                        <IoClose />
-                    </button>
-                </div>
+        <>
+            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+                <div ref={dialogRef} className="bg-white mx-4 rounded-lg shadow-lg p-6 max-h-[90vh] overflow-y-auto" data-aos="zoom-in-up">
+                    <div className="flex flex-row justify-between items-center mb-4">
+                        <h3 className="text-xl md:text-2xl lg:text-4xl font-semibold mb-4">{addin_name}</h3>
+                        <button
+                            type='button'
+                            onClick={closeDialog}
+                            className="text-gray-400 text-xl md:text-2xl lg:text-4xl mb-3 hover:bg-[#F1F1F1] hover:text-[#2e2e2e] flex justify-center items-center h-12 w-12 rounded-full font-bold hover:opacity-90 transition"
+                        >
+                            <IoClose />
+                        </button>
+                    </div>
 
-                <div className="mx-auto flex flex-col mb-4 md:flex-row lg:flex-row items-center w-full">
-                    <div className="container mx-auto">
-                        <div className="card mx-md-0">
-                            <div className="flex flex-wrap justify-center">
-                                <div className="flex flex-col lg:flex-row w-full h-auto bg-[#F2F2F2]">
-                                    {/* Text Section */}
-                                    <div className="px-4 py-4 lg:w-5/12 flex flex-col">
-                                        <h1 className="text-xl md:text-3xl lg:text-3xl font-semibold">{addin_title}</h1>
-                                        <p className="py-4 text-md">{addin_description_1}</p>
-                                        <p className="py-2 text-md">{addin_description_2}</p>
-                                        <p className="py-4 text-md font-semibold">{skills_and_deliverables}</p>
-                                        <div className="flex flex-wrap gap-2">
-                                            {tags.map((tag, index) => (
-                                                <span key={index} className="relative px-3 py-1 rounded-full shadow-sm bg-gray-200">
-                                                    {tag}
-                                                </span>
-                                            ))}
-                                        </div>
-                                    </div>
-
-                                    {/* Image Carousel Section */}
-                                    <div className="lg:w-7/12 mt-4 lg:mt-0 relative w-full">
-                                        <div className="w-full sticky top-0">
-                                            <Slider {...sliderSettings}>
-                                                {addin_images.map((image, index) => (
-                                                    <div key={index}>
-                                                        <Image src={image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover rounded-lg" />
-                                                    </div>
+                    <div className="mx-auto flex flex-col mb-4 md:flex-row lg:flex-row items-center w-full">
+                        <div className="container mx-auto">
+                            <div className="card mx-md-0">
+                                <div className="flex flex-wrap justify-center">
+                                    <div className="flex flex-col lg:flex-row w-full h-auto bg-[#F2F2F2]">
+                                        {/* Text Section */}
+                                        <div className="px-4 py-4 lg:w-5/12 flex flex-col">
+                                            <h1 className="text-md md:text-3xl lg:text-3xl font-semibold">{addin_title}</h1>
+                                            <p className="py-4 text-sm md:text-md lg:text-md">{addin_description_1}</p>
+                                            <p className="py-2 text-sm md:text-md lg:text-md">{addin_description_2}</p>
+                                            <p className="py-4 text-sm md:text-md lg:text-md font-semibold">{skills_and_deliverables}</p>
+                                            <div className="flex flex-wrap gap-2">
+                                                {tags.map((tag, index) => (
+                                                    <span key={index} className="relative px-3 py-1 text-sm md:text-md lg:text-md rounded-full shadow-sm bg-gray-200">
+                                                        {tag}
+                                                    </span>
                                                 ))}
-                                            </Slider>
+                                            </div>
+                                        </div>
+
+                                        {/* Image Carousel Section */}
+                                        <div className="lg:w-7/12 mt-4 lg:mt-0 relative w-full">
+                                            <div className="w-full sticky top-0">
+                                                <Slider {...sliderSettings}>
+                                                    {addin_images.map((image, index) => (
+                                                        <div key={index}>
+                                                            <Image src={image} alt={`Slide ${index + 1}`} className="w-full h-auto object-cover rounded-lg" />
+                                                        </div>
+                                                    ))}
+                                                </Slider>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@ const PortfolioDialog: React.FC<PortfolioDialogProps> = ({
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 };
 
