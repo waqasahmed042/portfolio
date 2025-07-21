@@ -122,7 +122,7 @@ export const demoLoomURLs = [
     },
     {
         addin_name: "Food Hub",
-        demoLoomURL: "https://www.loom.com/share/97161f3623cf4c99aff501542c42fd8a?sid=a25c59fd-8ed9-4405-b0f6-95a5fe65eb97",
+        demoLoomURL: "https://foodhub-hotel.web.app/",
     },
     {
         addin_name: "Legal Track AI",
