@@ -90,8 +90,13 @@ import food_hub_booking_history from "../public/assets/portfolio/websites/food-h
 import food_hub_update_profile from "../public/assets/portfolio/websites/food-hub/food-hub-update-profile.png";
 
 // browser extention images
-import g_auto_pilot_home from "../public/assets/portfolio/browser-extensions/g-auto-pilot/g-auto-pilot-home.png";
-import g_auto_pilot_authenticate_first from "../public/assets/portfolio/browser-extensions/g-auto-pilot/g-auto-pilot-authenticate-first.png";
+import g_mass_mailer from "../public/assets/portfolio/browser-extensions/g-mass-mailer/g-mass-mailer.png";
+import g_mass_mailer_home from "../public/assets/portfolio/browser-extensions/g-mass-mailer/g-mass-mailer-home.png";
+import g_mass_mailer_auth from "../public/assets/portfolio/browser-extensions/g-mass-mailer/g-mass-mailer-auth.png";
+import g_mass_mailer_already_authenticated from "../public/assets/portfolio/browser-extensions/g-mass-mailer/g-mass-mailer-already-authenticated.png";
+import g_mass_mailer_upload_csv from "../public/assets/portfolio/browser-extensions/g-mass-mailer/g-mass-mailer-upload-csv.png";
+import g_mass_mailer_start_sending_mails from "../public/assets/portfolio/browser-extensions/g-mass-mailer/g-mass-mailer-start-sending-mails.png";
+import g_mass_mailer_start_new_campaign from "../public/assets/portfolio/browser-extensions/g-mass-mailer/g-mass-mailer-start-new-compaign.png";
 
 export const buttonText = [
     'All Portfolio',
@@ -149,15 +154,15 @@ export const demoLoomURLs = [
     },
     {
         addin_name: "This is a Phish",
-        demoLoomURL: "https://www.loom.com/share/705eccc070ba4f6791955987f9dc0f8d?sid=016015ba-d75f-434c-930a-93a84bf93813"
+        demoLoomURL: "https://www.loom.com/share/039a7d5ca3b74d03b940120c51952270?sid=3a2eb3f4-5cf6-4920-83c1-ef81348126aa"
     },
     {
         addin_name: "GEMS Tool",
         demoLoomURL: "https://www.loom.com/share/2a068da505da400fac77ddeeda8ae1e2?sid=1797e44e-727c-48b4-a2bc-f85b806e755c"
     },
     {
-        addin_name: "GAutoPilot",
-        demoLoomURL: ""
+        addin_name: "GMassMailer",
+        demoLoomURL: "https://chromewebstore.google.com/detail/gmassmailer-email-campaig/pogblmdhcggdjdeddkpjenlihkeikcji?authuser=0&hl=en-GB"
     },
 ]
 
@@ -191,23 +196,31 @@ export const portfolio = [
     },
     {
         "img": [
-            g_auto_pilot_home,
-            g_auto_pilot_authenticate_first
+            g_mass_mailer,
+            g_mass_mailer_home,
+            g_mass_mailer_auth,
+            g_mass_mailer_already_authenticated,
+            g_mass_mailer_upload_csv,
+            g_mass_mailer_start_sending_mails,
+            g_mass_mailer_start_new_campaign
         ],
-        addin_name: 'GAutoPilot',
+        addin_name: 'GMassMailer',
         addin_type: 'Browser Extension',
-        addin_purpose: 'GAutoPilot – Streamlined Email and Client Data Management',
-        addin_description_1: 'GAutoPilot provides a user-friendly interface to access all emails, manage client lists, create new clients, and upload bulk client data via CSV files directly from your browser.',
-        addin_description_2: 'Optimized for seamless data workflows, GAutoPilot boosts productivity by organizing emails and clients with clarity and control.',
+        addin_purpose: 'GMassMailer – Streamlined Gmail Campaign Management and Client Data Automation',
+        addin_description_1: 'GMassMailer is a powerful Gmail extension that allows users to automate email campaigns directly from their browser. Easily upload CSV files, personalize messages, set custom send intervals, track progress, and export detailed results—all from within Gmail.',
+        addin_description_2: 'Designed for marketers, businesses, and professionals, GMassMailer enhances productivity by automating bulk email tasks while maintaining personalization, scheduling, and campaign reporting with ease.',
         skills_and_deliverables: 'Skills and deliverables:',
         tags: [
             'Browser Extension',
-            'Email Management',
-            'Auto Send Emails',
-            'Client Management',
+            'Email Campaigns',
+            'Gmail Automation',
             'CSV Upload',
+            'Personalized Emails',
+            'Scheduling & Rate Limiting',
+            'Campaign Tracking',
+            'Bulk Emailing',
+            'Client Outreach',
             'Productivity Tool',
-            'Data Organization',
         ],
     },
     {
@@ -462,22 +475,31 @@ export const dashboard = [
 export const browser_extentions = [
     {
         "img": [
-            g_auto_pilot_home,
-            g_auto_pilot_authenticate_first
+            g_mass_mailer,
+            g_mass_mailer_home,
+            g_mass_mailer_auth,
+            g_mass_mailer_already_authenticated,
+            g_mass_mailer_upload_csv,
+            g_mass_mailer_start_sending_mails,
+            g_mass_mailer_start_new_campaign
         ],
-        addin_name: 'GAutoPilot',
+        addin_name: 'GMassMailer',
         addin_type: 'Browser Extension',
-        addin_purpose: 'GAutoPilot – Streamlined Email and Client Data Management',
-        addin_description_1: 'GAutoPilot provides a user-friendly interface to access all emails, manage client lists, create new clients, and upload bulk client data via CSV files directly from your browser.',
-        addin_description_2: 'Optimized for seamless data workflows, GAutoPilot boosts productivity by organizing emails and clients with clarity and control.',
+        addin_purpose: 'GMassMailer – Streamlined Gmail Campaign Management and Client Data Automation',
+        addin_description_1: 'GMassMailer is a powerful Gmail extension that allows users to automate email campaigns directly from their browser. Easily upload CSV files, personalize messages, set custom send intervals, track progress, and export detailed results—all from within Gmail.',
+        addin_description_2: 'Designed for marketers, businesses, and professionals, GMassMailer enhances productivity by automating bulk email tasks while maintaining personalization, scheduling, and campaign reporting with ease.',
         skills_and_deliverables: 'Skills and deliverables:',
         tags: [
             'Browser Extension',
-            'Email Management',
-            'Client Management',
+            'Email Campaigns',
+            'Gmail Automation',
             'CSV Upload',
+            'Personalized Emails',
+            'Scheduling & Rate Limiting',
+            'Campaign Tracking',
+            'Bulk Emailing',
+            'Client Outreach',
             'Productivity Tool',
-            'Data Organization',
         ],
     }
 ];

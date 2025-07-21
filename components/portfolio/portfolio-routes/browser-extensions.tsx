@@ -140,7 +140,7 @@ const BrowserExtensions: React.FC = () => {
                     )}
                 </div>
 
-                {/* Broswer Extentin Items */}
+                {/* Broswer Extention Items */}
                 <section className="py-16 z-50 px-4">
                     <div className="container mx-auto">
                         {browser_extentions.length === 0 ? (
