@@ -19,3 +19,51 @@ $scrollbar-thumb-color: #d73e0f;
 ::-webkit-scrollbar-thumb {
     background: $scrollbar-thumb-color;
 }
+
+.marque-container .Marquee-content {
+    animation: marquee 20s linear infinite running;
+}
+
+.marque-container .Marquee-content:hover {
+    animation-play-state: paused;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-50%);
+    }
+}
+
+@-webkit-keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-50%);
+    }
+}
+
+@-o-keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-50%);
+    }
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translate(-50%);
+    }
+}

@@ -17,6 +17,12 @@ const UIText = {
         loading: "Loading...",
         what_i_do_best: " What I Do Best",
         archived_projects: "Archived Projects",
+        trusted_companies: "Trusted Companies",
+        testimonials: {
+            title: "Testimonials",
+            read_more: "Read More",
+            show_less: "Show Less",
+        }
     },
     askAI: {
         title: "Ask AI",
