@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import UIText from '@/utilities/testResource';
 import { raleway } from '@/utilities/hook/useFonts';
-import { trustedCompanies } from '@/utilities/trustedCompanies';
+import { trustedCompanies } from '@/utilities/home/trustedCompanies';
 
 const TrustedCompanies: React.FC = () => {
     return (

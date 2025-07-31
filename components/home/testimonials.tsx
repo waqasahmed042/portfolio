@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import UIText from "@/utilities/testResource";
-import { testimonials } from "@/utilities/testimonials";
+import { testimonials } from "@/utilities/home/testimonials";
 import { FaStar } from "react-icons/fa";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { countWords } from "@/utilities/hook/countWords";
