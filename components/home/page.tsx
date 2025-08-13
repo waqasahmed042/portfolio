@@ -34,7 +34,10 @@ const Home: React.FC = () => {
                             <h1 className={`text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-center md:text-left ${rubik.className}`}>
                                 {UIText.home.i}
                                 &apos;
-                                {UIText.home.name}
+                                {UIText.home.m}
+                                <span className="text-[#d73e0f]">
+                                    {UIText.home.name}
+                                </span>
                             </h1>
                             <p className="type-writer-text text-md md:text-xl lg:text-xl xl:text-xl">
                                 <i>

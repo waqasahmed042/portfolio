@@ -12,10 +12,7 @@ const PricingPlans: React.FC = () => {
                 <div className="container mx-auto px-4 lg:px-8">
                     {/* Title */}
                     <h2 className={`text-3xl font-bold mb-10 inline-block relative group ${raleway.className}`}>
-                        {UIText.home.pricing.find_your}
-                        <span className="text-[#d73e0f]">
-                            {UIText.home.pricing.title}
-                        </span>
+                        {UIText.home.pricing.title}
                         <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded h-1 w-16 transition-all duration-500 group-hover:w-full"></span>
                     </h2>
 

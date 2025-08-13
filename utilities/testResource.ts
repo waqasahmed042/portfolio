@@ -11,7 +11,8 @@ const UIText = {
     home: {
         hello: "Hello!",
         i: "I",
-        name: "m Waqas Ahmed",
+        m: "m ",
+        name: "Waqas Ahmed",
         description: "I’m a Full Stack Developer specializing in Web Development, Office Add-ins, and Google Add-ons. With expertise in building powerful & animated Websites, Offcie Add-ins, Google Add-ons and enterprise solutions, I focus on seamless integration, user-centric design, and innovative problem-solving to deliver high-performance applications.",
         get_a_free_quote: "Get a Free Quote",
         loading: "Loading...",
@@ -19,8 +20,7 @@ const UIText = {
         archived_projects: "Archived Projects",
         trusted_companies: "Trusted Companies",
         pricing: {
-            find_your: "Find Your ",
-            title: "Pricing Plan",
+            title: "Choose Your Plan",
             most_popular: "Most Popular",
             btn: "Choose Plan"
         },
