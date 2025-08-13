@@ -64,6 +64,7 @@ export const pricingPlans: PricingPlanProps[] = [
             "React & TypeScript",
             "Material UI, Fluent UI & Chakra UI",
             "Advanced security (Azure AD, OAuth)",
+            "Firebase integration (Email, Google, SMS, Push notifications)",
             "REST APIs & database integration",
             "Full Microsoft Graph API coverage",
             "Multi-framework support (React, Angular, Vue)",
