@@ -27,7 +27,7 @@ const Navbar: React.FC = () => {
             <ScrollProgress />
             <header className={`${roboto.className}`}>
                 <nav
-                    className="navbar flex items-center justify-between shadow-md fixed w-full z-20 px-6 py-2 top-0 bg-white"
+                    className="navbar flex items-center justify-between shadow-md fixed w-full z-20 px-8 py-2 top-0 bg-white"
                     id="ftco-navbar"
                 >
                     <div className="container mx-auto px-4 flex items-center justify-between">

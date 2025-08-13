@@ -141,7 +141,7 @@ const OfficeAddins: React.FC = () => {
                 </div>
 
                 {/* Office Addin Items */}
-                <section className="py-16 z-50 px-4">
+                <section className="py-16 z-50 px-4 lg:mx-8">
                     <div className="container mx-auto">
                         {office_addins.length === 0 ? (
                             <section className="py-8 z-50 px-4">

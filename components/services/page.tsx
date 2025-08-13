@@ -31,13 +31,13 @@ const Services: React.FC = () => {
         <>
             {/* hero section */}
             <section>
-                <div data-aos="fade-up" className="flex  items-center justify-center  bg-gray-100 hero-section">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
+                <div data-aos="fade-up" className="flex  items-center justify-center bg-gray-100 hero-section">
+                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 lg:px-8 space-y-6 md:space-y-0">
                         {/* Left section (text + buttons) */}
-                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6 lg:px-20">
+                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6">
                             <h2 className={`text-3xl font-bold mb-2 relative group ${raleway.className}`}>
                                 {UIText.services.title}
-                                <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded  h-1  w-12 transition-all duration-500 group-hover:w-44"></span>
+                                <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded h-1 w-12 transition-all duration-500 group-hover:w-44"></span>
                             </h2>
                             <p className="text-center">
                                 <i>&quot;{UIText.services.tag_line}&quot;</i>
@@ -60,11 +60,11 @@ const Services: React.FC = () => {
                 </div>
             </section>
 
-            <div className="flex items-center justify-center bg-gray-100 ">
+            <div className="flex items-center justify-center bg-gray-100">
                 <div className="container">
                     {/* Services Section */}
-                    <section className=" py-10">
-                        <div data-aos="fade-up" className="container mx-auto px-4 lg:px-24">
+                    <section>
+                        <div data-aos="fade-up" className="container mx-auto px-4 lg:px-8">
                             {/* Title */}
                             <h2 className={`text-3xl mt-5 font-bold mb-10 inline-block relative group ${raleway.className}`}>
                                 {UIText.services.what_i_offer}
@@ -94,7 +94,7 @@ const Services: React.FC = () => {
 
                     {/* tools and Technologies section */}
                     <section className=' py-10'>
-                        <div data-aos="zoom-in" className='container mx-auto px-4 lg:px-24'>
+                        <div data-aos="zoom-in" className='container mx-auto px-4 lg:px-8'>
                             <h2 className={`text-3xl mt-5 font-bold  inline-block relative group ${raleway.className}`}>
                                 {UIText.services.tools_and_technologies}
                                 <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded  h-1  w-12 transition-all duration-500 group-hover:w-72"></span>
@@ -115,7 +115,7 @@ const Services: React.FC = () => {
                     </section>
 
                     <section className="bg-gray-100 py-10">
-                        <div data-aos="fade-up" className="container mx-auto px-4 lg:px-24">
+                        <div data-aos="fade-up" className="container mx-auto px-4 lg:px-8">
                             {/* Title */}
                             <h2 className={`text-3xl font-bold mb-10 inline-block relative group ${raleway.className}`}>
                                 {UIText.services.why_choose_me}

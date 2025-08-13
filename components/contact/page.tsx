@@ -117,9 +117,9 @@ const Contact: React.FC = () => {
             {/* hero section */}
             <section className='bg-gray-100'>
                 <div data-aos="fade-up" className="flex items-center justify-center bg-gray-100 hero-section">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
+                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 lg:px-8 space-y-6 md:space-y-0">
                         {/* Left section (text + buttons) */}
-                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6 lg:px-20">
+                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6">
                             <h2 className={`text-3xl font-bold mb-2 relative group ${raleway.className}`}>
                                 {UIText.contact.title}
                                 <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded h-1 w-12 transition-all duration-500 group-hover:w-40"></span>
@@ -141,12 +141,12 @@ const Contact: React.FC = () => {
                 </div>
 
                 <section className='bg-gray-100 hero-section'>
-                    <div className='container mx-auto px-4 lg:px-24'>
+                    <div className='container mx-auto px-4 lg:px-8'>
                         <h2 className={` text-3xl mt-20 font-bold mb-2 relative group ${raleway.className}`}>
                             {UIText.contact.title}
-                            <span className="text-underline ms-1 absolute left-0 bottom-[-4px] rounded  h-1  w-12 transition-all duration-500 group-hover:w-40"></span>
+                            <span className="text-underline ms-1 absolute left-0 bottom-[-4px] rounded h-1 w-12 transition-all duration-500 group-hover:w-40"></span>
                         </h2>
-                        <div data-aos="fade-up" className="flex flex-wrap justify-around lg:justify-around sm:justify-start items-center sm:content-start mt-10 gap-y-2 mb-10">
+                        <div data-aos="fade-up" className="flex flex-wrap justify-around lg:justify-start sm:justify-start items-center sm:content-start mt-10 gap-40 mb-10">
                             <div className="flex w-full sm:w-auto me-3">
                                 <div className="contact-icon-container">
                                     <IoIosMail size={60} color="#d73e0f" />
@@ -180,7 +180,7 @@ const Contact: React.FC = () => {
                         </div>
 
                         {/* map and form section */}
-                        <div data-aos="fade-up" className='container flex flex-wrap flex-col md:flex-row align-center justify-center '>
+                        <div data-aos="fade-up" className='container flex flex-wrap flex-col md:flex-row align-center justify-center'>
                             {/* google map */}
                             <div className='w-full md:w-1/2'>
                                 <iframe

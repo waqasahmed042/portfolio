@@ -26,10 +26,10 @@ const Home: React.FC = () => {
         <>
             {/* hero section */}
             <section>
-                <div data-aos="fade-up" className="flex  items-center justify-center bg-gray-100 hero-section">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4  md:space-y-0">
+                <div data-aos="fade-up" className="flex items-center justify-center bg-gray-100 hero-section">
+                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 md:space-y-0">
                         {/* Left section (text + buttons) */}
-                        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center space-y-8 lg:px-20">
+                        <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center space-y-8 lg:px-8">
                             <p className={`text-xl hellow-text ${rubik.className}`}>{UIText.home.hello}</p>
                             <h1 className={`text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-semibold text-center md:text-left ${rubik.className}`}>
                                 {UIText.home.i}
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
 
             {/* highlight section */}
             <section className="bg-gray-100 py-10">
-                <div data-aos="fade-up" className="container mx-auto px-4 lg:px-24">
+                <div data-aos="fade-up" className="container mx-auto px-4 lg:px-8">
                     {/* Title */}
                     <h2 className={`text-3xl font-bold mb-10 inline-block relative group ${raleway.className}`}>
                         {UIText.home.what_i_do_best}

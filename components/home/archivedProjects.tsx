@@ -25,7 +25,7 @@ const ArchivedProjects: React.FC = () => {
     return (
         <>
             <section className="bg-gray-100 py-10">
-                <div data-aos="fade-up" className="container mx-auto px-4 lg:px-24">
+                <div data-aos="fade-up" className="container mx-auto px-4 lg:px-8">
                     {/* Title */}
                     <h2 className={`text-3xl font-bold mb-10 inline-block relative group ${raleway.className}`}>
                         {UIText.home.archived_projects}

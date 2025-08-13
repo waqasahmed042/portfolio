@@ -48,9 +48,9 @@ const About: React.FC = () => {
             {/* hero section */}
             <section>
                 <div data-aos="fade-up" className="flex  items-center justify-center  bg-gray-100 hero-section">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
+                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 lg:px-8 space-y-6 md:space-y-0">
                         {/* Left section (text + buttons) */}
-                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6 lg:px-20">
+                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6">
                             <h2 className={`text-3xl font-bold mb-2 relative group ${raleway.className}`}>
                                 {UIText.about.title}
                                 <span className="text-underline ms-1 absolute left-0 bottom-[-4px] rounded  h-1  w-12 transition-all duration-500 group-hover:w-36"></span>
@@ -77,7 +77,7 @@ const About: React.FC = () => {
             </section>
 
             <section className="bg-gray-100 py-10">
-                <div data-aos="fade-up" className="container mx-auto px-4 lg:px-24">
+                <div data-aos="fade-up" className="container mx-auto px-4 lg:px-8">
                     {/* Title */}
                     <h2 className={`text-3xl font-bold mb-6 inline-block relative group ${raleway.className}`}>
                         {UIText.about.resume}
@@ -120,7 +120,7 @@ const About: React.FC = () => {
             {/* Vision & Mission section */}
             <section className="bg-gray-100">
                 <div data-aos="fade-up" className="bg-gray-100 py-16">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
+                    <div className="container flex flex-col md:flex-row items-center justify-center mx-auto px-4 lg:px-8 space-y-6 md:space-y-0">
                         {/* Right section (image with SVG background) */}
                         <div className="w-full md:w-1/2 flex justify-center items-center relative">
                             <Image src={missionImg.src} className='rounded-3xl' alt='about-hero' width={360} height={360} />

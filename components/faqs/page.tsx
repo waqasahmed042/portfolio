@@ -111,13 +111,16 @@ const FAQs: React.FC = () => {
             {/* hero section */}
             <section className='bg-gray-100'>
                 <div data-aos="fade-up" className="flex items-center justify-center bg-gray-100 hero-section">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
+                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 lg:px-8 space-y-6 md:space-y-0">
                         {/* Left section (text + buttons) */}
-                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6 lg:px-20">
+                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6">
                             <h2 className={`text-xl md:text-2xl lg:text-3xl xl:text-3xl font-bold mb-2 relative group ${raleway.className}`}>
                                 {UIText.faqs.title}
                                 <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded h-1 w-20 transition-all duration-500 group-hover:w-96"></span>
                             </h2>
+                            <p className="text-center">
+                                <i>&quot;{UIText.faqs.tag_line}&quot;</i>
+                            </p>
                             <p className={`text-lg text-center md:text-left ${roboto.className}`}>{UIText.faqs.description}</p>
                             <div>
                                 <Link href="/contact" passHref>
@@ -136,9 +139,9 @@ const FAQs: React.FC = () => {
                 </div>
             </section>
 
-            <div className='bg-gray-100 mb-8'>
-                <div className="p-2 md:p-4 lg:p-6 xl:p-8">
-                    <div className="flex flex-col lg:flex-row mx-auto max-w-[84em] gap-4">
+            <div className='bg-gray-100'>
+                <div className="p-2 md:p-4 lg:px-6 xl:p-8">
+                    <div className="flex flex-col lg:flex-row mx-auto max-w-[92em] gap-4">
                         {/* Categories Section */}
                         <div className="w-full lg:w-1/3 bg-gradient-to-br from-[#ff7e5f] to-[#d73e0f] p-6 rounded-lg animate-slide-bottom">
                             <h2 className="text-lg font-semibold text-white mb-4">{UIText.faqs.categories}</h2>

@@ -12,7 +12,7 @@ const raleway = Raleway({
 const Contact: React.FC<ContactProps> = ({ titlePre, highlight, titlePost }) => {
     return (
         <section className="bg-gray-100 py-10">
-            <div data-aos="zoom-in-up" className="container mx-auto px-4 lg:px-24">
+            <div data-aos="zoom-in-up" className="container mx-auto px-4 lg:px-8">
                 {/* Title */}
                 <h2 className={`text-3xl font-bold mb-6 relative inline-block group ${raleway.className}`}>
                     {UIText.contact.title}

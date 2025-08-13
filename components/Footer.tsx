@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
     return (
         <>
             <footer className="footer bg-light z-50">
-                <div className="container mx-auto px-4 lg:px-24 py-0">
+                <div className="container mx-auto px-4 lg:px-8 py-0">
                     <div className='flex justify-center md:justify-between lg:justify-between xl:justify-between flex-wrap mt-4'>
                         <Link href='/' className='my-4 md:my-0 lg:my-0 xl:my-0'>
                             <Image src={logo} alt="logo" width={250} />

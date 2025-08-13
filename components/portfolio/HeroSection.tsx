@@ -10,9 +10,9 @@ const HeroSection: React.FC = () => {
         <>
             <section>
                 <div data-aos="fade-up" className="flex items-center justify-center bg-gray-100 hero-section">
-                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 space-y-6 md:space-y-0">
+                    <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4 lg:px-8 space-y-6 md:space-y-0">
                         {/* Left Section */}
-                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6 lg:px-20">
+                        <div className="w-full md:w-1/2 mt-4 flex flex-col items-center md:items-start justify-center space-y-6">
                             <h2 className={`text-3xl font-bold mb-2 relative group ${raleway.className}`}>
                                 {UIText.projects.title}
                                 <span className="text-underline ms-2 absolute left-0 bottom-[-4px] rounded h-1 w-12 transition-all duration-500 group-hover:w-40"></span>
