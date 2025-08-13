@@ -13,7 +13,7 @@ import ArchivedProjects from "./archivedProjects";
 import QuoteModel from "./quoteModel";
 import AskAI from "../ai/page";
 import TrustedCompanies from "./trustedCompanies";
-import Packages from "./packages";
+import PricingPlans from "./pricingPlan";
 
 const Home: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -146,7 +146,7 @@ const Home: React.FC = () => {
             {/* project section */}
             <ArchivedProjects />
             <TrustedCompanies />
-            <Packages />
+            <PricingPlans />
 
             {/* contact section */}
             <Contact titlePre={"Let's "} highlight={"Build"} titlePost={" Something Amazing Together."} />
