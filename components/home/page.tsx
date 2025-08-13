@@ -13,7 +13,7 @@ import ArchivedProjects from "./archivedProjects";
 import QuoteModel from "./quoteModel";
 import AskAI from "../ai/page";
 import TrustedCompanies from "./trustedCompanies";
-// import Testimonials from "./testimonials";
+import Packages from "./packages";
 
 const Home: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         <>
             {/* hero section */}
             <section>
-                <div data-aos="fade-up" className="flex  items-center justify-center  bg-gray-100 hero-section">
+                <div data-aos="fade-up" className="flex  items-center justify-center bg-gray-100 hero-section">
                     <div className="container mx-auto flex flex-col md:flex-row items-center justify-center px-4  md:space-y-0">
                         {/* Left section (text + buttons) */}
                         <div className="w-full md:w-1/2 flex flex-col items-center md:items-start justify-center space-y-8 lg:px-20">
@@ -146,7 +146,7 @@ const Home: React.FC = () => {
             {/* project section */}
             <ArchivedProjects />
             <TrustedCompanies />
-            {/* <Testimonials /> */}
+            <Packages />
 
             {/* contact section */}
             <Contact titlePre={"Let's "} highlight={"Build"} titlePost={" Something Amazing Together."} />

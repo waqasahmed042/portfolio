@@ -18,11 +18,17 @@ const UIText = {
         what_i_do_best: " What I Do Best",
         archived_projects: "Archived Projects",
         trusted_companies: "Trusted Companies",
+        pricing: {
+            find_your: "Find Your ",
+            title: "Pricing Plan",
+            most_popular: "Most Popular",
+            btn: "Choose Plan"
+        },
         testimonials: {
             title: "Testimonials",
             read_more: "Read More",
             show_less: "Show Less",
-        }
+        },
     },
     askAI: {
         title: "Ask AI",

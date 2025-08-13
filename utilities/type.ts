@@ -18,6 +18,16 @@ export interface QuoteModelProps {
     setIsModalOpen: (isOpen: boolean) => void;
 }
 
+export interface PricingPlanProps {
+    name: string;
+    price: string;
+    period: string;
+    description: string;
+    features: string[];
+    notIncluded: string[];
+    popular?: boolean;
+}
+
 export interface ContactProps {
     titlePre: string;
     highlight: string;
