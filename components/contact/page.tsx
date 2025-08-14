@@ -13,22 +13,37 @@ import Image from 'next/image';
 import Loader from '@/components/Loader';
 import emailjs from 'emailjs-com';
 import { ContactPageProps } from '@/utilities/type';
-import { contact, projectTypeDropdown } from '@/utilities/contact';
+import { contact, pricingPlans, projectTypeDropdown } from '@/utilities/contact';
 import aboutImg from '@/public/assets/images/contactPic.jpg';
 import UIText from '@/utilities/testResource';
 import AskAI from '../ai/page';
+import Uploadfiles from './uploadFile/page';
+import { useSearchParams } from 'next/navigation';
 
-const initialState: ContactPageProps = { name: '', email: '', subject: '', project_type: '', message: '' };
+const initialState: ContactPageProps = { name: '', email: '', subject: '', project_type: '', pricing_plan: '', message: '' };
 
 const Contact: React.FC = () => {
-    const [state, setState] = useState(initialState);
+    const searchParams = useSearchParams();
+    const selectedPlan = searchParams.get("plan") || "";
+    console.log("Selected Plan:", selectedPlan);
+
+    const [state, setState] = useState({
+        ...initialState,
+        pricing_plan: selectedPlan,
+    });
+
     const [loading, setLoading] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [successMessage, setSuccessMessage] = useState('');
 
     useEffect(() => {
         AOS.init();
-    }, []);
+
+        // Prefill pricing plan from query param
+        if (selectedPlan) {
+            setState(prev => ({ ...prev, pricing_plan: selectedPlan }));
+        }
+    }, [selectedPlan]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setState({ ...state, [e.target.name]: e.target.value });
@@ -44,11 +59,12 @@ const Contact: React.FC = () => {
         setErrorMessage("");
         setSuccessMessage("");
 
-        let { name, email, subject, project_type, message } = state;
+        let { name, email, subject, project_type, pricing_plan, message } = state;
         name = name.trim();
         email = email.trim();
         subject = subject.trim();
         project_type = project_type.trim();
+        pricing_plan = pricing_plan.trim();
         message = message.trim();
 
         // Check for missing fields
@@ -57,6 +73,7 @@ const Contact: React.FC = () => {
         if (!email) missingFields.push("Email");
         if (!subject) missingFields.push("Subject");
         if (!project_type) missingFields.push("Project Type");
+        if (!pricing_plan) missingFields.push("Pricing Plan");
         if (!message) missingFields.push("Message");
 
         // If more than one field is missing, show a general message
@@ -79,6 +96,7 @@ const Contact: React.FC = () => {
             full_name: name,
             subject,
             project_type,
+            pricing_plan,
             message,
             email,
             reply_to: email,
@@ -141,12 +159,12 @@ const Contact: React.FC = () => {
                 </div>
 
                 <section className='bg-gray-100 hero-section'>
-                    <div className='container mx-auto px-4 lg:px-8'>
+                    <div className='container mx-auto px-4 sm:px-0 lg:px-8'>
                         <h2 className={` text-3xl mt-20 font-bold mb-2 relative group ${raleway.className}`}>
                             {UIText.contact.title}
                             <span className="text-underline ms-1 absolute left-0 bottom-[-4px] rounded h-1 w-12 transition-all duration-500 group-hover:w-40"></span>
                         </h2>
-                        <div data-aos="fade-up" className="flex flex-wrap justify-around lg:justify-start sm:justify-start items-center sm:content-start mt-10 gap-40 mb-10">
+                        <div data-aos="fade-up" className="flex flex-wrap justify-around lg:justify-start sm:justify-start items-center sm:content-start mt-10 gap-12 mb-10">
                             <div className="flex w-full sm:w-auto me-3">
                                 <div className="contact-icon-container">
                                     <IoIosMail size={60} color="#d73e0f" />
@@ -186,13 +204,13 @@ const Contact: React.FC = () => {
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108208.7613301713!2d72.61463039841445!3d32.055078894508505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39217439502694e3%3A0x55e1bad6edcbbc70!2sSargodha%2C%20Pakistan!5e0!3m2!1sen!2s!4v1740571509760!5m2!1sen!2s"
                                     width="100%"
-                                    height="580"
+                                    height="720"
                                     style={{ border: 0 }}
                                     loading="lazy"
                                 ></iframe>
                             </div>
                             <div className='w-full md:w-1/2'>
-                                <form className='bg-white shadow-md  px-8 pt-6 pb-8 mb-20'>
+                                <form className='bg-white shadow-md px-8 pt-2 pb-8 mb-20'>
                                     <h2 className='text-4xl mb-10'>{UIText.contact.interested_work_together} <br /> {UIText.contact.let}&apos;{UIText.contact.talk}</h2>
                                     <div className="flex gap-5 mb-4 flex-row inputs-container">
                                         <div className="form__group field w-full" >
@@ -212,9 +230,19 @@ const Contact: React.FC = () => {
 
                                     <div className="form__group field w-full mb-4">
                                         <label htmlFor="project_type" className="block form__label">{UIText.contact.project_type}</label>
-                                        <select id="project_type" name="project_type" className="form__field" value={state.project_type} onChange={handleChange}>
+                                        <select id="project_type" name="project_type" className="form__field cursor-pointer" value={state.project_type} onChange={handleChange}>
                                             <option value="" disabled>{UIText.contact.selected_project_type}</option>
                                             {projectTypeDropdown.map((type, index) => (
+                                                <option key={index} value={type}>{type}</option>
+                                            ))}
+                                        </select>
+                                    </div>
+
+                                    <div className="form__group field w-full mb-4">
+                                        <label htmlFor="pricing_plan" className="block form__label">{UIText.contact.pricing_plan}</label>
+                                        <select id="pricing_plan" name="pricing_plan" className="form__field cursor-pointer" value={state.pricing_plan} onChange={handleChange}>
+                                            <option value="" disabled>{UIText.contact.selected_pricing_plan}</option>
+                                            {pricingPlans.map((type, index) => (
                                                 <option key={index} value={type}>{type}</option>
                                             ))}
                                         </select>
@@ -225,7 +253,10 @@ const Contact: React.FC = () => {
                                         <label htmlFor="message" className="form__label">{UIText.contact.message}</label>
                                     </div>
 
-                                    <div className='flex items-center justify-end'>
+                                    {/* upload files as an attachment */}
+                                    <Uploadfiles />
+
+                                    <div className='flex items-center justify-end mt-4'>
                                         <button
                                             className='bg-custommain text-white font-bold py-2 px-2 rounded hero-btn-resume h-10 w-32 flex items-center justify-center'
                                             type='button' onClick={handleSubmit}

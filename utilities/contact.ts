@@ -17,3 +17,9 @@ export const projectTypeDropdown = [
     'Google Docs Add-on',
     'Google Forms Add-on',
 ];
+
+export const pricingPlans = [
+    'Starter',
+    'Pro',
+    'Enterprise',
+];

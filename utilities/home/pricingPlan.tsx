@@ -28,7 +28,7 @@ export const pricingPlans: PricingPlanProps[] = [
         popular: false,
     },
     {
-        name: "Professional",
+        name: "Pro",
         price: "$250",
         period: "per add-in",
         description:
@@ -60,7 +60,7 @@ export const pricingPlans: PricingPlanProps[] = [
         description:
             "Full-stack enterprise-grade Office Add-in development with premium support and maximum security.",
         features: [
-            "All Professional features",
+            "All Enterprise features",
             "React & TypeScript",
             "Material UI, Fluent UI & Chakra UI",
             "Advanced security (Azure AD, OAuth)",

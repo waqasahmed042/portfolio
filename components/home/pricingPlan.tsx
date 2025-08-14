@@ -1,6 +1,8 @@
+"use client";
 import React from 'react';
 import { raleway } from '@/utilities/hook/useFonts';
 import UIText from '@/utilities/testResource';
+import Link from "next/link";
 import { pricingPlans } from '@/utilities/home/pricingPlan';
 import { TiTickOutline } from "react-icons/ti";
 import { IoClose } from "react-icons/io5";
@@ -61,14 +63,15 @@ const PricingPlans: React.FC = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <button
-                                    className={`w-full font-semibold py-2 rounded transition ${plan.popular
+                                <Link
+                                    href={`/contact?plan=${encodeURIComponent(plan.name.toLowerCase())}`}
+                                    className={`block text-center font-semibold py-2 rounded transition ${plan.popular
                                         ? "bg-[#219ebc] text-white hover:text-black border-2 hover:border-[#219ebc] hover:bg-white"
                                         : "border-2 border-[#219ebc] text-black hover:bg-[#219ebc] hover:text-white"
                                         }`}
                                 >
                                     {UIText.home.pricing.btn}
-                                </button>
+                                </Link>
                             </div>
                         ))}
                     </div>

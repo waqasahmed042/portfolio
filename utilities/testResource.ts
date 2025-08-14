@@ -127,7 +127,12 @@ const UIText = {
         subject: "Subject",
         project_type: "Project Type",
         selected_project_type: "Select Project Type",
-        message: "Message"
+        pricing_plan: "Pricing Plan",
+        selected_pricing_plan: "Choose Your Plan",
+        message: "Message",
+        UploadFiles: {
+            label: "Drop your files here or click to browse"
+        }
     },
     footer: {
         all_rights_reserved: "© 2025 Waqas Ahmed. All Right Reserved."

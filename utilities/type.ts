@@ -39,7 +39,15 @@ export interface ContactPageProps {
     email: string;
     subject: string;
     project_type: string;
+    pricing_plan: string;
     message: string;
+}
+
+export interface FilePreviewProps {
+    name: string;
+    type: string;
+    size: number;
+    base64?: string;
 }
 
 export interface projectProps {
