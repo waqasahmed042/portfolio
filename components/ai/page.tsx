@@ -76,7 +76,7 @@ const AskAI: React.FC = () => {
         <>
             {/* Floating Ask AI Button */}
             <button
-                className="fixed bottom-5 right-5 bg-[#219ebc] hover:bg-[#1b7c92] text-white p-4 rounded-full shadow-lg flex items-center space-x-2 z-20"
+                className="fixed bottom-5 right-5 bg-[#219ebc] hover:bg-[#1b7c92] text-white px-[16px] py-[12px] rounded-full shadow-lg flex items-center space-x-2 z-20"
                 onClick={() => setIsAIModalOpen(true)}
             >
                 <span className="font-bold">{UIText.askAI.title}</span>

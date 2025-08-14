@@ -20,7 +20,7 @@ const UIText = {
         archived_projects: "Archived Projects",
         trusted_companies: "Trusted Companies",
         pricing: {
-            find_your: "Find Your",
+            // find_your: "Find Your",
             title: "Choose Your Plan",
             most_popular: "Most Popular",
             btn: "Choose Plan"

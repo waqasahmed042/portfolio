@@ -8,6 +8,7 @@ import { collection, doc, serverTimestamp, setDoc } from 'firebase/firestore';
 import { firestore } from '@/config/firebase';
 import Toast from '@/components/Toast';
 import "react-toastify/dist/ReactToastify.css";
+import { useRouter, useSearchParams } from "next/navigation";
 import AOS from 'aos';
 import Image from 'next/image';
 import Loader from '@/components/Loader';
@@ -18,13 +19,13 @@ import aboutImg from '@/public/assets/images/contactPic.jpg';
 import UIText from '@/utilities/testResource';
 import AskAI from '../ai/page';
 import Uploadfiles from './uploadFile/page';
-import { useSearchParams } from 'next/navigation';
 
 const initialState: ContactPageProps = { name: '', email: '', subject: '', project_type: '', pricing_plan: '', message: '' };
 
 const Contact: React.FC = () => {
+    const router = useRouter();
     const searchParams = useSearchParams();
-    const selectedPlan = searchParams.get("plan") || "";
+    const selectedPlan = (searchParams.get("plan") || "").toLowerCase();
     console.log("Selected Plan:", selectedPlan);
 
     const [state, setState] = useState({
@@ -40,10 +41,13 @@ const Contact: React.FC = () => {
         AOS.init();
 
         // Prefill pricing plan from query param
-        if (selectedPlan) {
-            setState(prev => ({ ...prev, pricing_plan: selectedPlan }));
+        const plan = searchParams.get("plan");
+        if (plan && plan !== plan.toLowerCase()) {
+            const newParams = new URLSearchParams(searchParams.toString());
+            newParams.set("plan", plan.toLowerCase());
+            router.replace(`/contact?${newParams.toString()}`);
         }
-    }, [selectedPlan]);
+    }, [searchParams, router]);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
         setState({ ...state, [e.target.name]: e.target.value });
